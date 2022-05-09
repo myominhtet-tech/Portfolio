@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Media Queries lesson</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width , initial-scale=1.0">
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kumar+One+Outline|Slabo+27px|Unlock" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <link rel="stylesheet" href="../CSS/response1.css">
+    <style>
+        body {
+            font-family: Myanmar3, Yunghkio;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/default.css">
+    <script src="../highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <header>
+                <a href="index.html" id="logo">
+                    <h1>Learning Start Basic Website Building</h1>
+                    <h2 class="header-h2">Myo Min Htet</h2>
+                </a>
+                <nav class="main-nav">
+                    <ul class="nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../HTML/lessons.html" class="selected">Lesson</a></li>
+                        <li><a href="../HTML/content.html">Content</a></li>
+                        <a class="mv-item nav-link" href="Volcubularies.html">Vocabularies</a>
+                        <li><a href="../HTML/resume.html">About</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+        </div>
+        <div>
+            <img src="http://placeimg.com/200/200/tech" class="lesson-img" alt="Profile_Picture">
+
+            <main class="flex">
+                <div id="wrapper">
+                    <ul class="lesson-learn">
+                        <h1 class="tag-name">LEARNING CSS MASK</h1>
+                        <li>
+                            <h2 class="small-title">CSS Masks</h2>
+                            <p>
+                                ဒီတစ်ခါမှာတော့ကျွန်တော်တို့ CSS design effect တွေကို cover ပြုလုပ်ဖို့အတွက် CSS mask တွေကိုလေ့လာသွားမှာပဲဖြစ်ပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့က masking နဲ့ clipping တွေကိုအများဆုံးအသုံးပြုတဲ့ features တွေဖြစ်ပြီး photoshop တွေ Sketch တွေနဲ့ပုံစံတူတဲ့ graphic
+                                editing tools တွေပဲဖြစ်ပါတယ်။ကျွန်တော်တို့က အဲတာတွေကို elements တွေရဲ့မြင်နိုင်တဲ့အပိုင်းတွေကို hide ထားဖို့အတွက်အသုံပြုပါတယ်။ဒါပေမယ့်ကျွန်တော်တို့က mask တွေကို browser ပေါ်မှာCSS တွေနဲ့တိုက်ရိုက်တန်းပြီးအသုံးမပြုနိင်ပါဘူး။design
+                                effects အချို့နဲ့အဲ့တာကို create ပြုလုပ်နိုင်ပါတယ်။Masking က CSS masking specification ရဲ့အပိုင်းတစ်ခုပဲဖြစ်ပါတယ်။method နှစ်ခုရှိပြီးတော့ အစိတ်အပိုင်းလေးတွေအတွက်သို့မဟုတ် html elements တစ်ခုလုံးကိုဖျောက်ထားနိုင်ပါတယ်။အဲ့ဒီ
+                                method တွေကတော့ masking နဲ့ clipping တွေပဲဖြစ်ပါတယ်။ masking feature တွေကသေချာတဲ့ areas တွေကို masking out ပြုလုပ်ခြင်းဖြင့် elements တွေရဲ့အပိုင်းတွေကိုမှေးမှိန်သွားအောင်ပြုလုပ်နိုင်ပါတယ်။ အဲ့တာကြောင့်ကျွန်တော်တို့က elements
+                                တွေကို masking ပြုလုပ်ချင်တယ်ဆိုရင်တော့ mask image တွေကိုအသုံးပြုပြီး elements တွေရဲ့မြင်နိုင်တဲ့အပိုင်းတွေကို filter ပြလုပ်နိုင်ဖို့ပဲဖြစ်ပါတယ်။mask image တွေမှာ တစ်ပိုင်းကအနက်ရောင်လုံးလုံးဖြစ်နေပြီးတစ်ပိုင်းကcompletely
+                                transparent ဖြစ်နေတယ်ဆိုရင်အဲ့တာမျိုးကို Alpha Mask လို့ခေါ်နိုင်ပါတယ်။နောက်ထပ် mask image တွေအတွက်ကျွန်တော်တို့ CSS ထဲမှာwebkit vendor prefix ကိုအသုံးပြုဖို့လိုအပ်ပါတယ်။CSS masks တွေကအဆင်သင့်ပြီး flexible ဖြစ်တဲ့ design
+                                features တွေပဲဖြစ်ပါတယ်။ကျွန်တော်တို့ website တွေမှာရှိတဲ့ headlines , buttons , icons သို့မဟုတ်အခြားအစိတ်အပိုင်းတွေမှာကျွန်တော်တို့အသုံးပြုနိုင်ပါတယ်။Internet Explorer မှာတော့ mask image property ကိုထောက်ပံ့ပေးမှာမဟုတ်ပါဘူး။
+                                <br>
+                                <pre><code class="css">
+                                
+/*===============================
+Mask image Insertig
+===============================*/
+
+.wrap {
+    background: url('../next-adding-css/mountain.jpg') no-repeat;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+    font-size: 22em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+    -webkit-mask-image: url('../next-adding-css/texture.png');
+    mask-image: url('../next-adding-css/texture.png');
+    padding: 260px 0 0 120px;
+}
+                            </code>
+                            </pre>
+                                <a href="../next-adding-css/index.html" class="See_page" target="_blank">See Examp Page</a>
+                            </p>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </main>
+        </div>
+        <div>
+            <footer>
+                <a href="http://twitter.com" class="social twitter">
+                    <img src="../images/Twitter.png" alt="Twitter logo" class="social-ico">
+                </a>
+                <a href="http://facebook.com" class="social Facebook">
+                    <img src="../images/facebook.png" alt="facebook logo" class="social-ico">
+                </a>
+                <a href="http://linkedin.com" class="social Linkin">
+                    <img src="../images/LinkedIn.png" alt="linkedin logo" class="social-ico">
+                </a>
+                <p class="copyright">&copy; Copyright:2015, Myo</p>
+
+            </footer>
+        </div>
+</body>
+
+</html>
+
+
+<p>
+
+</p>
+</body>
+
+</html>

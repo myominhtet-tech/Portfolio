@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SQL-window-function lesson</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kumar+One+Outline|Slabo+27px|Unlock" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Myanmar3, Yunghkio;
+        }
+        
+        #about {
+            background-color: #0000002e;
+        }
+        
+        #copyright {
+            background-color: #0000002e;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/default.css">
+    <script src="../highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+</head>
+
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand order-1 mr-0" href="http://zwelab.com/mmh/index.html" target="_blank">LEARN COURSES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#speakers">Courses</a>
+
+                    <a class="nav-item nav-link" href="#schedule">Lesson</a>
+                    <a class="mv-item nav-link" href="Volcubularies.html">Vocabularies</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron2 bg-info text-white mb-0">
+        <!-- <img src="jumbo-background.jpg" class="card-img" alt="background image"> -->
+        <div class="container text-sm-center pt-5">
+
+            <br>
+            <br>
+            <h1 id="schedule" class="display-5 text-center text-muted">SQL-Window-Function LESSONS</h1>
+        </div>
+    </div>
+    <!-- /jumbotron -->
+
+    <div class="container-fluid pt-4">
+
+
+        <!--speakers-->
+
+
+        <!-- test about -->
+
+        <!-- about -->
+
+        <div class="row border-top pt-3">
+            <div class="col-md-4 order-md-1 pb-4 ml-md-3">
+                <h3 class="mb-4">What You'll Learn</h3>
+                <div class="list-group">
+                    <a href="#section1" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section2" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section3" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section4" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section5" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section6" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section7" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section8" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section9" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section10" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section11" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section12" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section13" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section14" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+
+                </div>
+            </div>
+
+            <div class="col-lg order-lg-3 mx-md-4">
+                <h3 class="mb-4 small-title">Introduction to Window Functions</h3>
+                <p>
+                    Window functions တွေက powerful feature တွေဖြစ်ပြီးတော့ SQL တွေရဲ့အချို့ variations တွေမှာအလုပ်လုပ်နိုင်တာပဲဖြစ်ပါတယ်။window functions တွေက entire-result set တစ်ခုရဲ့ context တစ်ခုထဲမှာရှိတဲ့ row ကို analyze ပြုလုပ်ပေးတာပဲဖြစ်ပါတယ်။အခြားစကားလုံးနဲ့ပြောရရင်တော့
+                    query ထဲမှာရှိတဲ့ row တစ်ခုနဲ့ အခြား row တစ်ခုကိုကျွန်တော်တို့နှိုင်းယှဉ်နိုင်ပါတယ်။ူဥပမာကျွန်တော်တို့က row တစ်ခုဆီရဲ့ total တွေရဲ့ percentage တွေကိုတွက်ထုပ်မယ် သို့မဟုတ် report တွေတဲ့ကို average တွေကိုရွှေ့ပြီးထပ်ထည့်ပေးတာပဲဖြစ်ပါတယ်။ကျွန်တော်တို့မှာ
+                    company ရဲ့monthly sales တွေကို region အရ report တွေကို listing ပြုလုပ်ရမှာရှိပြီးတော့ region တစ်ခုရဲလတစ်လမှာရှိတဲ့ result တွေရဲ့ row တစ်ခုပဲဖြစ်ပါတယ်။ကျွန်တော်တို့က region sales တွေတစ်ခုဆီကိုတွက်ချက်ဖို့အတွက် window function တွေကိုအသုံးပြုနိုင်ပါတယ်။နောက်ပြီးလအလိုက်ရောင်းရတာတွေရဲ့
+                    percentage တွေအဖြစ်လည်းပဲတွက်ထုပ်နိုင်ပါတယ်။ကျွန်ောတ်တို့က window functions တွေကို function call တွေအသုံးပြုပြီးတော့ query တစ်ခုရဲ့အတွင်းမှာပဲ multiple level ပေါ်မှာ aggregate ပြုလုပ်ဖို့အတွက်အသုံးပြုနိုင်ပါတယ်။SQL Server, Oracle ,
+                    PostgreSQL တွေနဲ့နောက်ထပ် similar database systems တွေမှာလည်းပဲ window functions တွေကိုထောက်ပံ့ပေးနိုင်ပါတယ်။ကျွန်တော်တို့က SQL တွေရဲ့ variations တွေအမျိုးမျိုးနဲ့အလုပ်လုပ်တဲ့အခါမှာ window functions တွေကကျွန်တော်တို့ရဲ့ SQL skills
+                    ကိုနောက်ထပ် Level တစ်ခုကိုရောက်ဖို့အတွက်ကောင်းမွန်တဲ့နည်းလမ်းတွေပဲဖြစ်ပါတယ်။
+                    <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> ကတော့ open source database တစ်ခုပဲဖြစ်ပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့တွေက free download ပြုလုပ်နိုင်ပါတယ်။ ကျွန်တော်တို့က database ထဲမှာရှိတဲံအဖြေတွေကိုဖော်ပြဖို့အတွက်တွေနဲ့
+                    တွက်ထုပ်ဖို့အတွက်တွေကိုနောက်ထပ်additional report တွေရေးနေစရာမလိုပဲ window function တွေကိုအသုံးပြုပြီးတော့ဖော်ပြနိုင်ပါတယ်။
+                </p>
+                <h3 class="mb-4 small-title">Moving Beyond the Row_ The OVER Keyword</h3>
+                <p>
+                    ကျွန်တော်တို့တစ်တွေက Query တွေထဲမှာ sum, count တွေနဲ့ average ဆိုတဲ့ aggregate functions တွေကိုအသုံးပြုတဲ့အခါမှာအဲ့တာတွေက record တွေကိုအသုံးပြုပြီးတော့ result တွေကိုတွက်ထုပ်ပါတယ်။အဲ့ဒီ record တွေက GROUP BY statement မှာရှိတဲ့သူတို့ရဲ့ row တွေနဲ့ဆက်နွယ်နေတာပဲဖြစ်ပါတယ်။သူတို့တွေရဲ့
+                    grouping ရဲ့အပြင်မှာရှိတဲ့ records တွေရဲ့မည်သည့် value ကိုမှလက်ခံမှာမဟုတ်ပါဘူး။ အဲ့တာကြောင့် return ပြန်လာတဲ့ values တွေကို overall results ရဲ့ context ထဲမှာနေရာချထားမှာပဲဖြစ်ပါတယ်။over keyword နဲ့ကျွန်တော်တို့က window ကိုဖွင့်နိုင်မှာဖြစ်ပြီးတော့အဲ့ဒီ
+                    aggregate functions တွေကမြင်နိုင်ပြီးတော့ query တွေရဲ့ result တွေအားလုံးကို access ပြုလုပ်နိုင်မှာပဲဖြစ်ပါတယ်။အဲ့ဒီပြောင်းလဲမှုတွေကပုံမှန် aggregate function တွေကို window function အဖြစ်ပြောင်းပေးတာပဲဖြစ်ပါတယ်။ကျွန်တော်တို့တွေ over
+                    keyword ကိုအသုံးပြုတဲ့အခါမှာ information တွေကိုထပ်ပြီးတော့ထည့်နိုင်ပါတယ်။average့ိုလိုချင်ရင်တော့ average function ကိုထည့်ပြီးတော့အသုံးပြုပေးရပါတယ်။နောက်ထပ်ကျွန်တေ်ာတို့က row တွေအကုန်လုံးကို function ကလက်ခံနိုင်ဖို့အတွက် over keyword
+                    ကိုအသုံးပြုနိုင်ပါတယ်။over keyword ရဲ့နောက်မှာတော့ empty parentheses ကိုထည့်ပေးရမှာပဲဖြစ်ပါတယ်။parentheses က space ကိုတည်ဆောက်ပေးတာပဲဖြစ်ပါတယ်။နောက်ပြီးကျွန်တော်တို့က sum of sum of checkmate ဆိုတဲ့ function ကိုလည်း empty parentheses
+                    နဲ့တွဲပြီးတော့အသုံးပြုနိုင်ပါတယ်။
+                    <br>
+                    <img src="" alt="sql window functions" class="img-fluid">
+                </p>
+
+            </div>
+        </div>
+
+        <!--  /about -->
+        <!-- signup form -->
+        <hr>
+        <div id="about" class="row pb-2 text-body border-top px-3">
+            <!-- <div class="row-md row-xl-5">
+                <h3><strong>About Me</strong></h3>
+                <img src="http://placeimg.com/200/200/people/any" alt="Myo Min ,Web developer" class="img-thumbnail rounded-circle my-2 d-none d-md-block">
+                <h4>Myo Min Htet ,Web Developer</h4>
+
+                <p>I have been learning about the course from another lesson club.And then I have written this site to refer to and studying for the beginner. </p>
+
+                <h3 class="section-title">Summary of Qualifications</h3>
+                <ul>
+                    <li>Experience as a freelance web developer</li>
+                    <li>Experience with HTML, CSS, and JavaScript</li>
+                    <li>Bachelor of Science</li>
+                </ul>
+            </div> -->
+            <div class="col-md col-xl-5 mt-lg-5">
+                <a href="http://twitter.com" class="social twitter pt-3">
+                    <img src="../images/Twitter.png" alt="Twitter logo" class="social-ico">
+                </a>
+                <a href="http://facebook.com/mynameismyominhtet" class="social Facebook pt-3">
+                    <img src="../images/facebook.png" alt="facebook logo" class="social-ico">
+                </a>
+                <a href="http://linkedin.com" class="social Linkin pt-3">
+                    <img src="../images/LinkedIn.png" alt="linkedin logo" class="social-ico">
+                </a>
+            </div>
+            <div class="col-md col-xl-5 ml-auto mt-2">
+                <p><strong>Can Request Example project File</strong></p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="inpt-group-btn">
+                 <button class="btn btn-primary" type="button">Sign up</button>
+             </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- signup form -->
+        <!-- footer -->
+        <div class="row pb-2" id="copyright">
+
+            <div class="col-md text-md-right">
+                <small>&copy; 2019  Myo Min Htet</small>
+            </div>
+
+        </div>
+        <!-- /footer -->
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
