@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flexbox Layout lesson</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kumar+One+Outline|Slabo+27px|Unlock" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Myanmar3, Yunghkio;
+        }
+        
+        #about {
+            background-color: #0000002e;
+        }
+        
+        #copyright {
+            background-color: #0000002e;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/default.css">
+    <script src="../highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+</head>
+
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand order-1 mr-0" href="http://zwelab.com/mmh/index.html" target="_blank">LEARN COURSES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#speakers">Courses</a>
+
+                    <a class="nav-item nav-link" href="#schedule">Lesson</a>
+                    <a class="mv-item nav-link" href="Volcubularies.html">Vocabularies</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron7 bg-info text-white mb-0">
+        <!-- <img src="jumbo-background.jpg" class="card-img" alt="background image"> -->
+        <div class="container text-sm-center pt-5">
+
+            <br>
+            <br>
+            <h1 id="schedule" class="display-5 text-center text-muted"> FLEXBOX LESSONS</h1>
+        </div>
+    </div>
+    <!-- /jumbotron -->
+
+    <div class="container-fluid pt-4">
+
+
+        <!--speakers-->
+
+
+        <!-- test about -->
+
+        <!-- about -->
+
+        <div class="row border-top pt-3">
+            <div class="col-md-4 order-md-1 pb-4 ml-md-3">
+                <h3 class="mb-4">What You'll Learn</h3>
+                <div class="list-group">
+                    <a href="#section1" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Introduction</strong></a>
+                    <a href="#section2" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Concept of Flexbox</strong></a>
+                    <a href="#section3" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Creating Flexbox</strong></a>
+                    <a href="#section4" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Flexbox Direction Properties</strong></a>
+                    <a href="#section5" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Flexbox Wrap Property</strong></a>
+                    <a href="#section6" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Flexbox Justify-content Property</strong></a>
+                    <a href="#section7" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Flexbox Order Property</strong></a>
+                    <a href="#section8" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Expand Flex Items</strong></a>
+                    <a href="#section9" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Align Items In Main-axis</strong></a>
+                    <a href="#section10" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Align items to Cross-axis</strong></a>
+                    <a href="#section11" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Align Center for Flexbox Items</strong></a>
+                    <a href="#section12" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Building A Layout with Flexbox</strong></a>
+
+                </div>
+            </div>
+            <div class="col-lg order-lg-3 mx-md-4">
+                <h3 class="mb-4 small-title" id="section1">Introduction</h3>
+
+                <p>
+                    CSS Flexbox layout တွေထဲမှာကျွန်တော်တို့ webpages တွေအတွက်ပိုပြီးထူးခြားတဲ့ method တစ်ခုကိုလေ့လာရမှာပဲဖြစ်ပါတယ်။CSS lab methods တွေက floats တွေလိုဖြစ်ပြီးတော့ inline block နဲ့ absolute positioning တွေမှာတိကျတဲ့ကန့်သတ်ချက်တွေရှိပါတယ်။ယနေ့ခေတ်ရှုပ်ထွေးတဲ့
+                    responsive websites တွေရဲ့ layout တွေကိုကိုယ်တိုင်ပြုပြင်ဖို့အတွက်ကျွန်တော်တို့က design တွေရှိဖို့မလိုအပ်ပါဘူး။ကျွန်တော်တို့ CSS Layout Basics တွေကိုလေ့လာတဲ့အခါမှာ floats ကပြသနာဖြစ်နိုင်ပါတယ်။ဘာ့ကြောင့်လဲဆိုတော့သူတို့ရဲ့ထူးခြားတဲ့အပြုအမူကြောင့်ဖြစ်ပါတယ်။collapsing
+                    ကနေ elements တွေပါဝင်နေတာကိုကာကွယ်ဖို့ရန်အတွက်ပြုပြင်ချင်းတွေကိုရှင်းလင်းထားဖို့လိုအပ်ပါလိမ့်မယ်။ကျွန်တော်တို့ဟာ display မှာ inline block ကိုအသုံးပြုတဲ့အခါ browser က default သတ်မှတ်ထားတဲ့အဖြူရောင်နေရာလွတ်နဲ့အမြဲတမ်းအဆင်မပြေဖြစ်နေတာကိုတွေ့ရမှာပဲဖြစ်ပါတယ်။
+                    page layout မှာဘယ်တည်နေရာကိုမဆို tricky လုပ်နိုင်ပါတယ်။ဘာ့ကြောင့်လဲဆိုတော့ အဲ့တာက context တွေရဲ့တည်နေရာတွေ ၊positioned elements တွေတောင်မရှိပဲ page ပေါ်မှာလုပ်ဆောက်နေတဲ့အခြား content တွေကိုလိုအပ်ပါတယ်။ အဲ့တာကြောင့် Flexbox (သို့) Flexible
+                    Box Layout က css properties ရဲ့အစုတွေပဲဖြစ်ပါတယ်။ အဲ့တာတွေက page content ရဲ့ layout ကို flexible way တွေထောက်ပံ့ပေးပါတယ်။ အဲ့တာက ထူးခြားတဲ့ layout feature ဖြစ်ပြီး web designers တွေက layout တွေကိုာဘယ်လိုတည်ဆောက်တယ်ဆိုတာကိုပြန်ပြီးသတ်မှတ်နိုင်ပါတယ်။stacking
+                    elements တွေကဲ့သို့သော floats, block, inline block တွေရဲ့ကောင်းကျိုးကိုကျွန်တော်တို့ရရှိနိုင်ပါတယ်။အဲ့တာတွေကိုအသုံးပြုတဲ့အခါမှာဖြစ်လာတဲ့ browser ရဲ့တစ်မူထူးခြားတာတွေမရှိပဲနဲ့ တစ်ဖက်နဲ့တစ်ဖတ်မှီခိုပြီးတော့နေနိုင်ပါတယ်။မူလ size တွေ HTML
+                    ထဲမှာရှိတဲ့ order တွေကိုဂရုမစိုက်ပဲ navigation links ,content columns တွေနဲ့ images တွေကဲ့သို့သောအရာတွေကို flexbox ကိုသုံးပြီးတော့ direction, size ,order သို့မဟုတ် elements တွေကိုကျွန်တော်တို့ပြောင်းလဲနိုင်ပါတယ်။ကျွန်တော်တို့ content
+                    တွေကို container ထဲမှာဘယ်နေရာမှာပဲဖြစ်ဖြစ်ထားနိုင်ရန်အတွက်အဲ့တာကပေးပြီးရိုးရှင်းတဲ့ intelligent tools ပဲဖြစ်ပါတယ်။source code ထဲမှာသူတို့ပေါ်လာတဲ့နေရာမှာတော့ပြသနာမရှိပါဘူး။flexbox တွေပြုလုပ်ပြီး responsive layouts တွေတည်ဆောက်ခြင်းက
+                    သေးငယ်တဲ့ mobile devices တွေကနေ ကြီးမားတဲ့ desktop screens တွေအထိအမြဲတမ်းလွယ်ကူနေပါလိမ့်မယ်။
+                    <br>
+                    <img src="../images/flexbox (2).svg" id="flexbox-image" class="low-fide-image" alt="flexbox examp image">
+
+                </p>
+                <h3 class="mb-4 small-title" id="section2">Concept of Flexbox</h3>
+                <p>
+                    ကျွန်တော်တို့ရဲ့ layout ထဲမှာ flexbox တွေကိုအသုံးမပြုခင်မှာflexbox နောက်မှာရှိတဲ့ terminology တွေ concept တွေကိုနားလည်ထားဖို့လိုအပ်ပါလိမ့်မယ်။flexbox layout ထဲမှာအရေးအကြီးဆုံး element နှစ်ခုကတော့ flex container နဲ့ flex items တွေပဲဖြစ်ပါတယ်။ပထမ အဆင့်အနေနဲ့ကျွန်တော်တို့ရဲ့
+                    layout တွေထဲမှာ flexbox တွေကိုအသုံးပြုမယ်ဆိုရင် flex container ကိုတည်ဆောက်ပေးဖို့လိုအပ်ပါတယ်။flex container က flexbox layout ရဲ့အပိုင်းတစ်ခုဖြစ်ပြီးတော့သူ့ထဲမှာတော့ flex items တွေပါဝင်ပါတယ်။flex container က div,ul,header တွေလိုမျိူး
+                    block-level တစ်ခုခု (သို့မဟုတ်) inline element တစ်ခုဖြစ်လာနိုင်ပါတယ်။ flex container ထဲမှာရှိတဲ့ direct child တွေကို flex item လို့ခေါ်ပါတယ်။ဥပမာကျွန်တော်တို့မှာ unorder list တစ်ခုရှိတယ်ဆိုရင် ul ဆိုတဲ့ tag က flex container ဖြစ်ပြီးတော့
+                    li tag တွေကတော့ flex items တွေပဲဖြစ်ပါတယ်။ကျွန်တော်တို့က flexbox ရဲ့ powerful aligement properties တွေကိုအသုံးပြုပြီး flex items တွေရဲ့တည်နေရာတွေကိုပြောင်းလဲနိုင်ပါတယ်။နောက်ထပ် flexbox တွေဘယ်လိုအလုပ်လုပ်သလဲဆိုတာကိုလည်းကျွန်တော်တို့သိထားဖို့လိုအပ်ပါတယ်။browser
+                    တွေမှာ axis တစ်လျှောက်ဘယ်လိုနေရာခြထားနိုင်တယ်ဆိုတာကိုလည်းသိဖို့လိုအပ်ပါတယ်။flexbox တွေမှာ axis နှစ်ခုရှိပြီးတော့ flex items တွေရဲ့ Layout direction တွေကိုသတ်မှတ်ပေးတာပဲဖြစ်ပါတယ်။container ထဲမှာ items တွေဟာ main axis (or) cross axis
+                    အတိုင်းတည်ရှိပါတယ်။main axis ကတော့မူလနေရာဖြစ်ပြီး item တွေကပုံမှန်အတိုင်းဆိုရင်main axis အတိုင်းတည်ရှိပါတယ်။cross axis ကတော့ Main axis ပေါ်မှာဒောင့်မတ်ကြစွာတည်ရှိပါတယ်။ axis တစ်ခုစီတိုင်းမှာ start side နဲ့ end side ဆိုပြီးရှိပါတယ်။main
+                    axis မှာရှိတဲ့ default main start နဲ့ main end တွေရဲ့ဦးတည်ချက်ကတော့ဘယ်ဘက်ကနေညာဘက်ကိုသွားတာဖြစ်ပြီး cross axis ရဲ့ default direction ကတော့ အပေါ်ကနေအောက်ကိုသွားတာပဲဖြစ်ပါတယ်။ဒါပေမယ့်ကျွန်တော်တို့က direction တွေကိုလွယ်လွယ်ကူကူပဲပြောင်းလဲနိုင်ပါတယ်။
+                </p>
+                <h3 class="mb-4 small-title" id="section3">Creating Flexbox</h3>
+                <p>
+                    ကျွန်တော်တို့အခြေခံ concepts တွေ terminology တွေအကြောင်းကိုလေ့လာခဲ့ပြီးဖြစ်ပါတယ်။အဲ့တာကြောင့်ပထမအဆင့်အနေနဲ့flexbox layout တွေတည်ဆောက်ဖို့ flex container တွေသတ်မှတ်ဖို့အတွက်ကျွန်တော်တို့ လေ့လာရမှာပဲဖြစ်ပါတယ်။ဥပမာထဲမှာကျွန်တော်တို့ရေးပြထားသလိုပဲ container
+                    ဆိုတဲ့ div element တစ်ခုတည်ဆောက်ပြီး items တွေထည့်ရေးထားပါတယ်။Flexbox layout အတွက်ကျွန်တော်တို့ css style file သီးခြားတည်ဆောက်ပြီးရေးပြထားပါတယ်။ကျွန်တော်တို့က flexbox property တွေမရေးခင်မှာ layout ထဲမှာ flex container ကိုသတ်မှတ်ခဲ့ဖို့လိုအပ်ပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့က
+                    container selector ထဲမှာ display property ထဲမှာ value ကို flex လို့ပေးခဲပြီး flex container ကိုသတ်မှတ်ခဲ့ပါတယ်။အဲ့လိုသတ်မှတ်လိုက်တဲ့အခါမှာ container ထဲမှာရှိတဲ့ items တွေက flex items တွေဖြစ်သွားပါတယ်။
+                    <br>
+                    <pre><code class="css">
+&Lt;!-- This is html document for examp. --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Flexbox Layout&lt;/title&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css"&gt;
+    &lt;link rel="stylesheet" href="../flexbox_layouts/flex.css"&gt;
+    &lt;link rel="stylesheet" href="../flexbox_layouts/modifined.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="item-1 item"&gt;item-1&lt;/div&gt;
+        &lt;div class="item-2 item"&gt;item-2&lt;/div&gt;
+        &lt;div class="item-3 item"&gt;item-3&lt;/div&gt;
+        &lt;div class="item-4 item"&gt;item-4&lt;/div&gt;
+        &lt;div class="item-5 item"&gt;item-5&lt;/div&gt;
+        &lt;div class="item-6 item"&gt;item-6&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+The following code is flexbox example.
+/* ================
+Flexbox 
+================= */
+
+.container {
+display: flex;
+height: 300px;
+}
+
+<a href="../flexbox_layouts/flex.css" target="_blank">This is normal css code.</a>
+                            </code></pre>
+                    <a href="../flexbox_layouts/flex.html" target="_blank">See Examp Page:</a>
+                </p>
+
+
+                <h3 class="mb-4 small-title" id="section4">Flexbox Direction Properties</h3>
+
+                <p>
+                    ပြီးခဲ့တဲ့သင်ခန်းစာမှာကျွန်တော်တို့ flex (သို့) inline flex ဆိုတဲ့တန်ဖိုးတွေကို display မှာပေးပြီးလေ့လာခဲ့ကြပါတယ်။container က flex box layout အတွက် context တွေပါဝင်တဲ့အစုတစ်ခုပဲဖြစ်ပြီး flex items တွေလည်းပါဝင်ပါတယ်။flex container တွေကိုသတ်မှတ်တဲ့အခါမှာ
+                    ကျွန်တော်တို့စပြီး flex boxရဲ့ထူးခြားချက်တွေကိုတွေ့ရမှာဖြစ်ပါတယ်။အဲ့တာတွေကတော့ powerful direction order, alignment နဲ့ sizing ဆိုတဲ့ properties တွေပဲဖြစ်ပါတယ်။အချို့ flex box properties တွေက flex container ကိုပဲသတ်ရောက်တာဖြစ်ပြီးအချို့တွေကတော့
+                    flex items တွေပေါ်မှာပဲသတ်ရောက်တာဖြစ်ပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့အရေးတကြီးသိရမှာကတော့ ဘယ်properties က flex containers ပေါ်မှာသတ်ရောက်တယ် flex items တွေပေါ်မှာသတ်ရောက်တယ်ဆိုတာတွေပဲဖြစ်ပါတယ်။တစ်နည်းအားဖြင့် flex items တွေကကျွန်တော်တို့ရဲ့
+                    Layout တွေပေါ်မှာသတ်ရောက်မှုမရှိပဲ Properties တွေကိုအသုံးပြုပြီးအဆုံးသတ်နိုင်ပါတယ်။ပထမကျွန်တော်တို့ flex direction property ကိုအသုံးပြုပြီးတော့ flex box layout တွေရဲ့ direction တွေကိုထိမ်းချုပ်နိုင်ပါတယ်။အောက်မှာပြထားတဲ့ဥပမာထဲမှာတော့
+                    flex direction ကို vertical column layout ကိုပြောင်းပြပေးထားတာဖြစ်ပါတယ်။flex direction property က flex container ကိုပဲသတ်ရောက်တာဖြစ်ပါတယ်။flex items တွေကို apply လုပ်မယ်ဆိုရင်တော့ အဲ့ဒီအပေါ်မှာသတ်ရောက်မှုရှိမှာမဟုတ်ပါဘူး။verticle layout
+                    ပြောင်းတဲ့အခါမှာ reverse ဆိုတဲ့ property ကိုထည့်သုံးမယ်ဆိုရင်တော့ browser ထဲမှာ အောက်ကနေအပေါ်အတိုင်းပဲစီပေးမှာဖြစ်ပါတယ်။အဲ့တာတွေကိုကျွန်တော်တို့ navigation responsive အတွက်အစားထိုးအသူံးပြုနိုင်ပါတယ်။သေးငယ်တဲ့မျက်နှာပြင်ပေါ်မှာlayout
+                    ကို column တစ်ခုနဲ့ပေါ်ပြပြီးတော့ ကျယ်တဲ့မျက်နှာပြင်ပေါ်မှာတော့ row နဲ့ဖော်ပြနိုင်တာပဲဖြစ်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+/* ================
+Flexbox 
+================= */
+
+.container {
+display: flex;
+flex-direction: column;                 /* flex items are vertically */
+}
+
+.container1 {
+display: flex;
+flex-direction: column-reverse;         /* flex item reversed vertically */
+}
+                            </code></pre>
+                    <a href="../flexbox_layouts/flex_properties.html" target="_blank">See Examp Page</a>
+                </p>
+                <h3 class="mb-4 small-title" id="section5">Flexbox Wrap Property</h3>
+                <p>
+                    Default အားဖြင့် flex container ထဲမှာရှိတဲ့ flex items တွေက single line တွေဖြစ်ပြီးတော့ flex line လို့ခေါ်ပါတယ်။flex container မှာ၎င်းရဲ့ contents ကို overflow ဖြစ်ဖို့ဖြစ်ပွားရင်တောင် flex container က flex line တစ်ခုပေါ်မှာ items အကုန်လုံးကိုနေရာယူနိုင်အောက်ကြိုးစားပါတယ်။ကျွန်တော်တို့
+                    browser ကိုချုံ့ကြည့်လိုက်တဲ့အခါမှာ container ကတော့ကျဉ်းသွားတာတွေ့ရပြီး items တွေကတော့ container ပေါ်မှာ overwrite ဖြစ်ပြီးကျန်နေတာပဲဖြစ်ပါတယ်။flex container က flex items တွေကို multiple flex lines အဖြစ်break လုပ်နိုင်ပါတယ်။အဲ့လိုလုပ်ဖို့အတွက်
+                    wrap ကိုအသုံးပြုဖို့လိုအပ်ပါတယ်။flex wrap property ကိုအသုံးပြုရင် flex container ကို single line သို့မဟုတ် multiple line layout တွေအဖြစ်ထိန်းချုပ်နိုင်ပါတယ်။ ကျွန်တော်တို့ရဲ့ဥပမာထဲမှာတော့ browser ချုံ့တဲ့အခါမှာ flex items တွေကို multiple
+                    lines ဖြစ်အောင်ရေးပြထားပါတယ်။နောက်ထပ် column တွေကိုလည်း container ထဲမှာပဲ responsive ဖြစ်အောင်ရေးပြထားပါတယ်။
+                    <br>
+                    <pre><code class="css">
+/*=====================
+Flexbox Properties
+=====================*/
+.container11 {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;            /* using wrap properties */
+}
+
+.container22 {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+height: 200px;
+}
+                            </code></pre>
+                    <a href="../flexbox_layouts/wrap_property.html" target="_blank">See Examp Page</a>
+                </p>
+
+
+                <h3 class="mb-4 small-title" id="section6">Flexbox Justify-content Property</h3>
+                <p>
+                    Layout တွေအတွက် floats သို့မဟုတ် inline block display တွေအသုံးပြုတဲ့အခါမှာ elements တွေက ဘယ်အချိန်မှာ out of space ဖြစ်ပြီးနောက်ထပ် line ကိုရောက်သွားတယ်ဆိုတာကိုကျွန်တော်တို့သိထားရပါမယ်။ကျွန်တော်တို့ရဲ့ layout ကိုဘယ်အပိုင်းက ပျက်ဆီးပြီးထွက်ပေါ်လာစေသလဲဆိုတာကိုလည်းသိရပါမယ်။Flexbox
+                    ကကောင်းမွန်ပြီး flexible ဖြစ်ပါတယ်။အဲ့တာကြောင့်flexbox တွေကိုလွတ်နေတဲ့နေရာလွတ်တွေမှာဖြန့်ပြီးအသုံးပြုနိုင်ပါတယ်။main axis ပေါ်မှာ flex items တွေရဲ့တည်နေရာနဲ့ alignment တွေကိုထိန်းချုပ်ဖို့အတွက် justify content property ကိုအသုံးပြုနိုင်ပါတယ်။ပြီးတော့
+                    flex container ထဲမှာ space ဘယ်လောက်ကို ဖြန့်ဝေမလဲဆိုတာကိုကောချိန်ညှိနိုင်ပါတယ်။justified content property ကို flex containers ထဲမှာပဲအသုံးပြုနိုင်ပါတယ်။container ထဲမှာရှိတဲ့ justified content ရဲ့ default value ကတော့ flex start မှာပဲရှိနေမှာပဲဖြစ်ပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့က
+                    item တွေကို line ရဲ့အဆုံးကပြန်စချင်တယ်ဆိုရင် justify content မှာ flex-end ဆိုတဲ့ value ကိုပေးခဲ့ရမှာပဲဖြစ်ပါတယ်။center ဆိုတဲ့ value ကိုပေးခဲ့ရင်တော့ items တွေက container ရဲ့အလယ်တည့်တည့်မှာပေါ်နေမှာပဲဖြစ်ပါတယ်။Justified content မှာအသုံးပြုတာအများဆုံး
+                    values တွေကတော့ space-between နဲ့ space-around ပဲဖြစ်ပါတယ်။အဲ့ဒီ values တွေကတော့ line ထဲမှာနေရလွတ်တွေကိုဖြန့်ယူပေးတာဖြစ်ပါတယ်။ကျွန်တော်တို့က အခြား CSS layout method တွေဖြစ်တဲ့ floats တွေ inline block စတာတွေကိုသုံးနေမယ့်အစား၊အချိန်တွေအကုန်ခံပြီး
+                    marign တွေကိုညှိယူနေမယ့်အစား အဲ့ဒီ value တွေကိုပဲ container ထဲမှာလွယ်လွယ်ကူကူအသုံးပြုနိုင်ပါတယ်။space-between ဆိုတဲ့ value ကိုအသုံးပြုတဲ့အခါမှာ flex items တွေကြားထဲမှာရှိတဲ့ space တွေကိုတူညီအောင်ပြုလုပ်ပေးတာပဲဖြစ်ပါတယ်။first item နဲ့
+                    last item တွေက flex container ရဲ့အစွန်းတွေမှာပဲတည်ရှိနေတာပဲဖြစ်ပါတယ်။အဲ့ဒီနောက် flexbox ကကျန်ရှိတဲ့ flex items တွေရဲ့ကြားထဲမှာ space တွေကိုညီအောင်ဖြန့်ပေးထားပါတယ်။container ရဲ့အစွန်းတွေအပါအဝင် flex item တွေအကုန်လုံးရဲ့ပတ်ပတ်လည်မှာ
+                    space တွေကိုညီမျှအောင်ထည့်ချင်တယ်ဆိုရင်တော့ space-around ဆိုတဲ့ value ကိုအသုံးပြုပါတယ်။ Flex items တွေပေါ်မှာ margin တွေကထူးခြားတဲ့ effect တွေရှိပါတယ် အထူးသဖြင့် value မှာ auto ပေးထားတဲ့အခါဖြစ်ပါတယ်။itemတစ်ခုကို margin မှာ auto ပေးခဲ့တဲ့အခါမှာအဲ့ဒီ
+                    item ကကွဲထွက်သွားပြီး left ဖက်မှာရောက်သွားမှာပဲဖြစ်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+/*=========================
+Flexox Content
+=======================*/
+.container_just {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container_just1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container_just2,
+.container_just3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item-13 {
+    margin-right: auto;
+}  
+                            </code></pre>
+                    <a href="../flexbox_layouts/just-content.html" target="_blank">See Examp Page</a>
+                </p>
+
+                <h3 class="mb-4 small-title" id="section7">Flexbox Order Property</h3>
+
+                <p>
+                    ပုံမှန်အားဖြင့် flex items တွေက source code ထဲမှာအစဉ်အလိုက်တည်ရှိပြီးဖော်ပြပေးပါလိမ့်မယ်။ဒါပေမယ့်ကျွန်တော်တို့ဟာ order property ကိုမည်သည့် flex item ရဲ့ oreder ကိုမဆိုပြောင်းလဲဖို့အတွက်အသုံးပြုနိုင်ပါတယ်။list item မှာရှိတဲ့ပထမဆုံး Item ကို main axis ပေါ်မှာနောက်ဆုံးမှာပဲပေါ်နေအောင်ကျွန်တော်တို့ပြုလုပ်နိုင်ပါတယ်။အဲ့တာကကြီးမားတဲ့အခြား
+                    feature ဖြစ်ပြီးတော့ flexbox ရဲ့ source order မှီခိုမှုတွေကိုဖော်ဆောင်သရုပ်ပြတာပဲဖြစ်ပါတယ်။ကျွန်တော်တို့က SEO (သို့) accessibility first အတွက် HTML documents တွေကိုဖွဲ့စည်းတည်ဆောက်နိုင်ပါတယ်။အဲ့ဒီနောက် HTML တွေကိုပြန်ပြီးမပြုပြင်ပဲနဲ့
+                    content ကိုပြန်ပြီးပြောင်းလဲပြုပြင်နိုင်ပါတယ်။order property က flex items တွေကိုပဲသတ်ရောက်ပါတယ်။ဒါ့ကြောင့် ကျွန်တော်တို့က flex container ကို order property ကသတ်မှတ်မယ်ဆိုရင် ထိုဟာကသတ်ရောက်မှုမရှိပဲနေပါလိမ့်မယ်။ကျွန်တော်တို့ရဲ့ ဥပမာထဲမှာတော့
+                    order property ကိုသုံးပြီး item တွေကိုနေရာထားပြထားပါတယ်။item တွေမှာရှိတဲ့ပုံမှန်ရှိပြီးသား order property value ကတော့ "0" ပဲဖြစ်ပါတယ်။value တွေမှာကျွန်တော်တို့က 0 ထက်ငယ်တဲ့အနှုတ်တန်ဖိုးတွေကိုလည်းပေးနိုင်ပါတယ်။order property က mobileတွေ
+                    desktop screen တွေပေါ်မှာရှိတဲ့ content တွေကိုပြန်ပြီးစီစဉ်တဲ့အခါမှာအသုံးဝင်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+/*=====================
+For Reorder items
+=====================*/
+
+.container_order,
+.container_order1 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.container_order1 {
+flex-direction: column;
+}
+/**************
+for first list
+**************/
+
+.item-6 {
+order: -1;
+}
+
+/**************
+for second list
+**************/
+
+.item-33 {
+order: -1;
+}
+
+.item-44 {
+order: -2;
+}
+
+.item-55 {
+order: -3;
+}
+
+.item-22 {
+order: 1;
+}    
+                            </code></pre>
+                    <a href="../flexbox_layouts/flex_order.html" target="_blank">See Examp Page</a>
+                </p>
+
+                <h3 class="mb-4 small-title" id="section8">Expand Flex Items</h3>
+                <p>
+                    Flex box တွေနဲ့ကျွန်တော်တို့ကအခြား flex items တွေနဲ့ဆက်နွယ်ပြီးတော့ grow (သို့) shrink လုပ်နိုင်ပါတယ်။ပြီးတော့ flex container ထဲမှာရှိတဲ့လွတ်တဲ့နေရာတွေမှာပြုလုပ်နိုင်ပါတယ်။ဥပမာကျွန်တော်တို့က flex items တွေကို expand လုပ်လိုက်တဲ့အခါမှာ flex container ထဲမှာရှိတဲ့နေရာလွတ်တွေကိုဖြည့်ပေးသွားမှာဖြစ်ပါတယ်။ဒါမှမဟုတ်container
+                    ထဲမှာရှိတဲ့ကျွန်တော်တို့ expand လုပ်ချင်တဲ့ items တွေကိုပဲရွေးပြီးလုပ်နိုင်ပါတယ်။Flex-grow property ကတော့ container ထဲမှာကျွန်တော်တို့ရဲ့ Item ကနေရာဘယ်လောက်ယူမယ်ဆိုတာကိုသတ်မှတ်နိုင်တဲ့ property တစ်ခုပဲဖြစ်ပါတယ်။ပုံမှန်အားဖြင့် flex
+                    container ထဲမှာရှိတဲ့ flex items တွေကလွတ်တဲ့နေရာတွေအကုန်လုံးကိုယူမပေးပါဘူး။ဒါပေမယ့်ကျွန်တော်တို့ flex items တွေကို expand လုပ်နိုင်ပါတယ်။ဒါ့ကြောင့်ကျွန်တော်တို့ flex grow property ကိုသုံးပြီးတော့ဖြည့်ပေးနိုင်ပါတယ်။အဲ့တာရဲ့ default
+                    value ကတော့ "0" ပဲဖြစ်ပါတယ်။ဥပမာထဲမှာတော့ flex-grow ကိုသုံးပြထားပါတယ်။browser ကို resize လုပ်တဲ့အခါတွေမှာ item တွေကို expand လုပ်ပေးမှာပဲဖြစ်ပါတယ်။အဲ့တာကြောင့် ဒီ feature ကိုအသုံးပြုခြင်းက responsive layouts တွေတည်ဆောက်တဲ့အခါမှာအသုံးဝင်ပြီးတော့
+                    ကြယ်ပြန့်တဲ့ desktop screen တွေပေါ်မှာဆိုရင် row တစ်ခုတည်းနဲ့ column တွေရဲ့ width တွေကိုတိတိကျကျတူညီအောင်ကျွန်တော်တို့ဖော်ပြနိုင်ပါတယ်။သေးငယ်တဲ့ screen တွေပေါ်မှာဆိုရင်လည်းကျည်းသွားပြီး နောက်တစ်ကြောင်းဆင်းသွားပြီးလွတ်တဲ့နေရာမရှိအောင်
+                    width တွေတူညီစွာထားပေးမှာဖြစ်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+/*====================
+Flex Grow Property
+====================*/
+
+.container_grow {
+display: flex;
+flex-wrap: wrap;
+}
+
+.item-a {
+flex-grow: 1;
+}
+
+.item1 {
+flex-grow: 1;
+}
+                            </code></pre>
+                    <a href="../flexbox_layouts/flex_grow.html" target="_blank">See Examp Page</a>
+                </p>
+                <h3 class="mb-4 small-title" id="section9">Align Items In Main-axis</h3>
+                <p>
+                    အောက်ပါဥပမာထဲမှာရေးပြထားသလိုပါပဲ။ကျွန်တော်တို့က item တွေနဲ့ flex container တစ်ခုကိုတည်ဆောက်ခဲ့ပါမယ်။ဒါပေမယ့် flex items တစ်ခုဆီမှာရှိကြတဲ့ content တွေကတော့အနည်းနဲ့အများတူညီမှာမဟုတ်ပါဘူး။ ကျွန်တော်တို့အသုံးပြုထားတဲ့ items တွေကို css ထဲမှာ flex grow value
+                    ကို 1 ပေးခဲ့မယ်ဆိုရင် browser ကcontainer ထဲမှာရှိတဲ့နေရာလွတ်တွေကိုအကောင်းဆုံးညှိယူပြီးညီနေအောင်ပြုလုပ်ပေးပါလိမ့်မယ်။အချို့ items တွေကတော့အခြား items တွေထက်ပိုပြီးကျယ်နေတာကိုတွေရပါလိမ့်မယ်။ဘာကြောင့်လဲဆိုတော့ content တွေရဲ့ပမာနကပိုကြီးလို့ပဲဖြစ်ပါတယ်။ကျွန်တော်တို့ပြောခဲ့တာကတော့
+                    flex basis property ဖြစ်ပြီးတော့ ကျွန်တော်တို့ရဲ့ fles items တွေရဲ့ size တွေပေါ်မှာပိုပြီးထိမ်းချုပ်နိုင်ပါတယ်။ flex basis property တွေက flex grow property နဲ့အလုပ်လုပ်တဲ့အခါမှာတော့ flex items တွေအကုန်လုံးကို တူညီအောင်ဖော်ပြဖို့ရန်
+                    အတွက်အသုံးပြုပါတယ်။ဒါပေမယ့် flexible တော့ဖြစ်နေပါလိမ့်မယ်။အဲ့တာကြောင့် ကျွန်တော်တို့လိုချင်တဲ့ flex item အရွယ်အစားကိုပထမသတ်မှတ်ထားခဲ့ရပါမယ်။အဲ့ဒီနောက် flex box ကလွတ်နေတဲ့နေရာတွေမှာ ကျွန်တော်တို့သတ်မှတ်ထားတဲ့ size အတိုင်းလုပ်ဆောင်ပေးပါလိမ့်မယ်။flex
+                    spaces တွေကတူညီတဲ့တန်ဖိုးတွေရှိတဲ့ width နဲ့ height properties တွေကိုလက်ခံပေးပါမယ်။flex-grow, flex-basic နဲ့အသုံးပြုတာအနည်းဆုံးဖြစ်တဲ့ flex-shrink property တွေကိုပေါင်းပြီးတော့အတိုကောက်အနေနဲ့ flex ဆိုတာကိုပဲအသုံးပြုပါတယ်။container
+                    ထဲမှာရှိတဲ့ကျွန်တော်တို့နှစ်သတ်တဲ့ item ကိုရွေးချယ်ပြီး item-grow တွေကိုချိန်ညှိပေးနိုင်ပါတယ်။အောက်ပါဥပမာထဲမှာကျွန်တော်တို့ထပ်ပြီးလေ့လာနိုင်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+/*===============
+Flex Grow align
+==============*/
+
+.container_grow2 {
+display: flex;
+flex-wrap: wrap;
+}
+
+.item-c {
+/* flex-grow: 1;
+flex-basis: 200px; */
+flex: 1 200px;          /* compound two properties */
+}
+                            </code></pre>
+                    <a href="../flexbox_layouts/flex_grow2.html" target="_blank">See Examp Page</a>
+                </p>
+
+
+                <h3 class="mb-4 small-title" id="section10">Align items to Cross-axis</h3>
+                <p>
+                    ပြီးခဲ့တဲသင်ခန်းစာမှာကျွန်တော်တို့ flex items တွေကို main axis ပေါ်မှာ justify content property တွေနဲ့ဘယ်လိုဘယ်လိုချိန်ညှိရမယ်ဆိုတာကိုလေ့လာခဲ့ပြီးဖြစ်ပါတယ်။ဒီတစ်ခါမှာတော့ကျွန်တော်တို့ cross axis ပေါ်မှာ flex items တွေကိုဘယ်လိုချိန်ညှိရမလဲဆိုတာကိုလေ့လာရမှာဖြစ်ပါတယ်။cross
+                    axis ကmain axis ပေါ်မှာထောင့်မတ်ကျစွာတည်ရှိပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့ရေးတဲ့အခါမှာ vertical space ကိုများအောင်ပေးခဲရမှာပဲဖြစ်ပါတယ်။နောက်ထပ် aligns items property ကိုထပ်တည့်ပေးရမှာဖြစ်ပါတယ်။အဲ့ဒီ property က flex container အတွက်ပဲအလုပ်လုပ်မှာပဲဖြစ်ပါတယ်။၎င်းရဲ့မူလ
+                    value ကတော့ stretch ဖြစ်ပါတယ်။cross axis ရဲ့အစကနေ အဆုံးထိ stretch လုပ်တာပဲဖြစ်ပါတယ်။နောက်ထပ် value တွေဖြစ်တဲ့ flex-start ကတော့ cross-axis ရဲ့အစမှာစပြီးထားပေးတာဖြစ်ပါတယ်။flex-end ကတော့ cross-axis ရဲ့နောက်ဆုံးမှာဖော်ပြတာဖြစ်ပြီး center
+                    ကတော့ axis အလည်ခောင်မှာဖော်ပြတာပဲဖြစ်ပါတယ်။flex items တွေအကုန်လုံကိုမဟုတ်ပဲကျွန်တော်တို့ align လုပ်ချင်တဲ့ item ကိုပဲရွေးပြီးတော့ချိန်ညှိနိုင်ပါတယ်။အဲ့ဒီအခါမှာတော့ ကျွန်တော်တို့ align-self ဆိုတဲ့ Property ကိုသုံးပြီးတော့ချိန်ညှိနိုင်ပါတယ်။အောက်ပါဥပမာထဲမှာကျွန်တော်တို့
+                    property တွေရေးပုံကိုဖော်ပြထားပါတယ်။
+                    <br>
+                    <pre><code class="css">
+
+/*===================
+Flex Grow cross align
+====================*/
+
+.container_cross {
+display: flex;
+flex-wrap: wrap;
+height: 450px;
+align-items: center;
+}
+
+.item-d,
+.item-dd {
+flex: 1;
+}
+
+.item-d2 {
+flex: 2;
+}
+
+
+/* The following is second container. */
+
+.container_cross2 {
+display: flex;
+flex-wrap: wrap;
+height: 450px;
+align-items: center;
+}
+
+.item-dd1 {
+align-self: flex-start;
+}
+
+.item-dd2 {
+align-self: flex-end;
+}
+
+.item-dd3 {
+align-self: flex-start;
+}
+
+.item-dd4 {
+align-self: center;
+}
+                            </code></pre>
+                    <a href="../flexbox_layouts/flex_grow_cross_axis.html" target="_blank">See Examp Page</a>
+                </p>
+                <h3 class="mb-4 small-title" id="section11">Align Center for Flexbox Items</h3>
+                <p>
+                    content တွေကို centering မှာထားခြင်းက trickiest တစ်ခုပဲဖြစ်ပါတယ်။ပြီးတော့ အဲ့တာက CSS layout ပေါ်မှာပြုလုပ်ဖို့ပိုပြီးခက်ခဲတဲ့ things တစ်ခုပဲဖြစ်ပါတယ်။fluid containers ထဲမှာရှိတဲ့ elements တွေကိုအလယ်မှာကိုက်ညီအောင်ပြုလုပ်တဲ့ things တွေကတော့ layout properties
+                    တွေဖြစ်တဲ့ float ,display ,position တွေကို web designers တွေ developers တွေကအများဆုံးအသုံးပြုကြပါတယ်။အခုကျွန်တော်တို့လေ့လာမှာကတော့ flex box properties တွေကိုသုံးပြီးတော့ ဒေါင်လိုက်ဖြစ်ဖြစ် အလျားလိုက်ပဲဖြစ်ဖြစ် ကျွန်တော်တို့ရဲ့ items
+                    တွေကိုချိန်ညှိနိုင်ပါတယ်။ဒီတစ်ခါဖော်ပြထားတဲ့ဥပမာထဲမှာတော့ကျွန်တော်တို့က items တစ်ခုတည်းကိုပဲဖော်ပြပြီး center မှာရောက်ဖို့အတွက်ချိန်ညှိပေးရမှာဖြစ်ပါတယ်။အဲ့လိုတွေချိန်ညှိပေးဖို့အတွက်ကျွန်တော်တို့မှာနည်းလမ်းသုံးမျိုးရှိပါတယ်။ပထမနည်းလမ်းကတော့container
+                    ထဲမှာ justify content နဲ့ align item ဆိုတဲ့ properties တွေမှာ center ဆိုတဲ့ value ကိုသုံးပြီးအလယ်ရောက်အောင်ချိန်ညှိပေးတာပဲဖြစ်ပါတယ်။နောက်ထပ်တစ်နည်းကတော့ container ထဲမှာ jusitify content ကိုပဲ center လို့ပေးထားပြီး item ထဲမှာမှ align-self
+                    ကို center လို့ပေးခဲ့ပြီး center ကိုချိန်ညှိတာပဲဖြစ်ပါတယ်။နောက်ဆုံးတစ်ခုကတော့ item ထဲမှာ margin ကို auto ဆိုတဲ့ values ပေးထားတာပဲဖြစ်ပါတယ်။flexbox တွေအသုံးပြုတာကပိုပြီးအဆင်ပြေတယ်လို့ကျွန်တော်တို့ခံစားရပါလိမ့်မယ်။ဘာကြောင့်လဲဆိုတော့
+                    websites တွေတည်ဆောက်ဖို့အတွက် flexbox tools တွေကိုအခုကျွန်တော်တို့လိုအပ်လို့ပဲဖြစ်ပါတယ်။Flexbox က Modern browser တိုင်းကိုထောက်ပံ့ပေးပြီးတော့ chrome, safari, firefox နဲ့ internet Explorer တွေမှာကျွန်တော်တို့သိုစရာတွေအနည်းငယ်ကျန်နေပါသေးတယ်။IE
+                    10 က flexbox တွေအတွက်အထူးပြုထောက်ပံ့ပေးပြီးတော့ Internet Explorer တွေရဲ့ older versions တွေဖြစ်တဲ့ IE9 မှာဆိုရင်တော့flexbox တွေကထောက်ပံ့မှုမပေးပါဘူး။
+                    <br>
+                    <pre><code class="css">
+/*=========================
+Flex items Center Align
+=========================*/
+
+.container_center {
+display: flex;
+min-height: 50vh;
+}
+
+
+/*==== First way for Align Center ====*/
+
+.container_center {
+justify-content: center;
+align-items: center; 
+}
+
+
+/*====Second way for Align Center ====*/
+
+.container_center {
+ justify-content: center; 
+}
+.item-e {
+align-self: center;
+} 
+
+
+/*====Third way for Align Center ====*/
+
+.item-e {
+margin: auto;
+}
+                            </code></pre>
+                    <a href="../flexbox_layouts/flexbox_center.html" target="_blank">See Examp Page</a>
+                </p>
+
+                <h3 class="mb-4 small-title" id="section12">Building A Layout with Flexbox</h3>
+                <p>
+                    အခုကျွန်တော်တို့ flexbox တွေက layout content တွေကိုပိုပြီးမြန်ဆန်တဲ့နည်းလမ်းတွေ ပိုပြီးလွယ်ကူတဲ့နည်းလမ်းတွေပေးတယ်ဆိုတာကိုသိပြီဖြစ်ပါတယ်။၎င်းရဲ့ direction တွေ order တွေ space distribution တွေနဲ့ automatic sizing features တွေက responsive layouts တွေတည်ဆောက်ဖို့အတွက်ကောင်းမွန်တဲ့ဖြေရှင်းနည်းတွေကိုဖြစ်အောင်လုပ်ဆောင်ပေးပါတယ်။Flexbox
+                    skills တွေကိုလက်တွေ့လေ့ကျင့်ဖို့အတွက်လည်းလိုအပ်ပါတယ်။ဒီတစ်ခါမှာတော့ကျွန်တော်တို့ရိုးရှင်းတဲ့ wep page တစ်ခုကိုတည်ဆောက်ပြမှာဖြစ်ပြီး Best City Guide ဆိုတာပဲဖြစ်ပါတယ်။ အဲ့ဒီ web page ကကျွန်တော်တို့နဲ့ familiar ဖြစ်ပါလိမ့်မယ်ပြီးတော့
+                    layout ကို CSS basic course ထဲမှာကျွန်တော်တို့တည်ဆောက်နိုင်ပါတယ်။Responsive layout ဖြစ်အောင်တည်ဆောက်ပေးရမှာဖြစ်ပြီး လက်တွေမှာ Flexbox တွေကဘယ်လိုလွယ်ကူပြီးဘယ်လိုဖြေရှင်းနိုင်တယ်ဆိုတာကိုကျွန်တော်တို့လေ့လာနိုင်ပါတယ်။ ကျွန်တော်တို့အောက်မှာပြထားတဲ့ဥပမာ
+                    web page မှာတော့ responsive ဖြစ်ဖို့ရန်အတွက် flexbox ကိုအသုံးပြုပြီးရေးပြထားပါတယ်။ရိုးရှင်းပြီးနားလည်လွယ်အောင်ရေးပြထားပါတယ်။ ကျွန်တော်တို့အောက်မှာပြထားတဲ့ဥပမာ web page မှာတော့ responsive ဖြစ်ဖို့ရန်အတွက် flexbox ကိုအသုံးပြုပြီးရေးပြထားပါတယ်။ရိုးရှင်းပြီးနားလည်လွယ်အောင်ရေးပြထားပါတယ်။floats
+                    သို့မဟုတ် display properties တွေဖြစ်တဲ့ inline block value တွေကိုအသုံးမပြုပဲကျွန်တော်တို့ flexbox တွေနဲ့ flexible, multicolumn layouts တွေကိုတည်ဆောက်နိင်ပါတယ်။ဥပမာထဲမှာဆိုရင် view port က 769 pixels နဲ့အထက်ကျော်သွားပြီးဆိုရင် two column
+                    layout ကိုကျွန်တော်တို့မြင်တွေ့ရမှာပဲဖြစ်ပါတယ်။viewport 1020 pixels မှာဆိုရင်တော့ပထမ content က ဒုတိယ content ထက် 2 ဆပိုကြီးနေတာကိုတွေ့မြင်ရမှာပဲဖြစ်ပါတယ်။
+                    <br> CSS Page>><a href="../flexbox_layouts/pratical-page/final/css/base.css" target="_blank">base.css</a>,<a href="../flexbox_layouts/pratical-page/final/css/flexbox.css" target="_blank">flexbox.css</a>
+                    <pre><code class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Best City Guide&lt;/title&gt;
+&lt;link rel="stylesheet" href="css/base1.css"&gt;
+&lt;link rel="stylesheet" href="css/flexbox.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;header class="main-header"&gt;
+    &lt;h1 class="name"&gt;&lt;a href="#"&gt;B&#233;st City Guide&lt;/a&gt;&lt;/h1&gt;
+    &lt;ul class="main-nav"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;ice cream&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;donuts&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tea&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;coffee&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/header&gt;
+&lt;!--/.main-header--&gt;
+&lt;div class="banner"&gt;
+    &lt;img class="logo" src="img/city-logo.svg" alt="city"&gt;
+    &lt;h1 class="headline"&gt;The Best City&lt;/h1&gt;
+    &lt;span class="tagline"&gt;The best drinks and eats in the best city.&lt;/span&gt;
+&lt;/div&gt;
+&lt;!--/.banner--&gt;
+&lt;div class="row"&gt;
+    &lt;div class="primary col"&gt;
+        &lt;h2&gt;Welcome!&lt;/h2&gt;
+        &lt;p&gt;Everything in this city is worth waiting in line for.&lt;/p&gt;
+       &lt;/div&gt;
+    &lt;!--/.primary--&gt;
+    &lt;div class="secondray col"&gt;
+        &lt;h2&gt;How to get here&lt;/h2&gt;
+        &lt;p&gt;&lt;strong&gt;Plane: &lt;/strong&gt;Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake brownie lollipop drag&#233;e cheesecake.&lt;/p&gt;
+       &lt;/div&gt;
+    &lt;!--/.secondray--&gt;
+&lt;/div&gt;
+&lt;footer class="main-footer"&gt;
+    &lt;span&gt;&copy;2015 Residents of The Best City Ever.&lt;/span&gt;
+&lt;/footer&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+                            </code></pre>
+                    <a href="../flexbox_layouts/pratical-page/final/index.html" target="_blank">See Example Page:</a>
+                    <br> နောက်ထပ်ကျွန်တော်တို့ရဲ့ဥပမာ web page ထဲမှာ column တစ်ခုထပ်ထည့်ပြီး three column layout ဖြစ်အောင်ဖော်ပြထားပါတယ်။column တွေကို responsive ဖြစ်အောင်ပြုလုပ်ပေးထားပါတယ်။
+
+                    <br> CSS Page>><a href="../flexbox_layouts/3-three-column-layout-with-flexbox/css/base.css" target="_blank">base.css</a>,
+                    <pre><code class="css">
+/* ================================= 
+Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+.main-header,
+.main-nav,
+.row {
+    display: flex;
+}
+
+.main-header {
+    flex-direction: column;
+    align-items: center;
+}
+
+.col {
+    flex: 1 50%;
+}
+
+.row {
+    flex-wrap: wrap;
+}
+
+
+.secondary {
+    order: -1;
+}
+
+}
+
+@media (min-width: 1025px) {
+
+.main-header {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 0;
+}
+
+.primary {
+    flex-grow: 1.4;
+}
+
+                              }
+                            </code></pre>
+                    <br><br><a href="../flexbox_layouts/3-three-column-layout-with-flexbox/index.html" target="_blank">See Three Column Layout</a>
+                    <br>
+                    <br> Layouts တွေကိုတည်ဆောက်တဲ့အခါမှာ web designers တွေနဲ့ developers တွေအဖြစ်များတဲ့ပြသနာတစ်ခုကတော့ container ရဲ့ bottom-edge မှာelements တွေကိုဘယ်လိုထားရမယ်ဆိုတာပဲဖြစ်ပါတယ်။အဲ့တာကိုကျွန်တော်တို့ flexbox ကိုအသုံးပြုပြီးလွယ်ကူစွာ ပြောင်းလဲပေးနိုင်ပါတယ်။column
+                    တစ်ခုဆီထဲမှာ buttom တွေထည့်ထားပြီး ချိန်ညှိပြထားတာပဲဖြစ်ပါတယ်။အောက်ပါဖော်ပြထားတဲ့ဥပမာထဲမှာဖော်ပြထားတဲ့ page ပေါ်မှာထပ်ပြီးလေ့လာနိုင်ပါတယ်။
+                    <br> CSS Page>><a href="../flexbox_layouts/4-aligning-items-to-bottom-of-column/css/base.css" target="_blank">Base.css</a> ,
+                    <br><br>
+                    <pre><code class="css">
+                                /* ================================= 
+Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+.main-header,
+.main-nav,
+.row {
+    display: flex;
+}
+
+.main-header {
+    flex-direction: column;
+    align-items: center;
+}
+
+.col {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    margin-top: auto;
+    align-self: flex-start; /* flex-end */
+}
+
+}
+
+@media (min-width: 1025px) {
+
+.main-header {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+}
+                            </code></pre>
+                    <a href="../flexbox_layouts/4-aligning-items-to-bottom-of-column/index.html" target="_blank">See Examp Page:</a>
+                </p>
+            </div>
+
+        </div>
+
+        <!--  /about -->
+        <!-- signup form -->
+        <hr>
+        <div id="about" class="row pb-2 text-body border-top px-3">
+            <!-- <div class="row-md row-xl-5">
+                <h3><strong>About Me</strong></h3>
+                <img src="http://placeimg.com/200/200/people/any" alt="Myo Min ,Web developer" class="img-thumbnail rounded-circle my-2 d-none d-md-block">
+                <h4>Myo Min Htet ,Web Developer</h4>
+
+                <p>I have been learning about the course from another lesson club.And then I have written this site to refer to and studying for the beginner. </p>
+
+
+                <h3 class="section-title">Summary of Qualifications</h3>
+                <ul>
+                    <li>Experience as a freelance web developer</li>
+                    <li>Experience with HTML, CSS, and JavaScript</li>
+                    <li>Bachelor of Science</li>
+                </ul>
+
+            </div> -->
+            <div class="col-md col-xl-5 mt-lg-5">
+                <a href="http://twitter.com" class="social twitter pt-3">
+                    <img src="../images/Twitter.png" alt="Twitter logo" class="social-ico">
+                </a>
+                <a href="http://facebook.com/mynameismyominhtet" class="social Facebook pt-3">
+                    <img src="../images/facebook.png" alt="facebook logo" class="social-ico">
+                </a>
+                <a href="http://linkedin.com" class="social Linkin pt-3">
+                    <img src="../images/LinkedIn.png" alt="linkedin logo" class="social-ico">
+                </a>
+            </div>
+            <div class="col-md col-xl-5 ml-auto mt-2">
+                <p><strong>Can Request Example project File</strong></p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="inpt-group-btn">
+                 <button class="btn btn-primary" type="button">Sign up</button>
+             </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- signup form -->
+        <!-- footer -->
+        <div class="row pb-2" id="copyright">
+
+            <div class="col-md text-md-right">
+                <small>&copy; 2019  Myo Min Htet</small>
+            </div>
+
+        </div>
+        <!-- /footer -->
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+/* ==============================
+Page styles
+=============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.35em;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(32, 30, 30);
+    background: #e8e9e9;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.container,
+.container11,
+.container_just,
+.container_just3,
+.container_order,
+.container_grow2,
+.container_cross,
+.container_cross2,
+.container_center {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.item,
+.item-a,
+.item-c,
+.item-d,
+.item-dd,
+.item-e {
+    color: #fff;
+    padding: 15px;
+    margin: 5px;
+    background: #3db5da;
+    border-radius: 3px;
+}
+
+.container1,
+.container22,
+.container_just1,
+.container_just2,
+.container_order1,
+.container_grow {
+    padding: 6px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px dotted black;
+}
+
+.item1 {
+    color: #fff;
+    padding: 10px;
+    margin: 4px;
+    background: #5532d4;
+    border-radius: 10px;
+}

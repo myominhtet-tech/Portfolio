@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>BOOTSTRAP BASICS lesson</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kumar+One+Outline|Slabo+27px|Unlock" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Myanmar3, Yunghkio;
+        }
+        
+        #about {
+            background-color: #0000002e;
+        }
+        
+        #copyright {
+            background-color: #0000002e;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/default.css">
+    <script src="../highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand order-1 mr-0" href="http://zwelab.com/mmh/index.html" target="_blank">LEARN COURSES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html">Home</a>
+                    <a class="nav-item nav-link" href="#speakers">Courses</a>
+
+                    <a class="nav-item nav-link" href="#lesson">Lesson</a>
+                    <a class="mv-item nav-link" href="Volcubularies.html">Vocabularies</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron12 bg-info text-white mb-0">
+        <!-- <img src="jumbo-background.jpg" class="card-img" alt="background image"> -->
+        <div class="container text-sm-center pt-5">
+
+            <br>
+            <br>
+            <h1 class="display-5 text-center text-muted">BOOTSTRAP BASICS LESSONS</h1>
+        </div>
+    </div>
+    <!-- /jumbotron -->
+
+    <div class="container-fluid pt-4">
+
+
+        <!--speakers-->
+
+
+        <!-- test about -->
+
+        <!-- about -->
+
+        <div id="lesson" class="row border-top pt-3">
+            <div class="col-md-4 order-md-1 pb-4 ml-md-3">
+                <h3 class="mb-4">What You'll Learn</h3>
+                <div class="list-group">
+                    <a href="#section1" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Bootstrap Introduction</strong></a>
+                    <a href="#section2" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>How to used Bootstrap?</strong></a>
+                    <a href="#section3" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Creating Project with Start Bootstrap</strong></a>
+                    <a href="#section4" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Bootstrap Grid</strong></a>
+                    <a href="#section5" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Using Bootstrap</strong></a>
+                    <a href="#section6" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+
+                </div>
+            </div>
+
+            <div class="col-lg order-lg-3 mx-md-4">
+                <h3 class="mb-4 small-title" id="section1">Bootstrap Introduction</h3>
+                <p>
+                    ကျွန်တော်တို့တွေ websites သို့မဟုတ် app တွေကိုတည်ဆောက်တော့မယ်ဆိုရင် မကြာခနဆိုသလိုကျွန်တော်တို့ဘယ် front-end tools တွေကိုအသုံးပြုသင့်တယ်ဆိုတာကိုစဉ်စားကြရပါတယ်။အဲ့ဒိအခါမှာ Layout ဆိုတာဘာလဲ? float တွေ grid system တွေသို့မဟုတ် flexbox ထဲမှာရှိတဲ့ venture
+                    တွေကိုအသုံးပြုသင့်သလား? နောက်ထပ်ကျွန်တော်တို့ typography နဲ့ media queries တွေအတွက် pixels သို့မဟုတ် ems တွေကိုအသုံးပြုသင့်သလားဆိုတာတွေ။browser တွေရဲ့ compatibility အကြောင်းတွေကဘာတွေလဲဆိုတာတွေကိုကျွန်တော်တို့ကိုယ်ကိုကိုယ်ပြန်ပြီးမကြာခနမေးမိပါလိမ့်မယ်။
+                    တစ်ခါတစ်ရံမှာကျွန်တော်တို့ websites သို့ app ကိုစပြီးတည်ဆောက်တဲ့အခါမှာအခက်ခဲဆုံးအပိုင်းကတော့ ဘယ်နေရာကနေစပြီးဘယ်လို design မယ် things တွေနဲ့ဘယ်လိုတည်ဆောက်မယ်ဆိုတာတွေပဲဖြစ်ပါတယ်။ ဒီတစ်ခါမှာတော့ကျွန်တော်တို့ functional design တွေနဲ့ layout
+                    တွေကိုအချိန်အနည်းငယ်အတွင်းမှာတည်ဆောက်ဖို့ရန်ကူညီပေးပြီးpopular အများဆုံးဖြစ်ပြီးတော့ open source front-end frameworks ဖြစ်တဲ့ bootstrap ကိုလေ့လာသွားမှာပဲဖြစ်ပါတယ်။Bootstrap ကိုအသုံးပြုခြင်းရဲ့အကောင်းမွန်ဆုံးထူးခြားချက်ကတော့ development
+                    speed ပဲဖြစ်ပါတယ်။အဲ့တာကနောက်ဆုံးထွက်ပိုပြီးထူးခြားတဲ့ front-end tools တွေကိုအသုံးပြုခြင်းဖြင့် bootstrap က web development တွေကိုပိုပြီးမြန်အောင် ပိုပြီးလွယ်ကူအောင်ပြုလုပ်ပေးပါတယ်။ကျွန်တော်တို့site app တွေရဲ့ designing တွေ code တွေကိုပုံကြမ်းဆွဲထားနေမယ့်အစား
+                    bootstrap ရဲ့ထုးချက်တွေဖြစ်တဲ့ readymade components တွေကိုအသုံးပြုပြီးစတင်တည်ဆောက်နိုင်ပါတယ်။ bootstrap framework တွေက common elements တွေဖြစ်တဲ့ buttons, forms , navigations, grids တွေစတာတွေအတွက်ပြန်လည်အသုံးပြုနိုင်တဲ့ HTML, CSS တွေနဲ့လာပါတယ်။ပြီးတော့
+                    javascript တစ်ကြောင်းမှရေးစရာမလိုပဲ components တွေအများကြီးပေါ်ကို ပါoင်ပြီးသားဖြစ်တဲ့ javascript plugins တွေကို dozen လိုက်နဲ့လွယ်ကူစွာထည့်နိုင်ပြီးအပြန်အလှန်ဆက်သွယ်နိုင်ပါတယ်။ bootstrap ရဲ့အကောင်းဆုံးအပိုင်းဖြစ်တဲ့တစ်ခုကတော့ cross-browser
+                    compatbility ပဲဖြစ်ပါတယ်။အဲ့တာတွကကျွန်တော်တို့ရဲ့ websites တွေကို responsive ဖြစ်မဖြစ် test လုပ်နေဖို့အချိန်ပြန်ပေးနေစရာမလိုပါပဲ IE, Safari, Firefox, Chrome တွေမှာအလုပ်လုပ်နိုင်ပါတယ်။ကျွန်တော်တို့ရဲ့ code တွေက devices တိုင်းပေါ်မှာ,
+                    ဖုန်းတိုင်းပေါ်မှာနဲ့ tablets တွေ desktop devices တွေပေါ်မှာပါကောင်းမွန်စွာအလုပ်လုပ်ပေးပါလိမ့်မယ်။
+                </p>
+
+                <h3 class="mb-4 small-title" id="section2">How to used Bootstrap?</h3>
+
+                <p>
+                    Bootstrap ကို developers တွေက twitter မှာတည်ဆောက်ခဲ့ကြပါတယ်။Bootstrap ကကမ္ဘာပေါ်မှာရှိတဲ့ web တွေကိုတည်ဆောက်ခြင်း ၊ responsive ဖြစ်ဖို့အတွက်နဲ့ mobile first projects တွေတည်ဆောက်ခြင်းအတွက်လူကြိုက်အများဆုံးဖြစ်တဲ့ html, css နဲ့ javascript framework တွေပဲဖြစ်ပါတယ်။7
+                    millions နဲ့အထက်မှာရှိတဲ့ app တွေ sites တွေဟာ web ကိုဖြတ်ပြီးတော့ bootstrap တွေကိုအသုံးပြုပြီးတည်ဆောက်ထားတာပဲဖြစ်ပါတယ်။web designers, front end developers တွေနဲ့ programmers တွေက project တွေတည်ဆောက်တဲ့အခါမှာ မြန်ပြီးလွယ်ကူဖို့အတွက်
+                    bootstrap တွေကိုအသုံးပြုပါတယ်။လူသိအများဆုံးဖြစ်တဲ့ NASA,FIFA,Spotify နဲ့ Lyft လိုမျိုး company တွေ agencies တွေကသူတို့ရဲ့ websites တွေကို bootstrap တွေသုံးပြီးတည်ဆောက်ထားတာပဲဖြစ်ပါတယ်။ ကျွန်တော်တို့နီးကပ်အောင်ထပ်ပြီးလေ့လာကြည့်မယ်ဆိုရင်
+                    bootstrap က fronts end framework ဖြစ်ပါတယ်။framework ဆိုတာကတော့ကျွန်တော်တို့ higher level projects တွေကိုတည်ဆောက်တဲ့အခါမှာ ပြန်ပြီးအသုံးပြုနိုင်တဲ့ platform မျိုးဖြစ်ပြီး lower level တွေ repetitive details တွေအတွက်ဆိုးရိမ်စရာမရှိပါဘူး။
+                    Layout ထဲမှာ UI components အချို့ရှိပါတယ်။အဲ့တာတွေကတော့ nav bars, buttons, headers ,forms ,modals တွေစတဲ့ဟာတွေပဲဖြစ်ပါတယ်။အဲ့ဒီ components တွေအားလုံးဟာ sites သို့မဟုတ် app ပေါ်မှာမတူညီတဲ့နေရာတွေမှာထွက်ပေါ်လာမှာပဲဖြစ်ပါတယ်။အဲ့တော့ကျွန်တော်တို့က
+                    ကိုယ်တိုင်တစ်ခုခြင်းဆီကိုလိုက်ပြီးတည်ဆောက်နေမဲ့အစား framework တွေကိုအသုံးပြုနိုင်ပါတယ်။အခြားနည်းလမ်းနဲ့ပြောရမယ်ဆိုရင် front end framework တွေနဲ့ common layout တွေ, typography နဲ့ browser compatibility တွေရဲ့ပြသနာတွေကိုဖြေရှင်းနိုင်ပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့ရိုးရှင်းစွာ
+                    content သို့မဟုတ် design တွေကို focus ပြုလုပ်နိုင်ပါတယ်။ bootstrap အတွက်နောက်ဆုံး documentation ကိုလေ့လာချင်တယ်ဆိုရင်တော့ <a href="https://getbootstrap.com/" target="_blank">getbootstrap.com</a>မှာသွားပြီးလေ့လာနိုင်ပါတယ်။အချို့
+                    developer တွေကတော့ bootstraps ကို design styles တွေနဲ့ grid တွေကိုသတ်မှတ်ဖို့အတွက်အသုံးပြုပါတယ်။အဲ့တာကြောင့်သူတို့ကလှပတဲ့ responsive layout တွေနဲ့ sites တွေကိုလျှင်လျှင်မြန်မြန်တည်ဆောက်နိုင်ပါတယ်။တစ်ချို့ကတော့ grid layout ချဖို့အတွက်ပဲအသုံးပြုပြီးသူတို့ရဲ့ကိုယ်တိုင်ရေးထားတဲ့
+                    CSS တွေကိုထည့်ကြပါတယ်။ တစ်ချို့ကတော့ javascript components တွေအတွက်အသုံးပြုပါတယ်။
+                </p>
+                <h3 class="mb-4 small-title" id="section3">Creating Project with Start Bootstrap</h3>
+
+                <p>
+                    အခုကျွန်တော်တို့ Bootstrap project တည်ဆောက်နည်းတွေကိုစပြီးလေ့လာသွားမှာဖြစ်ပါတယ်။Bootstraps sites ထဲကနေပြီးတော့ကျွန်တော်တို့ Saaa source ,JavaScript , documentation files စတာတွေအားလုံးကို download ပြုလုပ်နိုင်ပါတယ်။ပြီးတော့ကျွန်တော်တို့က package manager
+                    တွေသုံးပြီးတော့ ရှိပြီးသား project file ထဲကို bootstrap source file တွေကိုထည့်ပြီးအသုံးပြုနိုင်ပါတယ်။အမြန်ဆုံးနည်းလမ်းကတော့ project ထဲမှာ Bootstrap CDN သို့မဟုတ် content delivery network ကိုသုံးပြီးတည်ဆောက်ချင်းပဲဖြစ်ပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့ကဘယ်
+                    file ကိုမှ download ပြုလုပ်စရာမလိုပဲ ရိုးရှင်းစွာ CDN links တွေကိုအသုံးပြုရုံပဲဖြစ်ပါတယ်။အဲ့ဒီ links တွေ HTML ထဲမှာ၊ Bootstrap's CSS ထဲမှာ၊ Javascript တွေကို CDN servers ကနေချုပ်ကိုင်ထားတာပဲဖြစ်ပါတယ်။ဥပမာရေးပြထားပြီးတော့ ကျွန်တော်တို့ဥပမာထဲမှာတော့
+                    CDN links ကိုအသုံးပြုထားပြီး ကျွန်တော်တို့လိုအပ်တာတွေကိုbootstrap page ထဲမှာသွားရှာပြီး name တူအောင်ပေးရပါတယ်။အဲ့ဒီထဲမှာတော့ apply လုပ်နိုင်တဲ့ things တွေအများကြီးပါဝင်ပါတယ်။
+                    <br>
+                    <pre><code class="html">
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"&gt;
+&lt;title&gt;Full strap conf&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="container text-center"&gt;
+&lt;h1 class="display-1"&gt;Full strap conf&lt;/h1&gt;
+&lt;p class="lead"&gt;Coming Soon, a One-Day Conference About All Things JavaScript!&lt;/p&gt;
+&lt;div class="col-lg-6 mx-auto"&gt;
+    &lt;div class="input-group"&gt;
+        &lt;input type="text" class="form-control" placeholder="Enter your email for info" aria-label="Enter your email for info"&gt;
+        &lt;span class="input-group-btn"&gt;
+            &lt;button class="btn btn-secondary" type="button"&gt;Sign up&lt;/button&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;    
+                    </code></pre>
+                    <a href="../Bootstrap/create-Bootstrap.html" target="_blank" class="See_page">See Examp Page</a>
+                </p>
+                <h3 class="mb-4 small-title" id="section4">Bootstrap Grid</h3>
+                <p>
+                    bootstrap တွေကများစွာသော components တွေ options တွေနဲ့ project ပေါ်မှာတည်ရှိပါတယ်။အဲ့တာတွေကတော့ responsive container တွေ grid system, တွေ media objects တွေ utilities တွေပဲဖြစ်ပါတယ်။ container တွေကတော့ bootstrap ထဲမှာအခြေခံအကြဆုံး layout components တွေပဲဖြစ်ပါတယ်။bootstraps
+                    တွေက mobile တွေကိုပထမဦးစားပေးတည်ဆောက်ထားတာပဲဖြစ်ပါတယ်။ဆိုလိုတာကတော့ ၎င်းserver ရဲ့ basic layout styles နဲ့ style code တွေရဲ့ပမာဏကလည်း mobile device ကိုပထမဦးစားပေးထားတာပဲဖြစ်ပါတယ်။နောက်ထပ် media query တွေကတော့ကျွန်တော်တို့လေ့လာခဲ့သလိုပဲ
+                    breakpoints တွေကိုဖန်တီးပေးတာပဲဖြစ်ပါတယ်။mobile first approach မှာ bootstraps တွေက responsive breakpoints ၅ခုတောင်အသုံးပြုတာဖြစ်ပါတယ်။၎င်းရဲ့ default range ကတော့ portrait phones သို့မဟုတ် သေးငယ်တဲ့ devices တွေပဲဖြစ်ပါတယ်။bootstrap
+                    docks ထဲမှာသုံးတဲ့ media query breakpoints တွေကတော့ extra small,small, medium,large, extra large တွေပဲဖြစ်ပါတယ်။နောက်ပြီး bootstrap တွေက media query ထဲမှာ pixel units တွေကိုပဲအသုံးပြုပါတယ်။extra small range ကတော့ 576pixels ထက်ငယ်နေရင်ပဲဖြစ်ပါတယ်။extra
+                    large range ကတော့ 1200pixels နဲ့ကျော်တာတွေပဲဖြစ်ပါတယ်။ အောက်ပါဥပမာထဲမှာတော့ကျွန်တော်တို့ boostrap နဲ့ grid ကိုတည်ဆောက်ပြထားပြီး grid ထဲမှာ container , row ,column တွေပါဝင်တာပဲဖြစ်ပါတယ်။bootstrap ကိုအသုံးပြုထားတဲ့အတွက်ကြောင့်ကျွန်တော်တို့ကstylesheet
+                    တွေကို CDN link နဲ့ချိတ်ဆက်ပြီးအသုံးပြုထားတာပဲဖြစ်ပါတယ်။
+                    <br>
+                    <pre><code class="html">
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;!-- Required meta tags --&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+&lt;!-- Bootstrap CSS --&gt;
+&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"&gt;
+&lt;title&gt;Hello, world!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="container"&gt;
+&lt;!-- about --&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col"&gt;
+        &lt;h3&gt;About Full Stack Conf&lt;/h3&gt;
+        &lt;p&gt;The beautiful city of Portland, Oregon will be the host city for Stack Conf!&lt;/p&gt;
+        &lt;p&gt;Explore the future ofJavaScript with a lineup of industry professionals.Discover new techniques to advance your career as a web deveoloper.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+        &lt;h3&gt;Expert Speakers&lt;/h3&gt;
+        &lt;p&gt;Want to meet the international JavaScript community and share skills with some of the world's top experts, hackers, and makers? Be the first to know what to expect for the future of Javascript.&lt;/p&gt;
+        &lt;p&gt;Full Stack Conf is committed ti being inckusive and welcoming for everyone. We look forward to another intensive day of learning and sharing.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+        &lt;h3&gt;What You'll Learn&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;strong&gt;MongoDB&lt;/strong&gt;: NoSQL database&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Express&lt;/strong&gt;: Framework for Node&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;React&lt;/strong&gt;: Javascript library&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Node.js&lt;/strong&gt;: JavaScript environment&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;ES2015&lt;/strong&gt;: Latest version of JavaScript&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Babel&lt;/strong&gt;: JavaScript compiler&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--  /about --&gt;
+&lt;/div&gt;
+&lt;!--  /container --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+                    <a href="../Bootstrap/Bootstrap_grid.html" class="See_page" target="_blank">See Examp Page</a>
+                </p>
+
+
+                <h3 class="mb-4 small-title" id="section5">Using Bootstrap</h3>
+
+                <p>
+                    Bootstrap ကိုသုံးပြီးကျွန်တော်တို့ရေးတဲ့အခါမှာကျွန်တော်တို့က CSS file တွေကိုအသုံးပြုစရာမလိုပဲ bootstrap site နဲ့ချိတ်ဆက်ပြီးအသုံးပြုရတာတွေပဲဖြစ်ပါတယ်။ကျွန်တော်တို့ရဲ့ page ကိုstyling တွေပြုလုပ်ဖို့ရန်အတွက် html elements တွေရဲ့ class တွေထဲကနေပြီးတော့ခေါ်ပြီးအသုံးပြုရတာဖြစ်ပါတယ်။
+                    အဲ့ဒီအတွက်ကျွန်တော်တို့ကအချိန်ကုန်သက်သာစေပြီးတော့ရေးတဲ့အခါမှာပိုပြီးလွယ်ကူစေပါတယ်။နောက်ထပ် bootstrap ထဲမှာကျွန်တော်တို့ Jumbotron ဆိုတာတွေကိုလည်းအသုံးပြုနိုင်ပါတယ်။အဲ့တာတွေကတော့ action တွေကိုခေါ်ဖို့အတွက်နဲ့ key content တွေကိုဖော်ပြဖို့အတွက်အသုံးပြုတဲ့
+                    component တစ်ခုပဲဖြစ်ပါတယ်။နောက်ပြီးအဲ့တာကအရေးကြီးတဲ့ content တွေကိုပေးပြီးတော့အဲ့တာကိုအလေးထားဖို့လိုအပ်ပါတယ်။ကျွန်တော်တို့ bootstrap တွေနဲ့ရေးတဲ့အခါမှာ html ထဲမှာအရင်ကပြောခဲ့သလိုပဲ comment တွေနဲ့ထည့်ပြီးရေးပေးဖို့လိုအပ်ပါတယ်။အဲ့တာမှကျွန်တော်တို့ဘာတွေရေးထားတယ်
+                    ဘယ်အတွက်ရေးထားတယ်ဆိုတာတွေကိုသိနိုင်မှာပဲဖြစ်ပါတယ်။ Bootstrap 4 မှာတော့ UI component အသစ်ဖြစ်တဲ့ card ဆိုတာကိုမိတ်ဆက်ခဲ့ပါတယ်။card component ထဲမှာများစွာသော styling တွေရှိပြီးတော့အဲံတာတွေကတော့ aligement , grouping,color တွေ image overlays
+                    စတာတွေပဲဖြစ်ပါတယ်။ကျွန်တော်တို့ကြိုက်နှစ်သက်သလို card layout တွေ card design တွေနဲ့များစွာသော multiple content type တွေကိုရောပြီးတည်ဆောက်နိုင်ပါတယ်။user register form တွေတည်ဆောက်တဲ့အခါမှာတော့ကျွန်တော်တို့က page သီးခြားခွဲပြီးရေးနေမယ့်အစား
+                    interactibe pop up window တွေနဲ့ပဲအသုံးပြုတာပိုပြီးအဆင်ပြေစေပါတယ်။အဲ့တာတွေအတွက်တော့ bootstrap ထဲမှာကျွန်တော်တို့ modal ဆိုတာကိုအသုံးပြုပါတယ်။ နောက်ထပ်ကျွန်တော်တို့ <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>ဆိုတဲ့
+                    sites ထဲမှာသွားပြီးကျွန်တော်တို့လိုအပ်တာတွေကိုယူပြီးအသုံးပြုနိုင်ပါတယ်။အဲ့ဒီထဲမှာ javascript အချို့ပါပါဝင်ပြီးတော့ကျွန်တော်တို့က အလွယ်တကူခေါ်ပြီးအသုံးပြုနိုင်ပါတယ်။
+                    <br>
+                    <a href="../Bootstrap/Bootstrap-form.html" target="_blank" class="See_page">See Examp Page</a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!--  /about -->
+        <!-- signup form -->
+        <hr>
+        <div id="about" class="row pb-2 text-body border-top px-3">
+            <!-- <div class="row-md row-xl-5">
+                <h3><strong>About Me</strong></h3>
+                <img src="http://placeimg.com/200/200/people/any" alt="Myo Min ,Web developer" class="img-thumbnail rounded-circle my-2 d-none d-md-block">
+                <h4>Myo Min Htet ,Web Developer
+                </h4>
+
+                <p>I have been learning about the course from another lesson club.And then I have written this site to refer to and studying for the beginner.
+                </p>
+
+
+                <h3 class="section-title">Summary of Qualifications
+                </h3>
+                <ul>
+                    <li>Experience as a freelance web developer
+                    </li>
+                    <li>Experience with HTML, CSS, and JavaScript
+                    </li>
+                    <li>Bachelor of Science
+                    </li>
+                </ul>
+
+            </div> -->
+            <div class="col-md col-xl-5 mt-lg-5">
+                <a href="http://twitter.com" class="social twitter pt-3">
+                    <img src="../images/Twitter.png" alt="Twitter logo" class="social-ico">
+                </a>
+                <a href="http://facebook.com/mynameismyominhtet" class="social Facebook pt-3">
+                    <img src="../images/facebook.png" alt="facebook logo" class="social-ico">
+                </a>
+                <a href="http://linkedin.com" class="social Linkin pt-3">
+                    <img src="../images/LinkedIn.png" alt="linkedin logo" class="social-ico">
+                </a>
+            </div>
+            <div class="col-md col-xl-5 ml-auto mt-2">
+                <p><strong>Can Request Example project File</strong></p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="inpt-group-btn">
+                 <button class="btn btn-primary" type="button">Sign up</button>
+             </span>
+                </div>
+            </div>
+
+        </div>
+        <!-- signup form -->
+        <!-- footer -->
+        <div class="row pb-2" id="copyright">
+
+            <div class="col-md text-md-right">
+                <small>&copy; 2019  Myo Min Htet</small>
+            </div>
+
+        </div>
+        <!-- /footer -->
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

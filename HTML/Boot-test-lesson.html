@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Html lesson</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kumar+One+Outline|Slabo+27px|Unlock" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Myanmar3, Yunghkio;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+</head>
+
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+
+        <a class="navbar-brand order-1 mr-0" href="http://zwelab.com/mmh/index.html" target="_blank">LEARN COURSES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#speakers">Courses</a>
+                <a class="nav-item nav-link" href="#schedule">Schedule</a>
+                <a class="mv-item nav-link" href="Volcubularies.html">Vocabularies</a>
+                <a class="nav-item nav-link" href="#about">About</a>
+
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- about -->
+    <div class="row">
+        <div class="col-4 mt-5">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">CSS Masks</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+
+                    <li>
+                        <h2 class="small-title">CSS Masks</h2>
+                        <p>
+                            ဒီတစ်ခါမှာတော့ကျွန်တော်တို့ CSS design effect တွေကို cover ပြုလုပ်ဖို့အတွက် CSS mask တွေကိုလေ့လာသွားမှာပဲဖြစ်ပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့က masking နဲ့ clipping တွေကိုအများဆုံးအသုံးပြုတဲ့ features တွေဖြစ်ပြီး photoshop တွေ Sketch တွေနဲ့ပုံစံတူတဲ့ graphic
+                            editing tools တွေပဲဖြစ်ပါတယ်။ကျွန်တော်တို့က အဲတာတွေကို elements တွေရဲ့မြင်နိုင်တဲ့အပိုင်းတွေကို hide ထားဖို့အတွက်အသုံပြုပါတယ်။ဒါပေမယ့်ကျွန်တော်တို့က mask တွေကို browser ပေါ်မှာCSS တွေနဲ့တိုက်ရိုက်တန်းပြီးအသုံးမပြုနိင်ပါဘူး။design
+                            effects အချို့နဲ့အဲ့တာကို create ပြုလုပ်နိုင်ပါတယ်။Masking က CSS masking specification ရဲ့အပိုင်းတစ်ခုပဲဖြစ်ပါတယ်။method နှစ်ခုရှိပြီးတော့ အစိတ်အပိုင်းလေးတွေအတွက်သို့မဟုတ် html elements တစ်ခုလုံးကိုဖျောက်ထားနိုင်ပါတယ်။အဲ့ဒီ
+                            method တွေကတော့ masking နဲ့ clipping တွေပဲဖြစ်ပါတယ်။ masking feature တွေကသေချာတဲ့ areas တွေကို masking out ပြုလုပ်ခြင်းဖြင့် elements တွေရဲ့အပိုင်းတွေကိုမှေးမှိန်သွားအောင်ပြုလုပ်နိုင်ပါတယ်။ အဲ့တာကြောင့်ကျွန်တော်တို့က elements
+                            တွေကို masking ပြုလုပ်ချင်တယ်ဆိုရင်တော့ mask image တွေကိုအသုံးပြုပြီး elements တွေရဲ့မြင်နိုင်တဲ့အပိုင်းတွေကို filter ပြလုပ်နိုင်ဖို့ပဲဖြစ်ပါတယ်။mask image တွေမှာ တစ်ပိုင်းကအနက်ရောင်လုံးလုံးဖြစ်နေပြီးတစ်ပိုင်းကcompletely transparent
+                            ဖြစ်နေတယ်ဆိုရင်အဲ့တာမျိုးကို Alpha Mask လို့ခေါ်နိုင်ပါတယ်။နောက်ထပ် mask image တွေအတွက်ကျွန်တော်တို့ CSS ထဲမှာwebkit vendor prefix ကိုအသုံးပြုဖို့လိုအပ်ပါတယ်။CSS masks တွေကအဆင်သင့်ပြီး flexible ဖြစ်တဲ့ design features တွေပဲဖြစ်ပါတယ်။ကျွန်တော်တို့
+                            website တွေမှာရှိတဲ့ headlines , buttons , icons သို့မဟုတ်အခြားအစိတ်အပိုင်းတွေမှာကျွန်တော်တို့အသုံးပြုနိုင်ပါတယ်။Internet Explorer မှာတော့ mask image property ကိုထောက်ပံ့ပေးမှာမဟုတ်ပါဘူး။
+                            <br>
+                            <pre><code class="css">
+                                
+    /*===============================
+    Mask image Insertig
+    ===============================*/
+    
+    .wrap {
+    background: url('../next-adding-css/mountain.jpg') no-repeat;
+    }
+    
+    h1 {
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+    font-size: 22em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+    -webkit-mask-image: url('../next-adding-css/texture.png');
+    mask-image: url('../next-adding-css/texture.png');
+    padding: 260px 0 0 120px;
+    }
+                            </code>
+                            </pre>
+                            <a href="../next-adding-css/index.html" class="See_page" target="_blank">See Examp Page</a>
+                        </p>
+                    </li>
+
+
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+            </div>
+        </div>
+    </div>
+    <!-- lesson -->
+
+    <div>
+        <img src="http://placeimg.com/200/200/tech" class="lesson-img" alt="Profile_Picture">
+
+        <main class="flex">
+            <div id="wrapper">
+                <ul class="lesson-learn">
+                    <h1 class="tag-name">LEARNING CSS MASK</h1>
+                    <li>
+                        <h2 class="small-title">CSS Masks</h2>
+                        <p>
+                            ဒီတစ်ခါမှာတော့ကျွန်တော်တို့ CSS design effect တွေကို cover ပြုလုပ်ဖို့အတွက် CSS mask တွေကိုလေ့လာသွားမှာပဲဖြစ်ပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့က masking နဲ့ clipping တွေကိုအများဆုံးအသုံးပြုတဲ့ features တွေဖြစ်ပြီး photoshop တွေ Sketch တွေနဲ့ပုံစံတူတဲ့ graphic
+                            editing tools တွေပဲဖြစ်ပါတယ်။ကျွန်တော်တို့က အဲတာတွေကို elements တွေရဲ့မြင်နိုင်တဲ့အပိုင်းတွေကို hide ထားဖို့အတွက်အသုံပြုပါတယ်။ဒါပေမယ့်ကျွန်တော်တို့က mask တွေကို browser ပေါ်မှာCSS တွေနဲ့တိုက်ရိုက်တန်းပြီးအသုံးမပြုနိင်ပါဘူး။design
+                            effects အချို့နဲ့အဲ့တာကို create ပြုလုပ်နိုင်ပါတယ်။Masking က CSS masking specification ရဲ့အပိုင်းတစ်ခုပဲဖြစ်ပါတယ်။method နှစ်ခုရှိပြီးတော့ အစိတ်အပိုင်းလေးတွေအတွက်သို့မဟုတ် html elements တစ်ခုလုံးကိုဖျောက်ထားနိုင်ပါတယ်။အဲ့ဒီ
+                            method တွေကတော့ masking နဲ့ clipping တွေပဲဖြစ်ပါတယ်။ masking feature တွေကသေချာတဲ့ areas တွေကို masking out ပြုလုပ်ခြင်းဖြင့် elements တွေရဲ့အပိုင်းတွေကိုမှေးမှိန်သွားအောင်ပြုလုပ်နိုင်ပါတယ်။ အဲ့တာကြောင့်ကျွန်တော်တို့က elements
+                            တွေကို masking ပြုလုပ်ချင်တယ်ဆိုရင်တော့ mask image တွေကိုအသုံးပြုပြီး elements တွေရဲ့မြင်နိုင်တဲ့အပိုင်းတွေကို filter ပြလုပ်နိုင်ဖို့ပဲဖြစ်ပါတယ်။mask image တွေမှာ တစ်ပိုင်းကအနက်ရောင်လုံးလုံးဖြစ်နေပြီးတစ်ပိုင်းကcompletely transparent
+                            ဖြစ်နေတယ်ဆိုရင်အဲ့တာမျိုးကို Alpha Mask လို့ခေါ်နိုင်ပါတယ်။နောက်ထပ် mask image တွေအတွက်ကျွန်တော်တို့ CSS ထဲမှာwebkit vendor prefix ကိုအသုံးပြုဖို့လိုအပ်ပါတယ်။CSS masks တွေကအဆင်သင့်ပြီး flexible ဖြစ်တဲ့ design features တွေပဲဖြစ်ပါတယ်။ကျွန်တော်တို့
+                            website တွေမှာရှိတဲ့ headlines , buttons , icons သို့မဟုတ်အခြားအစိတ်အပိုင်းတွေမှာကျွန်တော်တို့အသုံးပြုနိုင်ပါတယ်။Internet Explorer မှာတော့ mask image property ကိုထောက်ပံ့ပေးမှာမဟုတ်ပါဘူး။
+                            <br>
+                            <pre><code class="css">
+                            
+/*===============================
+Mask image Insertig
+===============================*/
+
+.wrap {
+background: url('../next-adding-css/mountain.jpg') no-repeat;
+}
+
+h1 {
+font-family: Helvetica, sans-serif;
+color: #fff;
+font-size: 22em;
+margin: 0;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+-webkit-mask-image: url('../next-adding-css/texture.png');
+mask-image: url('../next-adding-css/texture.png');
+padding: 260px 0 0 120px;
+}
+                        </code>
+                        </pre>
+                            <a href="../next-adding-css/index.html" class="See_page" target="_blank">See Examp Page</a>
+                        </p>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <!-- /lesson -->
+    </div>
+
+    <!--  /about -->
+    <!-- signup form -->
+    <hr>
+    <div id="about" class="row py-4 text-muted border-top">
+        <div class="row-md row-xl-5">
+            <h3><strong>About Me</strong></h3>
+            <img src="http://placeimg.com/200/200/people/any" alt="Myo Min ,Web developer" class="img-thumbnail rounded-circle my-2 d-none d-md-block">
+            <h4>Myo Min Htet ,Web Developer</h4>
+
+            <p>I have been learning about the course from another lesson club.And then I have written this site to refer to and studying for the beginner. </p>
+
+
+            <h3 class="section-title">Summary of Qualifications</h3>
+            <ul>
+                <li>Experience as a freelance web developer</li>
+                <li>Experience with HTML, CSS, and JavaScript</li>
+                <li>Bachelor of Science</li>
+            </ul>
+
+        </div>
+        <div class="col-md col-xl-5 mt-lg-5">
+            <a href="http://twitter.com" class="social twitter pt-3">
+                <img src="../images/Twitter.png" alt="Twitter logo" class="social-ico">
+            </a>
+            <a href="http://facebook.com/mynameismyominhtet" class="social Facebook pt-3">
+                <img src="../images/facebook.png" alt="facebook logo" class="social-ico">
+            </a>
+            <a href="http://linkedin.com" class="social Linkin pt-3">
+                <img src="../images/LinkedIn.png" alt="linkedin logo" class="social-ico">
+            </a>
+        </div>
+        <div class="col-md col-xl-5 ml-auto mt-4">
+            <p><strong>Can Request Example project File</strong></p>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Email">
+                <span class="inpt-group-btn">
+                     <button class="btn btn-primary" type="button">Sign up</button>
+                 </span>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- signup form -->
+    <!-- footer -->
+    <div class="row py-3">
+
+        <div class="col-md text-md-right">
+            <small>&copy; 2019  Myo Min Htet</small>
+        </div>
+
+    </div>
+    <!-- /footer -->
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

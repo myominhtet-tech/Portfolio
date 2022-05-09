@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>CSS LAYOUT Basic lesson</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kumar+One+Outline|Slabo+27px|Unlock" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Myanmar3, Yunghkio;
+        }
+        
+        #about {
+            background-color: #0000002e;
+        }
+        
+        #copyright {
+            background-color: #0000002e;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/default.css">
+    <script src="../highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand order-1 mr-0" href="http://zwelab.com/mmh/index.html" target="_blank">LEARN COURSES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html">Home</a>
+                    <a class="nav-item nav-link" href="#speakers">Courses</a>
+
+                    <a class="nav-item nav-link" href="#lesson">Lesson</a>
+                    <a class="mv-item nav-link" href="Volcubularies.html">Vocabularies</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron13 bg-info text-white mb-0">
+        <!-- <img src="jumbo-background.jpg" class="card-img" alt="background image"> -->
+        <div class="container text-sm-center pt-5">
+
+            <br>
+            <br>
+            <h1 class="display-5 text-center text-muted"> CSS LAYOUT LESSONS</h1>
+        </div>
+    </div>
+    <!-- /jumbotron -->
+
+    <div class="container-fluid pt-4">
+
+
+        <!--speakers-->
+
+
+        <!-- test about -->
+
+        <!-- about -->
+
+        <div id="lesson" class="row border-top pt-3">
+            <div class="col-md-4 order-md-1 pb-4 ml-md-3">
+                <h3 class="mb-4">What You'll Learn</h3>
+                <div class="list-group">
+                    <a href="#section1" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Getting Start with CSS Layout</strong></a>
+                    <a href="#section2" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Sticky Footer</strong></a>
+                    <a href="#section3" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Controlling layout with CSS Display Modes</strong></a>
+                    <a href="#section4" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Layout with Float Property</strong></a>
+                    <a href="#section5" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Overflow & Clearfix</strong></a>
+                    <a href="#section6" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Example Project For CSS Layout Basics</strong></a>
+
+                </div>
+            </div>
+
+            <div class="col-lg order-lg-3 mx-md-4">
+                <h3 class="mb-4 small-title" id="section1">Getting Start with CSS Layout</h3>
+                <p>
+                    layout တွေက css တွေမှာ tricky တွေအမျိုးမျိုးနဲ့အသုံးပြုနိုင်ပါတယ်။ browser တွေပေါ်မှာ layout တွေအမျိုးမျိုးနဲ့ကျွန်တော်တို့တွေတည်ဆောက်နိုင်ပါတယ်။ဒါပေမယ့်ကျွန်တော်တို့ websitesတွေ app တွေတည်ဆောက်တဲ့အခါမှာ layout တွေကအလွန်အရေးကြီးတဲ့အပိုင်းမှာပါဝင်တာပဲဖြစ်ပါတယ်။ကျွန်တော်တို့လေ့လာသွားရမှာကတော့
+                    developer တွေ designer တွေအများဆုံးအသုံးပြုတဲ့ display mode , float တွေနေရာချထားဖို့ရန်အတွက်အသုံးပြုတဲ့ absolute , fix စတာတွေပဲဖြစ်ပါတယ်။ကျွန်တော်တို့အရင်သင်ခန်းစာတွေထဲမှာလည်း layout အကြောင်းအချို့ကိုလေ့လာခဲ့ပြီးဖြစ်ပါတယ်။ Browser
+                    တွေမှာ default stylesheet တွေပါတယ်ဆိုတာကိုသိပြီးသားဖြစ်မှာပါ။ကျွန်တော်တို့ကအဲ့တာတွေကို user agent stylesheet လို့ခေါ်ပြီးတော့နောက်ထပ် stylesheet တွေထပ်ပြီးမသတ်မှတ်ခင်မှာအဲ့တာတွေကသတ်ရောက်နေမှာဖြစ်ပါတယ်။Browser က body ,heading, paragraph
+                    ,list စတဲ့ elements တွေကို margin, padding,linehight တွေ font-size value ဆိုတဲ့ default value တွေကိုသတ်မှတ်ပေးထားတာပဲဖြစ်ပါတယ်။popular web browser တွေဖြစ်တဲ့ chrome,firefox,safari, internet explorer စတဲ့ browser တွေမှာရှိတဲ့ default
+                    styling တွေကအနည်းငယ်ကွဲပြားမှုတွေရှိပြီးတော့ heading တွေ margin တွေစတာတွေမှာဖြစ်ပါတယ်။အဲ့တာတွေကိုရှင်းပြစ်ဖို့ရန်အတွက်အကောင်းဆုံးနည်းလမ်းကတော့ css reset ကိုအသုံးပြုချင်းပဲဖြစ်ပါတယ်။css reset ကအမျိုးမျိုးသော browser တွေမှာရှိတဲ့ margin,padding,line
+                    height,font-size စတဲ့ default styling တွေကိုဖယ်ရှားပေးနိုင်ပါတယ်။နောက်တစ်နည်းပြောရမယ်ဆိုရင်တော့ browser တွေအားလုံးကိုတူညိစွာအလုပ်လုပ်အောင်လုပ်ဆောင်ပေးတာပဲဖြစ်ပါတယ်။web designer တွေ web developer တွေကတော့မတူညီတဲ့ css reset နည်းလမ်းတွေကိုအသုံးပြုကြပါတယ်။ကျွန်တော်တို့လေ့လာသွားမှာကတော့
+                    popular ဖြစ်တဲ့ method တစ်ခုဖြစ်တဲ့ <a href="http://necolas.github.io/normalize.css/" target="_blank">normalize.css</a> ပဲဖြစ်ပါတယ်။အဲ့တာကကျွန်တော်တို့ website ထဲမှာရှိတဲ့ default styling တွေကိုဖယ်ရှားပေးပါလိမ့်မယ်။
+                    Web design တွေမှာ wrapper ကိုအများဆုံးအသုံးပြုကြပါတယ်။layout ရဲ့အလယ်မှာထားဖို့အတွက်နဲ့ device ရဲ့ viewport တွေပေါ်မှာမှီခိုပြီးတအားကျယ်သွားတာတွေ တအားကျဉ်းသွားတာတွေကိုထိန်းသိမ်းဖို့ရန်အတွက်အသုံးပြုနိုင်ပါတယ်။web designer တွေ web developer
+                    တွေကတော့ container တွေကိအသုံးပြုပြီးတော့ container တွေ wrapper တွေက layout တွေထဲမှာ element တွေကိုဖော်ပြတဲ့အခါမှာအသုံးပြုတဲ့ generics term တွေပဲဖြစ်ပါတယ်။
+                </p>
+                <h3 class="mb-4 small-title" id="section2">Sticky Footer</h3>
+
+                <p>
+                    ဒီတစ်ခါမှာတော့ကျွန်တော်တို့ sticky footer တွေကိုဘယ်လိုတည်ဆောက်မယ်ဆိုတာကိုလေ့လာရမှာပဲဖြစ်ပါတယ်။web designs တွေမှာဆိုရင် footer တွေက page ရဲ့အောက်ခြေမှာ sticky အနေနဲ့တည်ရှိနေရာမှာဖြစ်ပါတယ်။ကျွန်တော်တို့ page မှာရှိတဲ့ content ကအောက်ကိုကျယ်နေတဲ့အချိန်ပဲဖြစ်ဖြစ်
+                    ကျဉ်းနေတဲ့အချိန်ပဲဖြစ်ဖြစ် footer ကတော့ page ရဲ့အောက်ခြေမှာရှိနေရမှာပဲဖြစ်ပါတယ်။footer တွေက page ရဲ့အောက်ခြေမှာမရှိပဲ အပေါ်ကိုတက်နေတာတွေကတော့ ကျွန်တော်တို့ layout problem တွေကြောင့်ပဲဖြစ်ပါလိမ့်မယ်။ကျွန်တော်တို့မှာ css တွေကိုအသုံး
+                    ပြုပြီး sticky footer တွေကိုတည်ဆောက်ဖို့အတွက်မတူညီတဲ့နည်းလမ်းတွေရှိပါတယ်။ကျွန်တော်တို့ပြောပြသွားမှာကတော့ popular ဖြစ်တဲ့နည်းလမ်းတစ်ခုဖြစ်ပါတယ်။အဲ့တာကတော့ css calculate function ကိုvh unit တွေနဲ့တွဲပြီးအသုံးပြုတဲ့နည်းလမ်းပဲဖြစ်ပါတယ်။အသုံးပြုပုံကတော့
+                    ပထမကျွန်တော်တို့ရဲ့ html document ထဲမှာ footer ကို အခြားcontent တွေနဲ့ခွဲထုပ်ဖို့အတွက် အခြား content တွေကို div tag ထဲမှာထည့်ထားပေးရပါမယ်။အဲ့ဒီနောက်ကျွန်တော်တို့က CSS မှာအဲ့ဒီ div tagရဲ့ min-height ကို calc function နဲ့သတ်မှတ်ပေးထားရမှာပဲဖြစ်ပါတယ်။ဥပမာထဲမှာပိုပြီးလေ့လာနိုင်ပါတယ်။အဲ့ဒီထဲမှာပါတဲ့
+                    vh ဆိုတာကတော့ view port ရဲ့ realtive unit ဖြစ်တဲ့ view port height ကိုဆိုလိုပါတယ်။1vh က 1% of viewport နဲ့တူညီပါတယ်။ calc function ဆိုတာကတော့ css ထဲမှာရှိတဲ့တန်ဖိုးတွေကိုသတ်မှတ်တဲ့အခါမှာသုံးနိုင်တဲ့ function ပဲဖြစ်ပါတယ်။နှုတ်ခြင်း
+                    ပေါင်းခြင်း မြှောက်ခြင်း စားခြင်းတွေပြုလုပ်နိုင်ပြီးတော့ result တွေကိုထုပ်ပြီးသတ်မှတ်ပေးတာဖြစ်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+@media (min-width: 769px) {
+.wrap {
+    min-height: calc(100vh - 89px);
+}
+}
+                    </code></pre>
+                </p>
+                <h3 class="mb-4 small-title" id="section3">Controlling layout with CSS Display Modes</h3>
+                <p>
+
+                    layout တွေကို CSS Display modes တွေနဲ့ဘယ်လိုထိန်းချုပ်ရမလဲဆိုတာတွေကိုကျွန်တော်တို့လေ့လာသွားရမှာဖြစ်ပါတယ်။အသုံးအများဆုံး CSS Display Modes တွေကတော့ block ,inline block ,inline စတာတွေပဲဖြစ်ပါတယ်။အဲ့တာတွေကြားထဲမှာရှိတဲ့ခြားနားချက်တွေကိုကျွန်တော်တို့ကနားလည်ထားရပါမယ်။ကျွန်တော်တို့
+                    webpage ထဲမှာရှိတဲ့ content တွေ element တွေက rectangle box ထဲမှာတည်ရှိတာပဲဖြစ်ပါတယ်။ block level element တွေကတော့ content တွေကိုရိုးရှင်းစွာတစ်ခုချင်းစီ block ပြုလုပ်ပြီးဖော်ပြတာပဲဖြစ်ပါတယ်။အဲ့ဒီ content တွေကြားထဲမှာလည်း line break
+                    တွေပြုလုပ်ပေးပါတယ်။ inline element ကတော့ image တွေ link tag တွေ span tag စတာတွေကိုဖော်ပြတဲ့အခါမှာအသုံးပြုတာဖြစ်ပြီးတော့ layout ပေါ်မှာတော့ Line break တွေပြုလုပ်ပေးမှာမဟုတ်ပါဘူး။inline တွေကိုအသုံးပြုတဲ့အခါမှာ element တွေကတူညီတဲ့ line
+                    တစ်ခုထဲပေါ်မှာတည်ရှိမှာပဲဖြစ်ပါတယ်။inline အသုံးပြုထားတဲ့ element တွေကို width တွေ့height တွေ margin-top တွေ button တွေ သတ်မှတ်ပေးရင်လည်းအလုပ်လုပ်မှာမဟုတ်ပါဘူး။ဒါပေမယ့် Inline element တွေကတစ်ခုနဲ့တစ်ခု float ပြုလုပ်ပေးနိုင်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+
+.name,
+.main-nav,
+.main-nav li {
+display: inline-block;
+}
+.name {
+width: 240px;
+margin-right: 50px;
+} 
+                    </code></pre>
+                </p>
+
+                <h3 class="mb-4 small-title" id="section4">Layout with Float Property</h3>
+
+                <p>
+
+                    float တွေဟာ css layout တွေမှာအသုံးပြုမှုအများဆုံး tools တွေပဲဖြစ်ပါတယ်။layout တွေမှာဆိုရင် Popular အဖြစ်ဆုံး Method တစ်ခုလည်းဖြစ်ပါတယ်။အဲ့ဒီအတွက်ကြောင့်ကျွန်တော်တို့က float ရဲ့မူလ concept တွေကိုနားလည်ထားရပါမယ်။websites တွေအများစုရဲ့ layout တွေထဲမှာ image
+                    တွေ content တွေရဲ့ပတ်လည်မှာ float ဖြစ်နေတဲ့ text paragraph ကိုကျွန်တော်တို့မကြာခနမြင်ဘူးပါလိမ့်မယ်။float တွေဟာ inline-block method နဲ့ပုံစံတူပြီးတော့ကျွန်တော်တို့တွေ အလျှားလိုက် navigation တွေ menu တွေ column တွေကိုတည်ဆောက်နိုင်တာပဲဖြစ်ပါတယ်။
+                    အဲ့ဒီနှစ်ခုရဲ့အကြီးမားဆုံးခြားနားချက်ကတော့ float element တွေဟာပုံမှန် document တွေရဲ့အပြင်ဘက်ကိုပါယူပြီးfloat လုပ်နိုင်ပါတယ်။ပုံမှန်အားဖြင့် HTML မှာ element တွေကိုအစဉ်လိုက်စီပြီးတော့တည်ဆောက်ပေးပါတယ်အဲ့တာကို normal document flow လို့ခေါ်ပါတယ်။အဲ့ဒီ
+                    document flow တွေကိုကျွန်တော်တို့က float တွေသုံးပြီးပြောင်းလဲနိုင်ပါတယ်။ float တွေကိုအသုံးပြုတဲ့အခါမှာ element တွေကိုကျွန်တော်တို့ရွှေ့ထားချင်တဲ့နေရာကိုရွှေ့လို့ရပါတယ်။ဥပမာကျွန်တော်တို့ ပုံကိုရွှေ့ပြီးထားမယ်ဆိုရင်တော့စာသားတွေကပုံရဲ့ဘေးပတ်လည်မှာပေါ်နေမှာပဲဖြစ်ပါတယ်။အဲ့တာတွေကိုတော့ကျွန်တော်တို့က
+                    padding တွေ margin တွေသတ်မှတ်ပြီးခြားနိုင်ပါတယ်။ ကျွန်တောတို့တွေက inline-block method တွေကို layout တွေရဲ့ navigation items တွေကို side by side ထားဖို့အတွက်နဲ့ရိုးရှင်းတဲ့ two-column layout တွေကိုတည်ဆောက်ဖို့အတွက်အသုံးပြုနိုင်ပါတယ်။နောက်ထပ်ကျွန်တော်တို့
+                    center နဲ့ vertical alignment တွေကိုထိန်းညှိဖို့လိုအပ်တဲ့အခါတွေမှာလည်းအသုံးပြုနိုင်ပါတယ်။content တွေကို element ရဲ့ဘယ်ဘက်သို့မဟုတ်ညာဘက်ကို flow ပြုလုပ်ချင်တဲ့အခါတွေမှာလည်း float ကိုအသုံးပြုပါတယ်။float တွေက elements တွေကြားထဲမှာ default
+                    horizontal white space တွေကိုမတည်ဆောက်နိုင်ပါဘူး။ကျွန်တော်တို့က container တွေရဲ့အလုပ်လုပ်ပုံတွေကိုလည်းသတိပြုမိဖို့လိုအပ်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+.feat-img {             /* Floating image to the left of paragraph */ 
+width: 300px;
+float: left;
+margin-top: 5px;
+margin-right: 25px;
+margin-bottom: 25px;
+padding: 10px;
+border: solid 1px #d9e4ea;
+}
+                </code></pre>
+                </p>
+
+                <h3 class="mb-4 small-title" id="section5">Overflow & Clearfix</h3>
+                <p>
+                    နောက်ထက်ရိုးရှင်းပြီး flexable ဖြစ်တဲ့နည်းလမ်းတွေကတော့element တွေကို overflow ပြုလုပ်ပြီး hidden မှာauto ပြုလုပ်ပေးထားမှာဖြစ်ပါတယ်။အဲ့တာကကျွန်တော်တို့ layout ထဲမှာ element တွေကို fixed ဖြစ်အောင်ပြုလုပ်ပေးနိုင်ပါတယ်။ နောက်ထပ်နည်းလမ်းကတော့ float ကို css
+                    pseudo element တွေနဲ့ clear ပြုလုပ်ပေးတာပဲဖြစ်ပါတယ်။အဲ့တာအတွက်ကျွန်တော်တို့က clearfix ဆိုတဲ့ method ကိုအသုံးပြုပြီးတော့အဲ့ဒီထဲမှာပါတဲ့ content ဆိုတာကတော့CSS တွေကြားထဲမှာရှိတဲ့ blank pseudo element တွေကို generate လုပ်ပေးဖို့အတွက်ပဲဖြစ်ပါတယ်။
+                    display မှာ table value ကိုအသုံးပြုတာကတော့ pseudo element ကို block level table အဖြစ်ဖော်ပြဖို့ရန်အတွက်ဖြစ်ပါတယ်။နောက်ထပ် clear ဆိုတဲ့ decoration မှာတော့ clear property က float နဲ့တိုက်ရိုက်ဆက်နွယ်နေပြီးတော့အရေးကြီးတာတွေကိုထိန်းချုပ်နိုင်တာပဲဖြစ်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+.main-header {
+background: rgb(69, 235, 221);
+padding-top: 1.5em;
+padding-bottom: 1.5em;
+margin-bottom: 30px;
+overflow: hidden;
+}
+@media (min-width: 769px) {        /* clear fix */
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+}
+                 </code></pre>
+                    <a href="../CSS Layout Basic/index.html" class="See_page" target="_blank">See Examp Page</a>
+                </p>
+                <h3 class="mb-4 small-title" id="section6">Example Project For CSS Layout Basics</h3>
+                <p><a href="../CSS Layout Basic/CSS_Layout_Project.html" target="_blank" class="See_page">View Example Project</a>
+                    <br><br>
+                    <a href="../CSS Layout Basic/base_style_Project.css" target="_blank">CSS Document</a>
+                    <br>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!--  /about -->
+        <!-- signup form -->
+        <hr>
+        <div id="about" class="row pb-2 text-body border-top px-3">
+            <!-- <div class="row-md row-xl-5">
+                <h3><strong>About Me</strong></h3>
+                <img src="http://placeimg.com/200/200/people/any" alt="Myo Min ,Web developer" class="img-thumbnail rounded-circle my-2 d-none d-md-block">
+                <h4>Myo Min Htet ,Web Developer
+                </h4>
+
+                <p>I have been learning about the course from another lesson club.And then I have written this site to refer to and studying for the beginner.
+                </p>
+
+
+                <h3 class="section-title">Summary of Qualifications
+                </h3>
+                <ul>
+                    <li>Experience as a freelance web developer
+                    </li>
+                    <li>Experience with HTML, CSS, and JavaScript
+                    </li>
+                    <li>Bachelor of Science
+                    </li>
+                </ul>
+
+            </div> -->
+            <div class="col-md col-xl-5 mt-lg-5">
+                <a href="http://twitter.com" class="social twitter pt-3">
+                    <img src="../images/Twitter.png" alt="Twitter logo" class="social-ico">
+                </a>
+                <a href="http://facebook.com/mynameismyominhtet" class="social Facebook pt-3">
+                    <img src="../images/facebook.png" alt="facebook logo" class="social-ico">
+                </a>
+                <a href="http://linkedin.com" class="social Linkin pt-3">
+                    <img src="../images/LinkedIn.png" alt="linkedin logo" class="social-ico">
+                </a>
+            </div>
+            <div class="col-md col-xl-5 ml-auto mt-2">
+                <p><strong>Can Request Example project File</strong></p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="inpt-group-btn">
+                 <button class="btn btn-primary" type="button">Sign up</button>
+             </span>
+                </div>
+            </div>
+
+        </div>
+        <!-- signup form -->
+        <!-- footer -->
+        <div class="row pb-2" id="copyright">
+
+            <div class="col-md text-md-right">
+                <small>&copy; 2019  Myo Min Htet</small>
+            </div>
+
+        </div>
+        <!-- /footer -->
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

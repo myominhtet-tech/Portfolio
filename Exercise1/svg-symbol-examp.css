@@ -1,0 +1,18 @@
+html {
+    text-align: center;
+    padding-top: 5em;
+}
+
+.heart-red {
+    fill: #c44;
+    color: #d35f5f;
+}
+.heart-green {
+    fill: #41af5d;
+    color: #5ece7f;
+}
+
+.heart-blue {
+    fill: #2e97af;
+    color: #38acd0;
+}

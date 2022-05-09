@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Variables lesson</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kumar+One+Outline|Slabo+27px|Unlock" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Myanmar3, Yunghkio;
+        }
+        
+        #about {
+            background-color: #0000002e;
+        }
+        
+        #copyright {
+            background-color: #0000002e;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/default.css">
+    <script src="../highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand order-1 mr-0" href="http://zwelab.com/mmh/index.html" target="_blank">LEARN COURSES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html">Home</a>
+                    <a class="nav-item nav-link" href="#speakers">Courses</a>
+
+                    <a class="nav-item nav-link" href="#lesson">Lesson</a>
+                    <a class="mv-item nav-link" href="Volcubularies.html">Vocabularies</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron10 bg-info text-white mb-0">
+        <!-- <img src="jumbo-background.jpg" class="card-img" alt="background image"> -->
+        <div class="container text-sm-center pt-5">
+
+            <br>
+            <br>
+            <h1 class="display-5 text-center text-muted"> CSS VARIABLES LESSONS</h1>
+        </div>
+    </div>
+    <!-- /jumbotron -->
+
+    <div class="container-fluid pt-4">
+
+
+        <!--speakers-->
+
+
+        <!-- test about -->
+
+        <!-- about -->
+
+        <div id="lesson" class="row border-top pt-3">
+            <div class="col-md-4 order-md-1 pb-4 ml-md-3">
+                <h3 class="mb-4">What You'll Learn</h3>
+                <div class="list-group">
+                    <a href="#section1" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>CSS Variables</strong></a>
+                    <a href="#section2" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Decalring & Using CSS Variables</strong></a>
+                    <a href="#section3" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>SVG Images width Variables</strong></a>
+                    <a href="#section4" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>CSS Variables with JavaScript</strong></a>
+
+
+                </div>
+            </div>
+
+            <div class="col-lg order-lg-3 mx-md-4">
+                <h3 class="mb-4 small-title" id="section1">CSS Variables</h3>
+                <p>
+                    ကျွန်တော်တို့တွေက CSS တွေကိုထပ်ခါထပ်ခါအများကြီးရေးမိတဲ့အခါမှာ ကျွန်တော်တို့ web page မှာအလုပ်လုပ်တာနှေးကွေးသွားပါလိမ့်မယ်။ကျွန်တော်တို့တွေရဲ့ style sheet ထဲမှာ value တွေကိုထည့်ဖို့အတွက် variables တွေကိုကြေငြာပြီးအသုံးပြုခဲ့ကြပြီးဖြစ်ပါတယ်။ Variables တွေကို
+                    CSS ထဲမှာတိုက်ရိုက်သုံးမယ်ဆိုရင်တော့ ကောင်းမွန်တဲ့ processing tools တွေမလိုအပ်ပါဘူး။ Variables တွေက programming ထဲမှာအရေးအပါဆုံး concept တစ်ခုဖြစ်ပါတယ်။ကျွန်တော်တို့ ရဲ့ stylesheet ထဲမှာပြန်ပြီးအသုံးပြုနိုင်ပြီး CSS variables တွေက
+                    values တွေကိုရည်ညွန်းဖို့အတွက်ပဲဖြစ်ပါတယ်။ CSS variables တွေကိုအရင်က custom Properties လို့သတ်မှတ်ကြပါတယ်။ဘာ့ကြောင့်လဲဆိုတော့အဲ့တာတွေက regular CSS properties တွေနဲ့ပုံစံတူပြီးတော့ custom property notation လို့ခေါ်တဲ့ special syntex
+                    ကိုအသုံးပြုပါတယ်။ property name ရဲ့ရှေ့မှာ dashes နှစ်ခုရှိတာက custom property ဆိုတာကို browser ကိုပြောပြပါတယ်။ အဲ့တာကြောင့်ကျန်တော်တို့က dashed နှစ်ခုနဲ့စရေးပြီး property တွေကိုနာမ်မည်ပေးနိုင်ပါတယ်။အဲ့တာကို technically အရတော့ custom
+                    properties လို့ခေါ်ပြီးတော့ developer တွေအများစုကတော့ CSS Variables လို့ခေါ်ပါတယ်။CSS variables တွေကိုအသုံးပြုခြင်းက ကျွန်တော်တို့ရဲ့ stylesheet ထဲမှာရှိတဲ့ variables တေါထပ်ခါထပ်ဖြစ်တာတွေကိုလျော့ချပေးပါတယ်။(--property-name: value;)
+                    ဆိုပြီးရေးနိုင်ပြီးတော့ ကျွန်တော်တို့ရဲ့code တွေထဲကနေရည်ညွန်းချင်တယ်ဆိုရင်တော့ var(--property-name) ဆိုတာကိုအသုံးပြုနိုင်ပါတယ်။ပြီးတော့ css variables တွေက game changer ဖြစ်ပြီးတော့ preprocessor variable တွေထက်ပိုပြီးပြုလုပ်နိုင်ပါတယ်။
+
+                </p>
+                <h3 class="mb-4 small-title" id="section2">Decalring & Using CSS Variables</h3>
+                <p>
+                    CSS variables တွေကိုအသုံးပြုတဲ့အခါမှာကျွန်တော်တို့ရဲ့ stylesheet ထဲမှာ process အဆင့်နှစ်ခုရှိပါတယ်။ပထမတစ်ခုကတော့ custom property notation တွေကိုအသုံးပြုပြီးတော့ selector ထဲမှာ variable တွေကိုကြေငြာရမှာပဲဖြစ်ပါတယ်။variable သို့ property name တွေကိုရည်ညွှန်းတဲ့အခါမှာတော့
+                    var() ဆိုတဲ့ function ကိုအသုံးပြုပါတယ်။ အောက်ပါဥပမာထဲမှာ CSS variables တွေကိုကြေငြာနည်းနဲ့ပြန်ခေါ်ပြီးအသုံးပြုပုံတွေကိုထပ်ပြီးလေ့လာနိုင်ပါတယ်။ CSS variables တွေက preprocessor variables တွေနဲ့တူညီအောင်မတည်ဆောက်နိုင်ပါဘူး။ဒါပေမယ့်တူညီတဲ့
+                    functions တွေတော့တွေ့ရပါတယ်။CSS variables တွေက things အများကြီးကိုပြုလုပ်နိုင်ပြီးတော့ preprocessor variables တွေကတော့မလုပ်နိုင်ပါဘူး။preprocessors တွေအလုပ်လုပ်တာကိုကျွန်တော်တို့ browser ထဲမှာမြင်ရမှာမဟုတ်ပါဘူး။CSS တွေကို compile လုပ်တဲ့အချိန်မှာ
+                    preprocessors တွေက variables တွေကို static values တွေနဲ့အစားထိုးတာပဲဖြစ်ပါတယ်။သူတို့က DOM structure တွေကိုသတိမထားပါဘူး။အခြားတစ်ဖက်မှာတော့ css variables တွေက flexibles ပိုဖြစ်ပါတယ်။ဘာ့ကြောင့်လဲဆိုတော့အဲ့တာတွေကို browser က runtime ပြုလုပ်တဲ့အချိန်မှာ
+                    update လုပ်ပေးလို့ပဲဖြစ်ပါတယ်။css variables တွေမှာ dynamic capabilities တွေရှိပါတယ်။preprocessor variables တွေကိုကျွန်တော်တို့ inline stylesheet တွေကနေလည်းခေါ်ပြီးအသုံးပြုနိုင်ပါတယ်။
+                    <pre><code class="css">
+/* VARIABLES ----------------------------- */
+
+:root {
+--color-primary: #278da4;
+--color-secondary: #b13c69;
+--color-bg: #3acec2;
+--color-bg-light: #009fe1;
+--gradient: var(--color-bg-light), var(--color);
+--font-stack-primary: 'Raleway', sans-serif;
+--font-stack-secondary: 'Bree Serif', serif;
+}
+
+
+/* BASE STYLES --------------------------- */
+
+body {
+font-family: var(--font-stack-primary);
+}
+
+h2 {
+font-family: var(--font-stack-secondary);
+}
+
+a,
+h2 {
+color: var(--color-primary);
+}
+                    </code></pre>
+                </p>
+
+                <p>
+                    var functions တွေကနောက်ထပ် arguments တွေကိုလက်ခံနိုင်ပြီး fall back value တွေကဲ့သိ့ုပြုမူလုပ်ဆောင်ပါတယ်။second argument က variable အတွက်အစားထိုးပြီးအသုံးပြုချင်းဖြစ်ပါတယ်။fall back values တွေကိုအသုံးပြုပြီး ကျွန်တော်တို့ element အတွက် defensive styles
+                    တွေကိုရေးနိုင်ပါတယ်။နောက်ထပ်ကျွန်တော်တို့ရဲ့ stylesheet ကိုလည်းပဲ sharable နဲ့ extensible တွေပြုလုပ်နိုင်ပါတယ်။CSS variables တွေအသုံးပြုပြီးတော့လည်းကျွန်တော်တို့ကရိုးရှင်းတဲ့တွက်ချက်မှုတွေပြုလုပ်နိုင်ပါတယ်။အဲ့လိုတွက်ချက်ဖို့အတွက်ကတော့ကျွန်တော်တို့က
+                    CSS calc function တွေအသုံးပြုနိုင်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+                                
+header {
+background: linear-gradient(var(--gradient)),url('..img/bg.jpg') no-repeat;
+background-blend-mode: multiply;
+background-size: cover;
+margin-bottom: calc(var(--spacing)* 1em); /* 2em */
+}
+
+/* COMPONENT STYLES -------------------------*/
+
+.main-nav li {
+margin: 0 calc(var(--spacing)* 10px);
+}
+                            </code></pre>
+                </p>
+                <h3 class="mb-4 small-title" id="section3">SVG Images width Variables</h3>
+
+                <p>
+                    element ရဲ့ style attributes အတွင်းမှာ update နဲ့ altered လုပ်နိုင်တာတွေကိုကျွန်တော်တို့လေ့လာခဲ့ပြီးဖြစ်ပါတယ်။အဲ့လိုပါပဲကျွန်တော်တို့က style တွေကိုပြုပြင်ဖို့ရန် နဲ့ svg တွေထဲမှာ presentation attributes တွေကိုပြုပြင်ဖို့ရန်အတွက် CSS variables တွေကိုအသုံးပြုနိုင်ပါတယ်။ဒီတစ်ခာမှာတော့ကျွန်တော်တို့
+                    SVG icons တွေကို CSS variables တွေအသုံးပြုပြီးလွယ်ကူစွာတည်ဆောက်နိုင်တာကိုလေ့လာသွားမှာပဲဖြစ်ပါတယ်။အောက်ပါ ဥပမာထဲမှာတော့ svg image တွေကိုကျွန်တော်တို့ fill ဆိုတာကိုကြေငြာပြီးအသုံးပြုပြထားတာဖြစ်ပါတယ်။နောက်ထပ်ကျွန်တော်တို့ var ကို values
+                    အဖြစ်အသုံးပြုနိုင်ပြီး အခြား svg attributes ဖြစ်တဲ့ stroke လိုမျိုး attribute ပဲဖြစ်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+/*==============================
+Using CSS Variables in Svg image
+============================== */
+
+.heart-red {
+--primary-fill: #c44;
+--secondary-fill: #d35f5f;
+}
+
+.heart-green {
+--primary-fill: #41af5d;
+--secondary-fill: #5ece7f;
+}
+
+.heart-blue {
+--primary-fill: #2e97af;
+--secondary-fill: #38acd0;
+}
+
+/*==============================
+Creating Svg Image in webpage
+===============================*/
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+&lt;title&gt;
+Svg creating
+&lt;/title&gt;
+&lt;link rel="stylesheet" href="../CSS_Variables/SVG_use.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;!-- HEART GRAPHIC --&gt;
+
+&lt;svg xmls="http://www.w3.org/2000/svg" style="display:none;"&gt;
+    &lt;symbol id="heart" viewBox="0 0 113.0 96.2"&gt;
+        &lt;path fill="var(--secondary-fill)" d="M96 0L67.5 5.2 56.9 23.3v72.8l56.9-55.6z" astroke="var(--primary-fill)"/&gt;
+        &lt;path fill="var(--primary-fill)" d="M46.4 5.3L17.9.1 0 40.6l56.9 55.6.1-72.8z"/&gt;
+    &lt;/symbol&gt;
+&lt;/svg&gt;
+
+&lt;div class="main"&gt;
+&lt;!-- Red --&gt;
+&lt;svg width="160" height="160" class="heart-red"&gt;
+        &lt;use Xlink:href="#heart"/&gt;
+    &lt;/svg&gt;
+
+&lt;!-- Green --&gt;
+&lt;svg width="140" height="140" class="heart-green"&gt;
+        &lt;use xlink:href="#heart"/&gt;
+    &lt;/svg&gt;
+
+&lt;!-- Blue --&gt;
+&lt;svg width="120" height="120" class="heart-blue"&gt;
+        &lt;use xlink:href="#heart"/&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+                        </code></pre>
+                    <a href="../CSS_Variables/SVG_use.html" class="See_page" target="_blank">See Examp Page</a>
+                </p>
+                <h3 class="mb-4 small-title" id="section4">CSS Variables with JavaScript</h3>
+
+                <p>
+                    CSS variables တွေက cascade နဲ့ inheritance တွေကိုသုံးပြီးတော့ update မလုပ်ပါဘူး။ကျွန်တော်တို့တွေက javascript တွေကနေပြီးတော့ CSS variables တွေကို read , write (သို့) get , set တွေပြုလုပ်နိုင်ပါတယ်။get PropertyValue ကတော့ custom property ရဲ့ value တွေကိုရယူဖို့အတွက်အသုံးပြုပြီးတော့
+                    setProperty method ကိုတော့ value တွေကိုထားဖို့အတွက်အသုံးပြုတာပဲဖြစ်ပါတယ်။ထပ်ပြီးလေ့လာချင်တယ်ဆိုရင်တော့ ကျွန်တော်တို့ <a href="https://googlechrome.github.io/samples/css-custom-properties/index.html" target="_blank">CSS Custom Properties (CSS Variables) Sample</a>                    မှာသွားပြီးလေ့လာနိုင်ပါတယ်။အဲ့ဒီထဲမှာ CSS code snipped တွေနဲ့ javaScript snipped တွေကိုပါဖော်ပြပေးထားပါတယ်။အောက်ပါ ဥပမာထဲမှာတော့ CSS variables တွေကို JavaScript တွေနဲ့တွဲပြီးအသုံးပြုထားတဲ့ page ကိုဖော်ပြထားတာပဲဖြစ်ပါတယ်။ var function
+                    အလုပ်လုပ်တဲ့အခါမှာ custom properties တွေကဘယ်နေရာမှာအလုပ်လုပ်တယ် ဘယ်နေရာမှာအလုပ်မလုပ်ဘူးဆိုတာကိုသိသင့်နေပြီဖြစ်ပါတယ်။Selector ထဲမှာအသုံးပြုတဲ့အခါမှာတော့ var function တွေက invalid ဖြစ်ပါတယ်။var တွေကိုကျွန်တော်တို့ CSS values တွေထဲမှာပဲအသုံးပြုနိုင်မှာဖြစ်ပါတယ်။နောက်ထပ်ကျွန်တော်တို့
+                    Media query expression ထဲမှာလည်း var တွေကိုအသုံးပြုနိုင်မှာမဟုတ်ပါဘူး။နောက်ဆုံးကျွန်တော်တို့ length value တွေကိုတည်ဆောက်ဖို့အတွက်တောင်မှကျွန်တော်တို့ var function တွေကိုအသုံးမပြုနိုင်ပါဘူး။ Variable names တွေက case sensitive ဖြစ်နိုင်ပါတယ်။CSS
+                    Variables တွေကအသုံးဝင်ပြီးတော့ ကောင်းမွန်တဲ့ feature တစ်ခုပဲဖြစ်ပါတယ်။
+                    <br>
+                    <a href="https://codepen.io/wesbos/full/adQjoY" class="See_page" target="_blank">See Example Page</a>
+                </p>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!--  /about -->
+        <!-- signup form -->
+        <hr>
+        <div id="about" class="row pb-2 text-body border-top px-3">
+            <!-- <div class="row-md row-xl-5">
+                <h3><strong>About Me</strong></h3>
+                <img src="http://placeimg.com/200/200/people/any" alt="Myo Min ,Web developer" class="img-thumbnail rounded-circle my-2 d-none d-md-block">
+                <h4>Myo Min Htet ,Web Developer
+                </h4>
+
+                <p>I have been learning about the course from another lesson club.And then I have written this site to refer to and studying for the beginner.
+                </p>
+
+
+                <h3 class="section-title">Summary of Qualifications
+                </h3>
+                <ul>
+                    <li>Experience as a freelance web developer
+                    </li>
+                    <li>Experience with HTML, CSS, and JavaScript
+                    </li>
+                    <li>Bachelor of Science
+                    </li>
+                </ul>
+
+            </div> -->
+            <div class="col-md col-xl-5 mt-lg-5">
+                <a href="http://twitter.com" class="social twitter pt-3">
+                    <img src="../images/Twitter.png" alt="Twitter logo" class="social-ico">
+                </a>
+                <a href="http://facebook.com/mynameismyominhtet" class="social Facebook pt-3">
+                    <img src="../images/facebook.png" alt="facebook logo" class="social-ico">
+                </a>
+                <a href="http://linkedin.com" class="social Linkin pt-3">
+                    <img src="../images/LinkedIn.png" alt="linkedin logo" class="social-ico">
+                </a>
+            </div>
+            <div class="col-md col-xl-5 ml-auto mt-2">
+                <p><strong>Can Request Example project File</strong></p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="inpt-group-btn">
+                 <button class="btn btn-primary" type="button">Sign up</button>
+             </span>
+                </div>
+            </div>
+
+        </div>
+        <!-- signup form -->
+        <!-- footer -->
+        <div class="row pb-2" id="copyright">
+
+            <div class="col-md text-md-right">
+                <small>&copy; 2019  Myo Min Htet</small>
+            </div>
+
+        </div>
+        <!-- /footer -->
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

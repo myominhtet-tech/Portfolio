@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>CSS Selectors lesson</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kumar+One+Outline|Slabo+27px|Unlock" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Myanmar3, Yunghkio;
+        }
+        
+        #about {
+            background-color: #0000002e;
+        }
+        
+        #copyright {
+            background-color: #0000002e;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/default.css">
+    <script src="../highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand order-1 mr-0" href="http://zwelab.com/mmh/index.html" target="_blank">LEARN COURSES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html">Home</a>
+                    <a class="nav-item nav-link" href="#speakers">Courses</a>
+
+                    <a class="nav-item nav-link" href="#lesson">Lesson</a>
+                    <a class="mv-item nav-link" href="Volcubularies.html">Vocabularies</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron8 bg-info text-white mb-0">
+        <!-- <img src="jumbo-background.jpg" class="card-img" alt="background image"> -->
+        <div class="container text-sm-center pt-5">
+
+            <br>
+            <br>
+            <h1 class="display-5 text-center text-muted"> CSS SELECTORS LESSONS</h1>
+        </div>
+    </div>
+    <!-- /jumbotron -->
+
+    <div class="container-fluid pt-4">
+
+
+        <!--speakers-->
+
+
+        <!-- test about -->
+
+        <!-- about -->
+
+        <div id="lesson" class="row border-top pt-3">
+            <div class="col-md-4 order-md-1 pb-4 ml-md-3">
+                <h3 class="mb-4">What You'll Learn</h3>
+                <div class="list-group">
+                    <a href="#section1" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Introduction</strong></a>
+                    <a href="#section2" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Using Selectors</strong></a>
+                    <a href="#section3" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>DRY</strong></a>
+                    <a href="#section4" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Combinators</strong></a>
+                    <a href="#section5" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Pseudo Class</strong></a>
+                    <a href="#section6" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Substring Matching Attribute Selectors</strong></a>
+                    <a href="#section7" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Focus and Review Pseudo class</strong></a>
+                    <a href="#section8" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>nth-child Pseudo-class</strong></a>
+                    <a href="#section9" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Root & Target Pseudo Class</strong></a>
+                    <a href="#section10" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Negation Pseudo Class</strong></a>
+                    <a href="#section11" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Pseudo Elements</strong></a>
+                    <a href="#section12" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong>Before & After Pseudo Class</strong></a>
+
+                </div>
+            </div>
+
+            <div class="col-lg order-lg-3 mx-md-4">
+                <h3 class="mb-4 small-title" id="section1">Introduction</h3>
+
+                <p>
+                    အခုကျွန်တော်တို့ basic selector concepts တွေအကြောင်းကိုလေ့လာသွားမှာဖြစ်ပါတယ်။ကျွန်တော်တို့ CSS basics မှာ type,ID,class တွေနဲ့ decendant selectors တွေအကြောင်းကိုလေ့လာခဲ့ကြပြီးဖြစ်ပါတယ်။Selector တွေဟာ CSS တွေရဲ့အရေးအကြီးဆုံးအပိုင်းတွေနဲ့ powerful ဖြစ်တဲ့အပိုင်းတွေပဲဖြစ်ပါတယ်။ဘာ့ကြောင့်လဲဆိုတော့
+                    သူတို့က Html element တွေကို target လုပ်နိုင်ပြီး style တွေသတ်မှတ်နိုင်လို့ပဲဖြစ်ပါတယ်။ဒီတစ်ခါမှာတော့ကျွန်တော်တို့ attribute selectors, child selectors, selector combinators တွေနဲ့ အသုံးဝင်တဲ့ pseudo-classes တွေအကုန်လုံးကိုလေ့လာရမှာဖြစ်ပြီး
+                    core concepts ကိုပိုပြီးလေ့လာသွားမှာဖြစ်ပါတယ်။ selectors တွေရဲ့ထူးခြားချက်တွေ ရိုးရှင်းတဲ့ expressions တွေနဲ့အသုံးပြုနိုင်ပုံတွေ elements တွေကိုပေါင်းပြီးတော့ target လုပ်တာတွေကိုကျွန်တော်တို့ပိုပြီးမြင်နိုင်မှာပဲဖြစ်ပါတယ်။ ကျွန်တော်တို့
+                    special selectors တွေကိုအသုံးပြုမှာဖြစ်ပြီးတော့ pseudo-elements လို့ခေါ်ပါတယ်။CSS ထဲကနေမှ page ထဲကို content နဲ့ virtual elements တွေထည့်ဖို့အတွက်ပဲဖြစ်ပါတယ်။အဲ့တာတွေကိုလေ့လာပြီးတဲ့အခါမှာကျွန်တော်တို့ CSS selectors တွေရဲ့အလုပ်လုပ်ပုံတွေကောင်းမွန်ပြီး
+                    flexibility ဖြစ်တာတွေကိုနားလည်သွားမှာပဲဖြစ်ပါတယ်။ကျွန်တော်တို့ရဲ့အမြဲတမ်းအသုံးပြုနေကြဖြစ်တဲ့ CSS tool kit တစ်ခုကိုအသုံးပြုပြီးလုပ်ဆောင်ရမှာပဲဖြစ်ပါတယ်။selector တွေကိုကျွန်တော်တို့ကအမြဲတမ်းမှတ်မိနေစရာမလိုအပ်ပါဘူး။
+                </p>
+                <h3 class="mb-4 small-title" id="section2">Using Selectors</h3>
+                <p>
+                    Html elements တွေကအမျိုးမျိုးသော attributes အမျိုးအစားတွေကိုလက်ခံနိုင်ပါတယ်။ဥပမာ id attribute, class attribute, href နဲ့ title attribute တွေပဲဖြစ်ပါတယ်။ကောင်းမွန်တာတစ်ခုကတော့ CSS မှာ element မှာရှိတဲ့၎င်းရဲ့ဘယ် attributes နဲ့ values ကို target ပြုလုပ်နိုင်တာပဲဖြစ်ပါတယ်။အဲ့တာတွေကတော့
+                    elements တွေမှာ style လုပ်ဖို့အတွက်အမှန်တကယ်အသုံးဝင်တာပဲဖြစ်ပါတယ်။ကျွန်တော်တို့ဥပမာထဲမှာပြထားသလိုလက်တွေ့ရေးတဲ့အခါမှာ elements ပေါ်မှာအခြေခံပြီးတော့အဲ့တာရဲ့ attributes နဲ့ values တွေပေါ်မှာ target ထားပြီ attributes selector တွေကိုအသုံးပြုနိုင်ပါတယ်။ကျွန်တော်တို့ဟာ
+                    attribute selector တွေကိုရေးတဲ့အခါမှာ square bracket ထဲမှာ attribute nameကိုရေးပြီးအဲ့ဒီနောက်မှာတော့ curky braces ရေးပြီး property တွေ value တွေထည့်ရေးပေးရမှာပဲဖြစ်ပါတယ်။elements တွေကိုတိတိကျကျသတ်မှတ်နိုင်ဖို့အတွက် ကျွန်တော်တို့က element
+                    name တွေနဲ့ attributes တွေကိုပေါင်းပြီးတိတိကျကျခေါ်ပြီးသတ်မှတ်ပေးလို့ရပါတယ်။elements selectors တွေနဲ့ကွာဟမှုသိပ်မရှိပေမယ့် attributes တူတာတွေကိုပေါင်းပြီး styles တွေသတ်မှတ်နိုင်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+            /*======================
+            Using Selector
+            ======================*/                                 
+            form[class="form-contact"] {
+            padding: 20px 24px;
+            background: #f4f7f8;
+            }
+            
+            div[id="container"] {
+            max-width: 500px;
+            margin: auto;
+            }
+            
+            input[placeholder] {
+            background: #fdfee6;
+            }
+                        </code></pre>
+                    <a href="../Selectors/first-examp.html" target="_blank" class="See_page">See Examp Page</a>
+                    <br>
+                    <br> ဒီတစ်ခါမှာတော့ကျွန်တော်တို့ အပေါ်မှာပြခဲ့တဲ့ workspace ပေါ်မှာထပ်ပြီး attributes selector ကိုသုံးပြီးပြုပြင်ပေးမှာဖြစ်ပါတယ်။buttton တွေ submit တွေပေါ်မှာ Mouse pointer ရောက်သွားတဲ့အခါပြောင်းသွားတာကိုဥပမာထဲမှာထပ်ရေးပြမှာဖြစ်ပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့က
+                    attributes တွေကို selector တွေနဲ့တွဲပြီးတိကျအောင်ခေါ်ပေးမှာပဲဖြစ်ပါတယ်။selector တွေကိုအတူတူပေါင်းရေးတဲ့ အခါမှာတော့ comma ခံပြီးရေးပေးရပါတယ်။အဲ့တာတွေရဲ့ အတွင်းထဲမှာတော့ pointer ကိုပြောင်းမှာဖြစ်တဲ့အတွက် courser ဆိုတဲ့ attribute နောက်မှာ
+                    pointer ဆိုတဲ့ value ကိုထည့်ပေးရမှာပဲဖြစ်ပါတယ်။အောက်ပါဥပမာထဲမှာကျွန်တော်တို့cursor အတွက်ရေးပြထားတာကိုလေ့လာနိုင်ပါတယ်။
+                    <br>
+                    <pre><code class="css">                    
+            input[type="button"],
+            input[type="reset"],
+            input[type="submit"] {
+            cursor: pointer;
+            }
+            
+            a[target='_blank'] {
+            color: #39add1;
+            text-decoration: none;
+            border-bottom: 1px dotted;
+            } 
+                        </code></pre>
+
+                </p>
+
+                <h3 class="mb-4 small-title" id="section3">DRY</h3>
+                <p>
+                    အခုကျွန်တော်တို့ဆက်ပြီးလေ့လာမှာကတော့ကြီးမားတဲ့ benefit တစ်ခုဖြစ်ပြီး style တွေကိုကြေငြာတဲ့အခါမှာထတူညီတာတွေထပ်မနေစေရန်အတွက်ရှောင်ရှားပေးတာပဲဖြစ်ပါတယ်။css ထဲမှာ(သို့)ရေဘူရအားဖြင့် web development ထဲမှာဆိုရင်အဲ့တာတွေကအသုံးပြုဖို့အတွက်အကောင်းဆုံးပဲဖြစ်ပြီး
+                    DRY လို့ခေါ်ပါတယ်။အရှည်ကတော့ Don't Repeat Yourself ဖြစ်ပြီးအဓိကရည်ရွယ်ချက်ကတော့တူညီတဲ့ code တွေကိုထပ်ခါရေးထားတွေကိုရှောင်ရှားဖို့ပဲဖြစ်ပါတယ်။ကျွန်တော်တို့ CSS ထဲမှာ stylesheet တစ်ခုကိုအကြိမ်ရေအများကြီးရေးထားတာရှိတယ်ဆိုရင်ကျွန်တော်တို့ပြန်ပြီးပြုပြင်တဲ့အခါမှာထိန်းသိမ်းဖို့ခက်ခဲပါလိမ့်မယ်။အဲ့တာတွေပြောင်းဖို့ဆိုရင်ကျွန်တော်တို့
+                    rule တစ်ခုအစားကျွန်တော်တို့ rules တွေအများကြီးလိုအပ်ပါလိမ့်မယ်။အဲ့တာတွေတင်မကပဲ stylesheet ရဲ့size ကလည်းကြီးမားနေပါလိမ့်မယ်။ကျွန်တော်တို့ရဲ့ Page ကို browser ပေါ်မှာrun တဲ့အခါမှာအချိန်တွေပိုပြီးကြာနေပါလိမ့်မယ်။အဲ့တာကြောင့်ကျွန်တော်တို့ကပိုပြီးကောင်းတဲ့
+                    idea တစ်ခုဖြစ်တဲ့ property တစ်ခုစီကို value တွေအများကြီးနဲ့တစ်ခါပဲသတ်မှတ်ပေးမှာဖြစ်ပါတယ်။IDတွေကပြန်ပြီးအသုံးပြုလို့မရဘူးဆိုတာကိုကျွန်တော်တို့သိကတည်းက DRY methodology တွေက css တွေနဲ့အကောင်းဆုံးအလုပ်လုပ်ပါတယ်။ကျွန်တော်တို့ Page ထဲမှာတူညီတဲ့
+                    STYLE တွေကိုသတ်မှတ်ချင်တဲ့အခါ DIY method ကိုအသုံးပြုပါတယ်။DRY method အလုပ်လုပ်ပုံကတော့ကျွန်တော်တို့ style ပြုလုပ်မဲ့ elementsတွေကို class တူညီတာကိုပေးခဲ့ပြီး CSS ထဲမှာအဲ့ဒီ class ကိုခေါ်သုံးတာပဲဖြစ်ပါတယ်။elements တွေမှာ class တွေသတ်မှတ်တာရှိပြီးသားဆိုလျှင်လည်းထပ်ပြီးသတ်မှတ်နိုင်ပါတယ်။class
+                    တွေအများကြီးသတ်မှတ်တဲ့နည်းကတော့ ပထမသတ်မှတ်ထားတဲ့ class nameရဲ့နောက်မှာ space ထားပြီးကျွန်တော်တို့ထားချင်တဲ့ class name ကိုထားပြီးသတ်မှတ်နိုင်ပါတယ်။အဲ့ဒီလိုတွေအသုံးပြုချင်းက css file size ကိုလည်းလျော့ချပေးပြီးပိုပြီးမြန်ဆန်စေပါတယ်။ဥပမာထဲမှာဆိုရင်
+                    border radius styles တွေ button တွေကိုစုပြီးသတ်မှတ်ပြထားပါတယ်။
+                    <br>
+                    <pre><code class="css">
+                        
+            /*-----DRY Classes ----------------*/
+            
+            .br {
+            border-radius: .5em;
+            }
+            
+            .avater {
+            display: block;
+            margin: 0 auto 2em;
+            }
+            
+            .rounded {
+            border-radius: 50%;
+            }
+            
+            .btn {                              /* composing call buttons */
+            cursor: pointer;
+            font-size: .875em;
+            font-weight: 400;
+            color: #fff;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-transform: uppercase;
+            }
+            
+            .btn:hover {
+            opacity: .75;
+            }
+            
+            .default {
+            background-color: #52bab3;
+            }
+            
+            .error {
+            background-color: #ff784f;
+            }
+            
+            @media (min-width: 769px) {
+            .inli {
+            width: auto;
+            display: inline-block;
+            }
+            }
+                    </code></pre>
+                    <a href="../Selectors/DRY_method.html" target="_blank" class="See_page">See Examp Page</a>
+                </p>
+
+                <h3 class="mb-4 small-title" id="section4">Combinators</h3>
+
+
+                <p>
+                    Combinators တွေက selectors တွေထဲမှာရှိတဲ့ elements တွေရဲ့ဆက်နွယ်မှုတွေကိုရှင်းပြတာပဲဖြစ်ပါတယ်။ကျွန်တော်တို့ဟာအချိန်တိုင်းမှာ selector တစ်ခုနဲ့ တစ်ခုသို့မဟုတ်တစ်ခုထက်ပိုတဲ့ elements တွေကိုခေါ်ပြီးအသုံးပြုကြပါတယ်။ combinator ကိုကျွန်တော်တို့အသုံးပြုဖို့လိုအပ်ပါတယ်။ပြီးတော့ကျွန်တော်တို့
+                    decendant selectors တွေရေးတဲ့အခါမှာ CSS basics တွေထဲမှာ combinators တွေကိုအမှန်တကယ်အသုံးပြုပါတယ်။ဘာ့ကြောင့်လဲဆိုတော့ selectors နှစ်ခုကြားထဲမှာရှိ white space ကလည်းပဲ combanitors ကိုဆုံးဖြတ်ပေးပါတယ်။decendant elements တွေကိုပြစ်မှတ်ထားပြီးအသုံးပြုတဲ့အခါ
+                    combinators တွေက element ရဲ့ချိတ်ဆက်နေ target ပြုလုပ်ထားတာတွေကို flexibility ဖြစ်စေပါတယ်။ကျွန်တော်တို့တွေက greater than sign, plus sign, tilde symbol တွေကိုအသုံးပြုပြီး selector ကိုပိုပြီးတိကြအောင်ပြုလုပ်နိုင်ပါတယ်။ပထမအဆင့်အနေနဲ့ CSS
+                    selectorမှာ greater than sign က child combinator တစ်ခုကိုရည်ညွှန်းတာပဲဖြစ်ပါတယ်။ဘာ့ကြောင့်လဲဆိုတော့အဲ့တာကအခြား elements တစ်ခုရဲ့ direct children ဖြစ်တဲ့ element ကိုရည်ညွန်းတာပဲဖြစ်ပါတယ်။direct child ဆိုတာကတော့ parent element ထဲမှာတိုက်ရိုက်
+                    nested ဖြစ်တဲ့ elements တွေပဲဖြစ်ပါတယ်။နောက်ထပ် combinator တစ်ခုဖြစ်တဲ့ plus sign ကိုအသုံးပြုတဲ့ selector ကိုလေ့လာရမှာဖြစ်ပါတယ်။plus sign combinator ကို adjancent sibling combinator လို့ခေါ်ပါတယ်။ပြီးတော့ selectors တွေကိုအသုံးပြုခြင်းကို
+                    adjacent sibling selectors လို့ခေါ်ပါတယ်။ဘာ့ကြောင့်လဲဆိုတော့ သူတို့က page ပေါ်မှာ element တစ်ခုကိုtarget ထားပြီးနောက်ထပ်နီးစပ်တဲ့ elements တစ်ခုနဲ့ပဲဖြစ်ပါတယ်။ကျွန်တော်တို့ ဥပမာထဲမှာ combinator တွေကိုအသုံးပြုပြထားပါတယ်။နောက်ဆုံး combinator
+                    တစ်ခုကတော့ ကျွန်တော်တို့ tilde symbol ကိုအသုံးပြုတာပဲဖြစ်ပါတယ်။အဲ့တာကို general sibling combinator လို့ခေါ်ပါတယ်။ဘာ့ကြောင့်လဲဆိုတော့ အဲ့တာက siblings ဖြစ်တာတွေကို target ထားတာပဲဖြစ်ပါတယ်။ဥပမာထဲမှာအဲ့တာတွေရဲ့အလုပ်လုပ်ပုံတွေကိုဖော်ပြပေးထားပါတယ်။အချုပ်အားဖြင့်ပြောရမယ်ဆိုရင်
+                    ကျွန်တော်တို့ specific child နဲ့ sibling selectors တွေကို combinators တွေနဲ့သတ်မှတ်ပေးနိုင်ပါတယ်။ greater than sign ">" ဆိုတာက elements တစ်ခုရဲ့ direct child ကို target လုပ်ပေးတာပဲဖြစ်ပါတယ်။plus sign "+" ဆိုတာကတော့ Immediate siblings
+                    ကို target လုပ်ပေးတာပဲဖြစ်ပါတယ်။tilde symbol ဆိုတာကတော့ element နောက်မှာလိုက်တဲ့တိကျတဲ့ sibling တွေကို target ပြုလုပ်ပေးတာပဲဖြစ်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+                        
+            /*-----Combinators ----------------*/
+            
+            form>a {
+            font-size: .7em;
+            }
+            
+            @media (min-width: 769px) {
+            .btn+.btn {
+            margin-left: 20px;
+            }
+            }
+            
+            h1~label {
+            background: tomato;
+            color: white;
+            padding: 5px;
+            }
+                    </code></pre>
+                    <a href="../Selectors/combinators.html" target="_blank" class="See_page">See Examp Page:</a>
+                </p>
+
+                <h3 class="mb-4 small-title" id="section5">Pseudo Class</h3>
+
+                <p>
+                    CSS တွေမှာအမှန်တကယ်တော့အခြားအကူအညီပေးနိုင်တဲ့ pseudo class တွေရှိပါတယ်။structural pseudo classes တွေနဲ့ဖြစ်ပြီး အခြား elements တွေနဲ့သူတို့ရဲ့ဆက်နွယ်မှုတွေနဲ့ page ပေါ်မှာရှိတဲ့သူတို့ရဲ့နေရာတွေအရ elements တွေကို target လုပ်ပါတယ်။ကျွန်တော်တို့ဥပမာထဲမှာဆိုရင်list
+                    item တစ်ခုထဲမှာ pseudo class ကိုသုံးပြီး list item ရဲ့ first child တွေ last child တွေကို apply လုပ်ပြထားတာပဲဖြစ်ပါတယ်။pseudo class ရေးနည်းကိုလည်းအောက်ပါဥပမာထဲမှာကျွန်တော်တို့လေ့လာနိုင်ပါတယ်။ အခြားpseudo classes တစ်ခုဖြစ်တဲ့ only child
+                    ဆိုတာကတော့element တစ်ခုရဲ့အတွင်းမှာရှိတဲ့ child တစ်ခုကို target ထားတာပဲဖြစ်ပါတယ်။အဲ့တာက ကျွန်တော်တို့ elementsတွေမှာchildတစ်ခုစီပဲရှိတဲ့ elementကိုapply လုပ်ပေးတာပဲဖြစ်ပါတယ်။empty ဆိုတဲ့ selector ကတော့element တွေထဲမှာဘာမှထပ်ပြီးမပါတာတွေကိုapply
+                    လုပ်ပေးတာပဲဖြစ်ပါတယ်။ အခြားpseudo classes တစ်ခုဖြစ်တဲ့ only child ဆိုတာကတော့element တစ်ခုရဲ့အတွင်းမှာရှိတဲ့ child တစ်ခုကို target ထားတာပဲဖြစ်ပါတယ်။အဲ့တာက ကျွန်တော်တို့ elementsတွေမှာchildတစ်ခုစီပဲရှိတဲ့ elementကိုapply လုပ်ပေးတာပဲဖြစ်ပါတယ်။empty
+                    ဆိုတဲ့ selector ကတော့element တွေထဲမှာဘာမှထပ်ပြီးမပါတာတွေကိုapply လုပ်ပေးတာပဲဖြစ်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+                            
+            /*-----Structural Pseudo-classes ----------------*/
+            
+            li:first-child {
+            background: #52bab3;
+            color: white;
+            }
+            
+            li:last-child {
+            background: #52bab3;
+            color: white;
+            border: none;
+            }
+            
+            span:only-child {
+            color: #52bab3;
+            font-size: 1.5em;
+            }
+            
+            li:empty {
+            background-color: tomato;
+            }
+                        </code></pre>
+                    <a href="../Selectors/pseudo_class.html" target="_blank" class="See_page">See Examp Page:</a>
+                </p>
+
+
+                <h3 class="mb-4 small-title" id="section6">Substring Matching Attribute Selectors</h3>
+
+                <p>
+                    CSS level ထဲမှာနောက်ထပ် powerful selector သုံးခုရှိပါတယ်။အဲ့တာတွေကတော့ substring matching attribute selectors တွေပဲဖြစ်ပြီး attribute's value တွေရဲ့တိကျတဲ့အစိတ်အပိုင်းတွေကိုတွေ target လုပ်တဲ့အခါခွင့်ပြုပေးပါတယ်။attribute values တွေရဲ့အပိုင်းဖြစ်တဲ့ letters
+                    သို့မဟုတ် words စတာမျိုးတွေကိုတိကျစွာ target လုပ်ပေးနိုင်တာပဲဖြစ်ပါတယ်။ကျွန်တော်တို့ဟာ external links တွေကို target လုပ်တဲ့အခါမှာ attribute selector နဲ့စရေးပြီးတော့ element တွေနဲ့ကိုက်ညီဖို့အတွက် href attribute ရဲ့အလွန်တိကျတဲ့အပိုင်းကိုကျွန်တော်တို့အသုံးပြုနိုင်ပါတယ်။ရေးတဲ့ပုံစံကတော့ပထမဆုံး
+                    anchor element တစ်ခုကို selecting လုပ်ပြီးနောက်မှာ square bracket "[]" လိုက်ပေးရပါမယ်။အဲ့ဒီထဲမှာတော့ href attribute ရဲ့ Length ကိုတိကျအောင် selecting လုပ်ပေးရမှာပဲဖြစ်ပါတယ်။အဲ့တာကြောင့် href ဆိုတာကိုရေးပြီးနောက်မှာ chrat character
+                    "^" နဲ့ equal sign လိုက်ပေးရပါတယ်။ကျွန်တော်တို့က external links တွေအကုန်လုံးကို select လုပ်မှာဖြစ်လို့ equal sign ရဲ့နောက်မှာ double code နဲ့ "့http://" ဆိုတာကိုရေးပေးရပါတယ်။အောက်ပါဥပမာထဲမှာကျွန်တော်တို့ရေးပုံတွေကိုရေးပြထားပါတယ်။ chart
+                    chararcter ဆိုတာကတော့ code ရဲ့တိကျတဲ့အပိုင်းတွေနဲ့ကိုက်ညီအောင် browser ကိုပြောပြပေးတာပဲဖြစ်ပါတယ်။နောက်ထပ်ကျွန်တော်တို့ attributes values တွေထဲမှာရှိတဲ့ အဆုံးသတ် code အပိုင်းအစ ဒါမှမဟုတ် နောက်ဆုံး substring ကို select လုပ်ပြီး apply
+                    လုပ်ပြမှာဖြစ်ပါတယ်။ဥပမာထဲမှာတော့ .pdf , .zip နဲ့ .jpg တွေကိုအသုံးပြုပြီးပြထားတာဖြစ်ပါတယ်။အပေါ်မှာရေးခဲ့တာနဲ့ပုံစံတူပြီး charat character နေရာမှာ dollar sign ထည့်ပေးရမှာဖြစ်ပါတယ်။dollar sign "$" က attribute's value တွေရဲ့နောက်ဆုံးမှာရှိတဲ့
+                    substring တွေနဲ့ကိုက်ညီတယ်ဆိုတာကို browser ကိုပြောပြတာပဲဖြစ်ပါတယ်။ဥပမာထဲမှာတော့ကျွန်တော်တို့ background image တွေကိုထည့်ပြထားတာပဲဖြစ်ပါတယ်။ နောက်ထပ် substring matching attribute selector တစ်ခုကတော့ ကျွန်တော်တို့ target လုပ်မယ့် elements
+                    ရဲ့ attribute value ထဲမှာပါဝင်တဲ့မည့်သည့်နေရာက value ကိုမဆိုသတ်မှတ်ပေးတာပဲဖြစ်ပါတယ်။အဲ့တာတွေကိုအသုံးပြုတဲ့အခါမှာတော့ကျွန်တော်တို့က astrick "*" ဆိုတာကိုထည့်သုံးပေးရမှာဖြစ်ပါတယ်။ astrick character ဆိုတာကတော့ ကျွန်တော်တို့ select လုပ်လိုက်တဲ့
+                    element ထဲမှာပါဝင်တဲ့ attributes ရဲ့ values တွေမှာပါဝင်တယ်ဆိုတာကို browser ကိုပြောပြတာပဲဖြစ်ပါတယ်။အောက်ပါဥပမာထဲမှာကျွန်တော်တို့ image တွေအတွက်ရေးပြထားတာဖြစ်ပါတယ်။
+
+                    <pre><code class="css">
+                        
+            /* Substring matching Attribute Selectors------*/
+            
+            a[href^="http://"] {                                        /* selecting start pieces of external links */
+            color: #53bab3;
+            text-decoration: none;
+            background-repeat: no-repeat;
+            background-size: 18px 18px;
+            padding-left: 25px;
+            }
+            
+            a[href$=".pdf"] {                                           /* selecting end piece substing of links */
+            background-image: url("../Selectors/img/icn-pdf.svg");
+            }
+            
+            a[href$=".jpg"] {
+            background-image: url('../Selectors/img/icn-picture.svg');
+            }
+            
+            a[href$=".zip"] {
+            background-image: url('../Selectors/img/icn-zip.svg');
+            }
+            
+            img[src*="thumb"] {                                         /* selecting any pieces value of links */
+            margin: 4px;
+            border: solid 2px;
+            width: 180px;
+            height: 140px;
+            }
+            
+            img[src*="trees"] {                             
+            border-color: red;
+            }
+                    </code></pre>
+                    <a href="../Selectors/Sub_Mat_Attr_selectors.html" target="_blank" class="See_page">See Examp Page</a>
+                </p>
+
+
+                <h3 class="mb-4 small-title" id="section7">Focus and Review Pseudo class</h3>
+                <p>
+                    ဒီတစ်မှာတော့ကျွန်တော်တို့ focus pseudo class ဆိုတာကိုလေ့လာသွားမှာဖြစ်ပါတယ်။focus pseudo class ဆိုတာကတော့ elements ပေါ်မှာ focus လုပ်လိုက်တဲ့အခါပြောင်းလဲပေးတာပဲဖြစ်ပါတယ်။ဥပမာထဲမှာတော့ကျွန်တော်တို့ textarea ကို focus လုပ်ပြထားပါတယ်။အဲ့တာက user action pseudocalsses
+                    တွေနဲ့ပုံစံတော်တော်တူပါတယ်။CSS တွေမှာ ui element states pseudo classes တွေလည်းရှိပါတယ်။သူတို့ကအခြား user interaction state တွေပေါ်မှာအခြေခံပြီးတော့ elements တွေကို target ပြုလုပ်ပါတယ်။ui element state selectors တစ်ခုကတော့ disable selector
+                    ပဲဖြစ်ပါတယ်။buttons သို့မဟုတ် input fields တွေမှာအများဆုံးအသုံးပြုပါတယ်။အဲ့ဒီ ်fields တွေ buttons တွေကအမြဲတမ်းအားဖြင့် enabled ရှိတာပဲဖြစ်ပါတယ်။pseudo-class ထဲမှာဆိုရင် first-child နဲ့ last-child တွေက parents ရဲ့ပထမဆုံး နဲ့ နောက်ဆုံး
+                    child ကိုselect လုပ်ပေးတာပဲဖြစ်ပါတယ်။only-child ဆိုတာကတော့ siblings မဟုတ်တဲ့ elements တွေကို target ထားတာပဲဖြစ်ပါတယ်။empty ဆိုတာကတော့ children သို့content တွေမရှိတဲ့ elements တွေကို target ပြုလုပ်ပေးတာဖြစ်ပါတယ်။substring matching attributes
+                    selectors တွေဆိုတာကတော့ attribute's value ရဲ့ကိုက်ညီပြီးတိကျတဲ့အပိုင်းတွေနဲ့ကိုက်ညီအောင်ခေါ်သုံးတာပဲဖြစ်ပါတယ်။charat character ကတော့ attribute's value တွေရဲ့နောက်ဆုံးမှာရှိတဲ့code အပိုင်းတွေကကိုက်ညီတယ်ဆိုတာကို browser ကိုပြောပြတာပဲဖြစ်ပါတယ်။$
+                    dollar sign ကတော့ attributes value တွေရဲ့နောက်ဆုံးအပိုင်းနဲ့ကိုက်ညီတာကိုဖော်ပြတာပဲဖြစ်ပါတယ်။* astrick ကတော့ attribute's value ရဲ့ဘယ်အပိုင်းကိုမဆိုခေါ်ပြီးသုံးတဲ့အခါမှကိုက်ညီအောက်ဖော်ပြတာပဲဖြစ်ပါတယ်။checked ဆိုတာကတော့ radio button တွေ
+                    check box တွေရဲ့ check state ကိုသတ်မှတ်တဲ့အခါမှာ target လုပ်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+                            
+            
+            /* UI element states Pseudo-classes ----------*/
+            
+            input:focus,
+            textarea:focus {
+            border-color: #392172;
+            }
+            
+            input:disabled {
+            color: rgb(63, 65, 66);
+            }
+            
+            input[type="checkbox"]:checked+label {
+            font-weight: bold;
+            } 
+                        </code></pre>
+                    <a href="../Selectors/focus_selector.html" target="_blank" class="See_page">See Examp Page</a>
+                </p>
+
+                <h3 class="mb-4 small-title" id="section8">nth-child Pseudo-class</h3>
+                <p>
+                    ပြီးခဲ့တဲ့သင်ခန်းစာတုန်းက structural pseudo-classes တွေနဲ့ကျွန်တော်တို့ပထမနဲ့ နောက်ဆုံး child elements ကိုဘယ်လို target လုပ်မယ်ဆိုတာကိုလေ့လာခဲ့ပြီးဖြစ်ပါတယ်။နောက်ထပ်ကျွန်တော်တို့ nth-child pseudo -class ကဘယ်လိုအလုပ်လုပ်တယ်ဆိုတာရယ် child elements တွေရဲ့မည်သည့်
+                    combination ကိုမဆို target လုပ်နိုင်တယ်ဆိုတာတွေကိုမြင်တွေ့ရမှာဖြစ်ပါတယ်။nth-child ဟာအသုံးဝင်ပြီးတော့ pseudo-class တည်ဆောက်ပုံတွေအတွက် Powerful ဖြစ်ပါတယ်။ဘာ့ကြောင့်လဲဆိုတော့ parent element အတွင်းထဲမှာ မည့်သည့်နေရာကိုမဆိုအခြေခံပြီးတော့
+                    elements တွေကို target လုပ်နိုင်ပါတယ်။ဥပမာထဲမှာတော့ကျွန်တော်တို့ list တွေနဲ့ဥပမာပြထားပါတယ်။ကျွန်တော်တို့ nth-child selector ကိုတည်ဆောက်တဲ့အခါ li ဆိုတဲ့ list item ကိုရေးပြီးအဲ့ဒီနောက်မှာ nth-child ဆိုတာလိုက်ရပါမယ်။အဲ့တာရဲ့နောက်မှာမှ
+                    parentheses လိုက်ပေးရပါမယ်။nth-child က functional like syntax ကိုအသုံးပြုပါတယ်။အဲ့တာက parentheses ကြားထဲမှာရှိတဲ့ value တွေ pass လုပ်ဖို့ခွင့်ပြုပါတယ်။အဲ့ဒီ values က argument တစ်ခုကိုရည်ညွှန်းပြီးတော့ selector ကိုဘယ်ဟာကို pass လုပ်မယ်ဆိုတာကိုဖော်ပြတာပဲဖြစ်ပါတယ်။ပထမအနေနဲ့ကျွန်တော်တို့
+                    argument ဖြစ်တဲ့ odd သို့ even ကိုထည့်နိုင်ပါတယ်။အဲ့ဒီနေရာမှာ ကျွန်တော်တို့ထည့်ချင်တဲ့ item number ကိုထည့်ပြီးလည်း apply လုပ်နိုင်ပါတယ်။ odd ဆိုတာကိုထည့်ပြီးအသုံးပြုမယ်ဆိုရင် list items တွေရဲ့ odd number တွေအတိုင်းအလုပ်လုပ်ပါတယ်။even
+                    ကိုထည့်ပြီးအသုံးပြုမယ်ဆိုရင်တော့ list items တွေရဲ့ even number တွေအတိုင်းအလုပ်လုပ်ပါတယ်။နောက်ထပ်ကျွန်တော်တို့ကနောက်ထပ် integer Number တွေကိုလည်းထည့်နိုင်ပါတယ်။nht child ဟာအမှန်တကယ် powerful ဖြစ်ပြီးတော့နောက်ထပ်ရှုပ်ထွေးတဲ့ combination
+                    တွေလည်းထပ်ထည့်နိုင်ပါတယ်။ဥပမာ (an+b) ဆိုတာကိုထည့်ရေးတဲ့အခါ a နဲ့ b ကnumber တွေကိုကိုယ်စားပြုပြီးတော့ n ဆိုတာကတော့မပြောင်းလဲတဲ့ value တစ်ခုပဲဖြစ်ပါတယ်။plug sign ကတော့တန်ဖိုးတွေကိုပေါင်းပြီးတော့ list item ထဲမှာသတ်မှတ်ပေးတာပဲဖြစ်ပါတယ်။
+                    minus n ဆိုပြီးလည်းထည့်သုံးနိုင်ပြီးအဲ့ဒီအခါမှာတော့ list item ထဲမှာလျှော့ပြီးသတ်မှတ်သွားမှာဖြစ်ပါတယ်။ကျွန်တော်တို့ဥပမာထဲမှာအဲ့တာတွေအကုန်လုံးကိုလေ့လာနိုင်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+            /* :nth-child Pseudo-classes -------------- */
+            
+            ul[class="1st"] li:nth-child(even) {               /*applying even items*/
+            background: #52bab2;
+            color: white;
+            }
+            
+            ul[class="2nd"] li:nth-child(odd) {                 /*applying odd items*/
+            background: #ba5282;
+            color: white;
+            }
+            
+            ul[class="3rd"] li:nth-child(2n+1) {                /*applying total items with constant n value */
+            background: #52ba52;
+            color: white;
+            }
+            
+            ul[class="4th"] li:nth-child(-n+5) {                /*applying total items with constant -n value */
+            background: #b3ab41;
+            color: white;
+            }
+                        </code></pre>
+                    <a href="../Selectors/nth-child-pseudo-class.html" target="_blank" class="See_page">See Examp Page</a>
+                    <br><br> nth-child တွေကတိကျတဲ့အတွက် ကျွန်တော်တို့ကသတ်မှတ်တဲ့အခါမှာအခြား tag တွေပါရောပြီးပါနေရင်တော့ကောင်းကောင်းအလုပ်လုပ်မှာမဟုတ်ပါဘူး။အဲ့ဒီအခါမှာတော့ကျွန်တော်တို့ nth-child အစား nth-of-type ဆိုတာကိုသုံးပြီးသတ်မှတ်နိုင်ပါတယ်။အဲ့တာကကျွန်တော်တို့သတ်မှတ်လိုက်တဲ့တူညီတဲ့
+                    tag တွေနဲ့ပဲပေါင်းပြီးအလုပ်လုပ်ပေးမှာဖြစ်ပါတယ်။အဲ့တာကအလွန်တိကျပြီးတော့ကျွန်တော်တို့သတ်မှတ်တဲ့အတိုင်းအလုပ်လုပ်ပေးမှာဖြစ်ပါတယ်။နောက်ထပ်တစ်ခုဖြစ်တဲ့ nth-last-of-type ဆိုတာကိုလည်းကျွန်တော်တို့အသုံးပြုနိုင်ပါတယ်။အဲ့ဒီ pseudo class ကတော့သတ်မှတ်လိုက်တဲ့
+                    tag ရဲ့နောက်ဆုံးကနေစပြီးအရေအတွက်အရအလုပ်လုပ်ပေးမှာပဲဖြစ်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+                            
+            /* Structural Pseudo classes--------------*/
+            
+            div:nth-child(5) {
+            background: #52ba52;
+            color: white;
+            }
+            
+            div:nth-of-type(4) {
+            background: #b3ab41;
+            color: white;
+            }
+            
+            div:nth-last-of-type(1) {
+            background: red;
+            color: white;
+            }
+                        </code></pre>
+                    <a href="../Selectors/nth-child-2.html" target="_blank" class="See_page">See Examp Page:</a>
+                </p>
+
+
+                <h3 class="mb-4 small-title" id="section9">Root & Target Pseudo Class</h3>
+                <p>
+                    နောက်ဆုံး pseudo classes တစ်ခုကတော့ root pseudo class ပဲဖြစ်ပါတယ်။ Document တစ်ခုသို့မဟုတ်အမြင့်ဆုံး level မှာရှိတဲ့ parent ရဲ့root ဖြစ်တဲ့ element ကို selects လုပ်ပေးတာပဲဖြစ်ပါတယ်။html file ထဲမှာဆိုရင် html elements ကိုပဲအမြဲတမ်းအလုပ်လုပ်ပါလိမ့်မယ်။ဘာ့ကြောင့်လဲဆိုတော့
+                    document ရဲ့ထိပ်ဆုံးမှာ html element ရှိနေလို့ပဲဖြစ်ပါတယ်။root pseudo class ကိုရေးတဲ့အခါမှာတော့ colon ရဲ့နောက်မှာ root ဆိုတာလိုက်ပြီးရေးပေးရပါတယ်။root pseudo class တွေက html type selector တွေထက်ပိုပြီးတိကျတယ်ဆိုတာကိုကျွန်တော်တို့မှတ်သားထားရပါမယ်။အကြောင်းပြချက်ကတော့
+                    CSS တွေက SVG နဲ့ XML တွေကဲ့သို့သောအခြား mark-up languages သို့ formats type တွေနဲ့အသုံးပြုနိုင်ပါတယ်။အဲ့တာကြောင့်class တွေထဲမှာ root psuedo-class တွေက မတူညီတဲ့elements တွေကိုရည်ညွှန်းနိုင်ပါတယ်။root ကdocument ထဲမှာရှိတဲ့ထိပ်ဆုံး elementကိုအမြဲတမ်း
+                    target လုပ်ပေးပါလိမ့်မယ်။ နောက်ထပ် pseudo class ကတော့ target ဆိုတာပဲဖြစ်ပါတယ်။ element တွေက link ကို target လုပ်တဲ့အခါမှာအသုံးပြုပါတယ်။ဥငမာထဲမှာကျွန်တော်တို့တစ်ခုချင်းဆီရေးပြထားပါတယ်။
+                    <br>
+                    <pre><code class="css">
+            :root {
+            background: #e3effb;
+            }
+            
+            :target {
+            background: #384047;
+            color: white;
+            }
+            
+            #col-c:target {
+            background: #eff1f2;
+            color: initial;
+            box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+            }
+                        </code></pre>
+                    <a href="../Selectors/root & target/index.html" target="_blank" class="See_page">See Examp Page</a>
+                </p>
+                <h3 class="mb-4 small-title" id="section10">Negation Pseudo Class</h3>
+
+                <p>
+                    special pseudo class ကတော့ negation pseudo-class ကိုရည်ညွှန်းပါတယ်။ဘာ့ကြောင့်လဲဆိုတော့အဲ့တာကselector ထဲမှာကျွန်တော်တို့သတ်မှတ်ထားတဲ့ element တွေကလွဲလို့ကျန်တာတွေကို select လုပ်ပေးပါတယ်။တူညီတဲ့ elements တွေထဲကနေမှာကျွန်တော်တို့သတ်ရောက်မှုမရှိစေချင်တဲ့
+                    element ကို negation pseudo class နဲ့သတ်မှတ်ပြီးတော့ဖယ်ထားနိုင်ပါတယ်။
+                    <br>
+                    <pre><code class="css">
+            /* negation pseudo class-------------*/
+            
+            div:not(#col-a) {
+            border: solid 1px red;
+            }
+            
+            input:not([type="submit"]) {
+            box-shadow: inset 0 2px 0 rgba(0, 0, 0, .15);
+            }
+            
+            .col:not(:first-child),
+            nav a:not(:first-child) {
+            margin-left: 15px;
+            }
+                        </code></pre>
+                    <a href="../Selectors/root & target/negation-pseudo-class.html" target="_blank" class="See_page">See Examp Page</a>
+                </p>
+                <h3 class="mb-4 small-title" id="section11">Pseudo Elements</h3>
+                <p>
+                    pseudo-elements တွေက pseudo-classes တွေနဲ့ပုံစံတူပါတယ်။ဒါပေမယ့် state တွေကိုဖော်ပြနေမယ်အစား pseudo-class တွေအလုပ်လုပ်ပုံ၊ pseudo-elements တွေနဲ့ element တစ်ခုရဲ့သေချာတဲ့ style အပိုင်းတစ်ခုပဲဖြစ်ပါတယ်။ကျွန်တော်တို့ရဲ့ CSS ထဲကနေ page ထဲကို elements နဲ့
+                    content တွေကိုထည့်ပေးနိုင်ပါတယ်။သူတို့ရဲ့ name တွေကအဓိပယ်သတ်ရောက်သလားဆိုတာကို pseudo-elements တွေကတိကျပါတယ်။သူတို့တွေဟာ phony elements တွေဖြစ်ပြီးတော့ အမှန်တကယ် html elements တွေနဲ့နည်းလမ်းတူပြီးတော့ DOM ရဲ့အပိုင်းတစ်ခုတော့မဟုတ်ပါဘူး။သူတို့တွေကကျွန်တော်တို့ရဲ့
+                    HTML cleaner တွေကိုကူညီထိမ်းသိန်းပေးပါတယ်။ဘာကြောင့်လဲဆိုတော့ markup ထဲမှာသတ်မှတ်မထားပဲနဲ့ virtual elements တွေကိုtarget ထားလို့ပဲဖြစ်ပါတယ်။ပြီးတော့သူတို့က source code ထဲမှာထွက်ပေါ်လာခြင်းမရှိပါဘူး။CSS ထဲမှာ pseudo class ၄မျိုးရှိပါတယ်။sites
+                    တွေအများစုမှာparagraphs ထဲမှာရှိတဲ့ text တွေဟာအမြဲတမ်း fluid ဖြစ်နေပါတယ်။lines width တွေများတဲ့အတွက်ကြောင့် class သို့မဟုတ် ID selectors တွေကိုအသုံးမပြုနိုင်ပါဘူး။ ကျွန်တော်တို့စပြီးပြောပြမှာကတော့ first-line pseudo-element ပဲဖြစ်ပါတယ်။paragraph
+                    တွေရဲ့ပထမဆုံး Line ကိုပဲသတ်မှတ်ပေးမှာဖြစ်ပါတယ်။ရေးနည်းကတော့ကျွန်တော်တို့ paragraph ကိုသတ်မှတ်ထားတဲ့ selector ကိုရေးပြီးနောက်မှာ colon လိုက်ပေးရပါတယ်။အဲ့ဒီနောက်မှာတော့ first-line ဆိုတာကိုရေးပေးပြီးနောက်မှာတော့ကျွန်တော်တို့ apply လုပ်ချင်တာတွေကိုရေးပေးရပါမယ်။ကျွန်တော်တို့သတ်မှတ်ပေးထားတဲ့stylesတွေကbrowser
+                    ရဲ့အကျယ်ပေါ်မှာမှီခိုပြီးပထမ linesကိုပဲသတ်မှတ်ပေးမှာဖြစ်ပါတယ်။first-lines မှာရှိတဲ့ first-character ကိုလည်းကျွန်တော်တို့ကသတ်မှတ်နိုင်ပါတယ်။အဲ့တာတွေကိုတော့ drop caps လိုမျိုး typographical effects တွေကိုဖန်တီးတဲ့အခါမျိုးမှာအများဆုံးအသုံးပြုပါတယ်။မထင်ရှားတဲ့
+                    paragraph တွေကနေပြီး letter ကိုထင်ရှားအောင်မြင်သာအောင်ပြုလုပ်ပေးတာလည်းဖြစ်ပါတယ်။ တစ်ခါတစ်ရံမှာ pseudo-elements တွေမှာ dobule colons တွေကိုအသုံးပြုထားတာကိုတွေ့ရမှာပဲဖြစ်ပါတယ်။double-colons တွေက pseudo-class တွေနဲ့ pseudo-elements တွေကြားထဲမှာရိုးရှင်းစွာကွဲပြားဖို့ရန်အသုံးပြုပါတယ်။အဲ့တာကြောင့်
+                    Pseudo-class တွေကတော့ colon တစ်ခုကိုပဲအသုံးပြုပါတယ်။ဒါပေမယ့် browser ကတော့နှစ်ခုစလုံးကိုထောက်ပံ့ပေးပြီးအတူတူအလုပ်လုပ်ပေးပါတယ်။
+                    <br>
+                    <pre><code class="css">
+                            
+            /*Pseudo-Elements ---------------*/
+            
+            .intro::first-line {
+            font-weight: bold;
+            font-size: 1.4em;
+            }
+            
+            .intro::first-letter {
+            float: left;
+            font-size: 80px;
+            color: white;
+            padding: 5px 10px;
+            background: #384047;
+            margin: 10px 10px 0 0;
+            border-radius: 5px;
+            line-height: 1;
+            } 
+                        </code></pre>
+                    <a href="../Selectors/before&after-Pseudo-class.html" target="_blank" class="See_page">See Examp Page</a>
+                </p>
+
+                <h3 class="mb-4 small-title" id="section12">Before & After Pseudo Class</h3>
+                <p>
+                    နောက်ထပ် pseudo-elements တွေကတော့ before နဲ့ after pseudo-elements တွေပဲဖြစ်ပါတယ်။အဲ့တာတွေက virtual elements တွေဖြစ်ပြီး user တွေကမြင်နိုင်ပါတယ်။css တွေနဲ့ style တွေသတ်မှတ်နိုင်ပြီးတော့ source code တွေထဲမှာထွက်ပေါ်လာမှာတော့မဟုတ်ပါဘူး။အဲ့တာကြောင့်ကျွန်တော်တို့
+                    css ထဲမှာရှိတဲ့ element ထဲမှာ new content ထည့်ပြီးကျွန်တော်တို့ page ထဲကိုထပ်ထည့်နိုင်ပါတယ်။အဲ့တာတွေကစိတ်ဝင်စားစရာကောင်းတဲ့ design တွေကိုတည်ဆောက်နိုင်ပါတယ်။element တစ်ခုမှာမရှိမဖြစ်လိုအပ်တဲ့ extra layers ရယူနိုင်ပါတယ်ပြီးတော့ကျွန်တော်တို့က
+                    အဲ့တာတွေနဲ့အလုပ်လုပ်နိုင်ပါတယ်။အဲ့တာတွေကတော့ before နဲ့ after ဖြစ်ပြီးအဲ့တာတွေကို generated content လို့ခေါ်ပါတယ်။အသုံးပြုတဲ့အခါတွေမှာတော့ selector နောက်မှာ column နဲ့ထည့်ပေးရမှာဖြစ်ပါတယ်။before ဆိုတာကိုသုံးရင်တော့ကျွန်တော်တို့ထည့်လိုက်တဲ့အရာကရှေ့ဆုံးမှာထားပေးမှာဖြစ်ပြီး
+                    after ဆိုတာကိုသုံးရင်တော့နောက်မှာထားပေးမှာပဲဖြစ်ပါတယ်။before နဲ့ after pseudo class တွေကိုအသုံးပြုပြီး source code တွေထဲမှာကျွန်တော်တို့ပြန်ကြည့်မယ်ဆိုရင်တွေ့ရမှာမဟုတ်ပါဘူး။ဘာ့ကြောင့်လဲဆိုတော့အဲ့တာတွေကို CSS တွေနဲ့ generated လုပ်ထားလို့ပဲဖြစ်ပါတယ်။ဥပမာထဲမှာတော့ကျွန်တော်တို့နှစ်ခါစီအသုံးပြုပြထားပါတယ်။
+                    <br>
+                    <pre><code class="css">
+                            
+            /* Before & After pseudo elements -------------*/
+            
+            .jpg::before {
+            content: url(../Selectors/img/icn-picture.svg);
+            font-size: .75em;
+            margin-right: 8px;
+            }
+            
+            .zip::before {
+            content: url(../Selectors/img/icn-zip.svg);
+            font-size: .75em;
+            margin-right: 8px;
+            }
+            
+            h1::before,
+            h1::after {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: coral;
+            margin: 0 10px;
+            }
+                        </code></pre>
+                    <a href="../Selectors/before&after-Pseudo-class.html" target="_blank" class="See_page">See Examp Page</a>
+                </p>
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <!--  /about -->
+        <!-- signup form -->
+        <hr>
+        <div id="about" class="row pb-2 text-body border-top px-3">
+            <!-- <div class="row-md row-xl-5">
+                <h3><strong>About Me</strong></h3>
+                <img src="http://placeimg.com/200/200/people/any" alt="Myo Min ,Web developer" class="img-thumbnail rounded-circle my-2 d-none d-md-block">
+                <h4>Myo Min Htet ,Web Developer
+                </h4>
+
+                <p>I have been learning about the course from another lesson club.And then I have written this site to refer to and studying for the beginner.
+                </p>
+
+
+                <h3 class="section-title">Summary of Qualifications
+                </h3>
+                <ul>
+                    <li>Experience as a freelance web developer
+                    </li>
+                    <li>Experience with HTML, CSS, and JavaScript
+                    </li>
+                    <li>Bachelor of Science
+                    </li>
+                </ul>
+
+            </div> -->
+            <div class="col-md col-xl-5 mt-lg-5">
+                <a href="http://twitter.com" class="social twitter pt-3">
+                    <img src="../images/Twitter.png" alt="Twitter logo" class="social-ico">
+                </a>
+                <a href="http://facebook.com/mynameismyominhtet" class="social Facebook pt-3">
+                    <img src="../images/facebook.png" alt="facebook logo" class="social-ico">
+                </a>
+                <a href="http://linkedin.com" class="social Linkin pt-3">
+                    <img src="../images/LinkedIn.png" alt="linkedin logo" class="social-ico">
+                </a>
+            </div>
+            <div class="col-md col-xl-5 ml-auto mt-2">
+                <p><strong>Can Request Example project File</strong></p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="inpt-group-btn">
+                 <button class="btn btn-primary" type="button">Sign up</button>
+             </span>
+                </div>
+            </div>
+
+        </div>
+        <!-- signup form -->
+        <!-- footer -->
+        <div class="row pb-2" id="copyright">
+
+            <div class="col-md text-md-right">
+                <small>&copy; 2019  Myo Min Htet</small>
+            </div>
+
+        </div>
+        <!-- /footer -->
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

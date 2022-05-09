@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- tag icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+    <!-- end tag icon -->
+    <title>Debug Node APP In Google lesson</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kumar+One+Outline|Slabo+27px|Unlock" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Myanmar3, Yunghkio;
+        }
+        
+        #about {
+            background-color: #0000002e;
+        }
+        
+        #copyright {
+            background-color: #0000002e;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/default.css">
+    <script src="../highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand order-1 mr-0" href="http://zwelab.com/mmh/index.html" target="_blank">LEARN COURSES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html">Home</a>
+                    <a class="nav-item nav-link" href="#speakers">Courses</a>
+
+                    <a class="nav-item nav-link" href="#lesson">Lesson</a>
+                    <a class="mv-item nav-link" href="Volcubularies.html">Vocabularies</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron13 bg-info text-white mb-0">
+        <!-- <img src="jumbo-background.jpg" class="card-img" alt="background image"> -->
+        <div class="container text-sm-center pt-5">
+
+            <br>
+            <br>
+            <h1 class="display-5 text-center text-muted">DEBUG NODE APP IN GOOGLE LESSONS</h1>
+        </div>
+    </div>
+    <!-- /jumbotron -->
+
+    <div class="container-fluid pt-4">
+
+
+        <!--speakers-->
+
+
+        <!-- test about -->
+
+        <!-- about -->
+
+        <div id="lesson" class="row border-top pt-3">
+            <div class="col-md-4 order-md-1 pb-4 ml-md-3">
+                <h3 class="mb-4">What You'll Learn</h3>
+                <div class="list-group">
+                    <a href="#section1" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section2" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section3" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section2" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+                    <a href="#section3" class="list-group-item list-group-item-action list-group-item-primary text-dark"><strong></strong></a>
+
+                </div>
+            </div>
+
+            <div class="col-lg order-lg-3 mx-md-4">
+
+                <h3 class="mb-4 small-title" id="section1">What is Debugging</h3>
+                <p>
+                    ကျွန်တော်တို့ဒီတစ်ခါမှာတော့ professional tools တွေနဲ့ကျွန်တော်တို့ node.js တွေကို debug ပြုလုပ်နိုင်တဲ့ techniques တွေကိုလေ့လာသွားမှာဖြစ်ပါတယ်။Debugging process ဆိုတာကတော့ ကျွန်တော်တို့ code တွေထဲမှာရှိတဲ့ errors တွေကိုထုပ်ပြီးဖော်ပြနိုင်ပြီးတော့ ဖယ်ရှားနိုင်တာပဲဖြစ်ပါတယ်။debugging
+                    ဆိုတာဘာကိုဆိုလိုသလဲဆိုရင်တော့ console.log statements တွေရေးခြင်းကလည်းဖြစ်နိုင်ပါတယ်။web-application တွေတည်ဆောက်တဲ့အခါမှာ http request တွေအားလုံးက console ထဲမှာ logged တွေထုပ်ပေးတာပဲဖြစ်ပါတယ်။ကျွန်တော်တို့က application ကိုရပ်တန့်လိုက်တဲ့အခါမှာတောင်
+                    အခြား console.log တစ်ခုကိုရေးပြီးတော့ application ကိုပြန်ပြီးဖွင့်နိုင်ပါတယ်။အဲ့ဒီ process တွေကို clumsy နဲ့ cumbersome လို့ခေါ်ပါတယ်။ကျွန်တော်တို့က console.log statement တွေကိုရေးပြီး application တွေထဲကိုထည့်နိုင်ပြီးတော့ အဲ့တာတွေကအမှန်တကယ်တော့မလိုအပ်ပါဘူး။ကျွန်တော်တို့
+                    program တွေရဲ့ function တွေမှာ console.log တွေမလိုအပ်ပါဘူး။နောက်ထပ်တစ်ချက်ကတော့ console.log တွေကို version control တွေရေးဖို့အတွက်အသုံးပြုခြင်းကကျွန်တော်တို့တွေကိုပဲအနှောက်အယှက်ဖြစ်စေတာမဟုတ်ပဲ ကျွန်တော်တို့ project တွေနဲ့အလုပ်လုပ်တဲ့
+                    အခြား developer တွေကိုလည်းပဲရှုပ်ထွေးစေပါတယ်။ရေဘူယအားဖြင့်တော့ console.log တွေက problematic တွေဖြစ်နိုင်ပြီးအဲ့တာတွေကိုကျွန်တော်တို့က proper debugging tools တွေကိုအသုံးပြုပြီးတော့ကျော်လွှားနိုင်ပါတယ်။ကျွန်တော်တို့ ပတ်ဝန်းကျင်မှာ debugging
+                    tools တွေအများကြီးရှိပြီးတော့အရေးကြီးတဲ့အချက်တွေကိုအလုပ်လုပ်ဖို့ခွင့်ပြုပေးတာပဲဖြစ်ပါတယ်။ပထမ code ထဲမှာသတ်မှတ်ထားတဲ့ points အတိုင်း execution ပြုလုပ်တာကိုရပ်တန့်ပေးနိုင်ပါတယ်။အဲ့တာတွေက variables တွေရဲ့ content တွေကို inspect ပြုလုပ်ဖို့ခွင့်ပြုပေးပြီးတော့
+                    program run နေတဲ့အချိန်မှာသူတို့ရဲ့ values တွေကို modify ပြုလုပ်နိုင်ပါတယ်။ကျွန်တော်တို့ application တစ်ခုနဲ့ဥပမာပြမှာဖြစ်လို့<a href="https://github.com/treehouse-projects/reverse-app-node" target="_blank"> gitHub site</a>                    မှာသွားပြီး application zip ကို download ပြုလုပ်နိုင်ပါတယ်။နောက်ပြီး zip file ကိုဖြည်ပြီးတော့ terminal ထဲကနေ application file ထဲထိ path ပေးခဲ့ရပါမယ်။နောက်ထပ်တစ်ဆင့်ကတော့ npm install ဆိုပြီး npm ကို install ပြုလုပ်ပေးရမှာပဲဖြစ်ပါတယ်။အဲ့ဒီနောက်
+                    application ကိုစပြီး run ဖို့အတွက် npm start ဆိုပြီးပေးခဲ့ရမှာပဲဖြစ်ပါတယ်။application ကအလုပ်လုပ်နေပြီးဖြစ်တဲ့အတွက် browser ထဲကနေ localhost:3000 ဆိုပြီးရိုက်ကြည့်ရင် application အလုပ်လုပ်တာကိုတွေ့ရမှာဖြစ်ပါတယ်။အဲ့ဒီ list တွေထည့်ထားပြီးတော့
+                    list တွေမှာပေးထားတဲ့ strings တွေက missing ဖြစ်နေမှာပဲဖြစ်ပါတယ်။ ကျွန်တော်တို့ဥပမာထဲမှာဖော်ပြပေးထားတာကတော့ npm install တင်နည်းနဲ့ start ပြုလုပ်တဲ့နည်းတွေပဲဖြစ်ပါတယ်။
+                </p>
+                <h3 class="mb-4 small-title">Setting Up Google Chrome for Node.js Debugging</h3>
+                <p>
+                    Node application တွေကို debugging ပြုလုပ်ဖို့အတွက် google Chrome features တွေကို node.js 6.3+ မှာပထမဆုံးမိတ်ဆက်ခဲ့ပါတယ်။ဒါပေမယ့် Node.js 6.4+ မှာထောက်ခံမှုတွေပေးမထားပါဘူး။ကျွန်တော်တို့မှာ အနည်းဆုံး google Chrome 55+ တော့လိုအပ်ပါလိမ့်မယ်။Google Chrome
+                    ကိုအသုံးပြုတဲ့အခါမှာကောင်းမွန်တဲ့ အချက်တစ်ချက်ကတော့ debugging tool ကတူညီတဲ့ interface တစ်ခုပေါ်မှာ front end javaScript နဲ့ Backend javaScript နှစ်ခုလုံးကို debug ပြုလုပ်နိုင်တာပဲဖြစ်ပါတယ်။goolge chrome မှာဘယ်လိုအလုပ်လုပ်လဲဆိုတာကိုသိဖို့အတွက်experimental
+                    dev tool ကိုသွားဖို့အတွက်setting panel တစ်ခုဖြစ်တဲ့ chrome//flags ကိုသွားပြီးဖွင့်ရပါမယ်။အဲ့ဒီနောက် dev tool ကိုဖွင့်ပြီး developer tool ရဲ့ setting ထဲကိုသွားပြီး experiments ဆိုတဲ့ tag ကိုသွားပေးရမှာပဲဖြစ်ပါတယ်။နောက်ထပ်တစ်ဆင့်ကတော့
+                    shift key ကို 6 ခါနှိပ်ပေးရမှာပဲဖြစ်ပါတယ်။အဲ့ဒီအခါမှာအခြား option တွေကိုလည်းုကျွန်တော်တို့မြင်တွေ့ရမှာပဲဖြစ်ပါတယ်။အဲဒီအထဲမှာ node debugging ဆိုတာပါမှာဖြစ်ပြီး select မှတ်ပေးခဲ့ရမှာလဲဖြစ်ပါတယ်။ကျွန်တော်တို့ရဲံ node ကို debug mode ထားခဲ့ပြီဖြစ်ပြီး
+                    chrome အတွက် URL ကို Generate ပြုလုပ်ပေးဖို့အတွက်ကျွန်တော်တို့ application ထဲမှာ inspect ပြုလုပ်ပေးခဲ့ရမှာဖြစ်ပါတယ်။ကျွန်တော်တို့ node app တွေ run တဲ့အခါ node --inspect app.js ဆိုပြီး run ခဲရမှာပဲဖြစ်ပါတယ်။ကျွန်တော်တို့ရဲ့ application
+                    ကိုစဖို့အတွက် NPM ကိုအသုံးပြုခဲ့တာဖြစ်တဲ့အတွက်ကြောင့် package.JSON ကို modify ပြုလုပ်ပေးဖို့လိုအပ်ပါတယ်။modify ပြုလုပ်ပြီးတဲ့အခါမှာတော့ application ကိုပြန် run ကြည့်ရမှာဖြစ်ပါတယ်။အဲ့ဒီအခါမှာ server start ပြုလုပ်တဲ့ message ကိုမြင်ရမှာဖြစ်ပြီးတော့
+                    debuggin ပြုလုပ်တဲ့ URL ကိုလည်းတွေ့ရမှာဖြစ်ပါတယ်။ကျွန်တော်တို့ <a href="chrome://inspect/#devices">chrome://inspect</a> ဆိုတာကိုရိုက်ထဲ့ပြီး Open dedicated DevTools for Node ဆိုတာကနေသွားပြီးတော့ node jsတွေကို run
+                    နိုင်ပါတယ်။
+                </p>
+
+                <h3 class="mb-4 small-title">Debugging Variables with Google Chrome</h3>
+                <p>
+                    ကျွန်တော်တို့ ဥပမာ program ကို browser ထဲမှာ run နေပြီးတော့ imposing ဖြစ်နေပါတယ်။ဘာ့ကြောင့်လဲဆိုတော့ကျွန်တော်တို့က code ထဲမှာနေရာတွေကို specified မပြုလုပ်ခဲ့လို့ပဲဖြစ်ပါတယ်။ကျွန်တော်တို့က အဲ့တာတွေကို post ပြုလုပ်ချင်တဲ့အခါမှာကျွန်တော်တို့ရဲ့ code ထဲမှာဘယ်နေရာမှာ
+                    execution ပြုလုပ်မယ်ဆိုတာကိုသတ်မှတ်ရမှာပဲဖြစ်ပါတယ်။အဲ့တာကြောင့်ကျွန်တေ်ာတို့က node debug browser ထဲမှာ inspect ထောက်ပြီးတော့ source ကိုသွားပြီး app.js ကိုဖွင့်ပေးရမှဖြစ်ပါတယ်။အဲ့ဒီထဲမှာဆိုရင် line 36 to 43 က URL handler ဖြစ်ပြီးတော့အဲ့တာက
+                    URL နဲ့ reverses တွေကနေ user string တွေကိုယူတာပဲဖြစ်ပါတယ်။URL handler က application execution တွေကို post ပြုလုပ်ဖို့အတွက် သင့်လျှော်တဲ့နေရာမှာမြင်တွေ့နိုင်အောင်ပြုလုပ်ပေးတာပဲဖြစ်ပါတယ်။ကျွန်တော်တို့က application ကို pause ပြုလုပ်ဖို့အတွက်
+                    breakpoint တွေအသုံးပြုဖို့လိုအပ်ပါတယ်။breakpoint တည်ဆောက်ဖို့အတွက် ကျွန်တော်တို့ execution ပြုလုပ်ချင်တဲ့ line number ပေါ်မှာ click ပြုလုပ်ပြီး pause ပြုလုပ်နိုင်ပါတယ်။ ကျွန်တော်တု့ိဥပမာပုံထဲမှာပြထားသလိုပဲ request တွေ response တွေလက်ခံရရှိမှာပဲဖြစ်ပါတယ်။အဲ့ဒီထဲမှာ
+                    constant variables နှစ်ခုကိလက်ခံထားပြီးတော့ reverse နဲ့ original ဆိုတာတွေပဲဖြစ်ပါတယ်။အဲ့ဒီ variables တွေကကျွန်ာတော်တို့ breakpoint လုပ်လိုက်တဲ့အခါမှာ Undefined ဖြစ်နေလဲဆိုတော့ break point က Line တွေကို evaluation မပြုလုပ်ခင် pause
+                    ပြုလုပ်ထားလို့ပဲဖြစ်ပါတယ်။ အဲ့ဒီအတွက်ကျွန်တော်တို့ကအပေါ်က watch panel ထဲမှာ expression တွေထပ်ထည့်နိုင်ပါတယ်။watch panel ထဲမှာတော့ variable တွေကကန့်သတ်ချက်မရှိပါဘူး။နောက်ထပ် variable တွေကို interact ပြုလုပ်တဲ့နည်းလမ်းကတော့ console ထဲမှာ
+                    run တာပဲဖြစ်ပါတယ်။
+                    <br>
+                    <img src="../images/debug-in-browser2.png" alt=" debug example" class="img-fluid">
+                </p>
+                <h3 class="mb-4 small-title">Debugging Functions with Google Chrome</h3>
+                <p>
+                    ဒီတစ်ခါမှာတော့ကျွန်တော်တို့ variables တွေကို inspecting နဲ့ modifying တွေပြုလုပ်ဖို့အတွက် debugging tools တွေကိုလေ့လာသွားမှဖြစ်ပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့က page ပေါ်မှာ inspect ထောက်ပြီး source tag ထဲမှာသွားကြည့်ရမှာပဲဖြစ်ပါတယ်။ကျွန်တေ်ာတို့က line
+                    40 ပေါ်မှာ reverse string ပေါ်မှာ click နှိပ်ပြီးတော့ next step function ဆိုတဲ့ button ကိုနှိပ်ရမှာပဲဖြစ်ပါတယ်။အဲ့ဒီအခါမှာ reverseString function ရဲ့အတွင်းထဲကိုရေက်သွားမှာပဲဖြစ်ပါတယ်။နောက်ထပ်function တွေကိုလည်း panel ထဲမှာရှိတဲ့ button
+                    တွေကိုနှိပ်ပြီးတော့သွားနိုင်ပါတယ်။ကျွန်တေ်ာတို့ console ထဲကနေလည်းသွားပြီးသတ်မှတ်နိုင်ပြောင်းလဲနိုင်တာပဲဖြစ်ပါတယ်။
+                </p>
+
+                <h3 class="mb-3 small-title">Live Editing Code with Google Chrome</h3>
+                <p>
+                    ကျွန်တော်တို့က function တွေထဲမှာပြသနာကိုရှာနိုင်ပြီး debug console ထဲမှာ option တွေကိုလက်တွေ့ပြောင်းလဲပြီးရှာနိုင်ပါတယ်။အဲ့ဒီအတွက်ကျွန်တေ်ာတို့က code ကို direct ပြုပြင်ဖို့အတွက်ကျွန်တေ်တို့ရဲ့ဥပမာ app ထဲမှာရှိတဲ့ line 42 မှာ reverse variable ကိုမြင်တွေံရမှဖြစ်ပါတယ်။အဲ့တာက
+                    local variable ထဲကို Pass ပြုလုပ်နိုင်ပြီးတော့ template ထဲမှာ access ပြုလုပ်နိုင်ပါတယ်။original variable တစ်ခုကိုထပ်ထည့်ပြီးကျွန်တာ်တို့ run ကြည့်တဲ့အခါမှာကျွန်တော်တို့ program ကကောင်းကောင်းအလုပ်လုပ်တာကိုတွေ့ရမှာပဲဖြစ်ပါတယ်။အဲ့တာကြောင့်ကျွန်တော်တို့က
+                    program ထဲမှာအမှန်ကိုသွားပြင်နိုင်မှာပဲဖြစ်ပါတယ်။
+                    <br>
+                    <img src="../images/debug-in-browser3.png" class="img-fluid" alt="debug example">
+                </p>
+            </div>
+
+        </div>
+
+        <!-- 
+        <p>
+            ကျွန်တော်တို့က ဒီတစ်ခါမှာတော့ plain JavaScript ကိုအသုံးပြုပြီးတော့ html ထဲမှာ ajax တွေကိုအသုံးပြုပြီးတည်ဆောက်တာကိုလေ့လာသွားမှာဖြစ်ပါတယ်။ပြီးခဲ့တဲ့သင်ခန်းစာမှာကျွန်တော်တို့ပြောခဲ့သလိုပဲ ajax ကိုအသုံးွပုဖို့အတွက်အဆင့်လေးဆင့်ကိုလုပ်ဆောင်ပေးရမှာပဲဖြစ်ပါတယ်။ကျွန်တော်တု့ိပထမဆုံးဥပမာထဲမှာတော့
+            XHR ဆိုတဲ့ variable name နဲ့ရေးပြထားတာဖြစ်ပြီးအဲ့ဒီထဲမှာတော့ xml http request object အသစ်ပါဝင်တာပဲဖြစ်ပါတယ်။အဲ့တာက browser ကို ajax နဲ့အတူတူအလုပ်လုပ်ဖို့ရန်အတွက်အဆင်သင့်ဖြစ်နေပြီဆိုတာကိုပြောပြတာပဲဖြစ်ပါတယ်။ကျွန်တော်တို့က ajax request တိုင်းအတွက်
+            XHR object အသစ်တွေကိုဖန်တီးပေးဖို့အတွက်လိုအပ်ပါတယ်။နောက်ထပ်တစ်ဆင့်ဖြစ်တဲ့ callback function ဆိုတာကတော့ ajax process ရဲ့အရုှပ်ထွေးဆုံးအပိုင်းတစ်ပိုင်းပဲဖြစ်ပါတယ်။callback function ကကျွန်တော်တို့ AJAX ရဲ့အဓိကကြတဲ့အပိုင်းဖြစ်ပါတယ်။
+        </p> -->
+        <!--  /about -->
+        <!-- signup form -->
+        <hr>
+        <div id="about" class="row pb-2 text-body border-top px-3">
+            <!-- <div class="row-md row-xl-5">
+                <h3><strong>About Me</strong></h3>
+                <img src="http://placeimg.com/200/200/people/any" alt="Myo Min ,Web developer" class="img-thumbnail rounded-circle my-2 d-none d-md-block">
+                <h4>Myo Min Htet ,Web Developer
+                </h4>
+
+                <p>I have been learning about the course from another lesson club.And then I have written this site to refer to and studying for the beginner.
+                </p>
+
+
+                <h3 class="section-title">Summary of Qualifications
+                </h3>
+                <ul>
+                    <li>Experience as a freelance web developer
+                    </li>
+                    <li>Experience with HTML, CSS, and JavaScript
+                    </li>
+                    <li>Bachelor of Science
+                    </li>
+                </ul>
+
+            </div> -->
+            <div class="col-md col-xl-5 mt-lg-5">
+                <a href="http://twitter.com" class="social twitter pt-3">
+                    <img src="../images/Twitter.png" alt="Twitter logo" class="social-ico">
+                </a>
+                <a href="http://facebook.com/mynameismyominhtet" class="social Facebook pt-3">
+                    <img src="../images/facebook.png" alt="facebook logo" class="social-ico">
+                </a>
+                <a href="http://linkedin.com" class="social Linkin pt-3">
+                    <img src="../images/LinkedIn.png" alt="linkedin logo" class="social-ico">
+                </a>
+            </div>
+            <div class="col-md col-xl-5 ml-auto mt-2">
+                <p><strong>Can Request Example project File</strong></p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="inpt-group-btn">
+                 <button class="btn btn-primary" type="button">Sign up</button>
+             </span>
+                </div>
+            </div>
+
+        </div>
+        <!-- signup form -->
+        <!-- footer -->
+        <div class="row pb-2" id="copyright">
+
+            <div class="col-md text-md-right">
+                <small>&copy; 2019  Myo Min Htet</small>
+            </div>
+
+        </div>
+        <!-- /footer -->
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

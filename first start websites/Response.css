@@ -1,0 +1,39 @@
+@media screen and (min-width: 700px) {
+
+/**************************
+Two Column Layout
+**************************/
+    #primary {
+        width: 60%;
+        float: left;
+    }
+     
+#secondary {
+    width: 40%;
+    float: right;
+    }
+
+/*
+    .cont-wrap {
+        max-width: 940px;
+        margin: 0 auto;
+        background: rgb(161, 223, 164);
+        border-radius: 30px;
+        border: 1px solid rgb(45,122, 45);
+    }
+    
+*/
+ }
+
+
+
+ @media screen and (max-width:500px) {
+    .main-head1 {
+        margin: 120px auto 10px;
+    }
+
+    .main-img{
+        margin: 120px auto 10px;
+    }
+    
+ }

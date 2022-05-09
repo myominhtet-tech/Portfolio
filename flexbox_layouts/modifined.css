@@ -1,0 +1,189 @@
+/* ================
+Flexbox 
+================= */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.container11 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container22 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.container_just {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container_just1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container_just2,
+.container_just3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item-13 {
+    margin-right: auto;
+}
+
+
+/*=====================
+For Reorder items
+=====================*/
+
+.container_order,
+.container_order1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container_order1 {
+    flex-direction: column;
+}
+
+.item-6 {
+    order: -1;
+}
+
+.item-33 {
+    order: -1;
+}
+
+.item-44 {
+    order: -2;
+}
+
+.item-55 {
+    order: -3;
+}
+
+.item-22 {
+    order: 1;
+}
+
+
+/*====================
+Flex Grow Property
+====================*/
+
+.container_grow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-a {
+    flex-grow: 1;
+}
+
+.item1 {
+    flex-grow: 1;
+}
+
+
+/*===============
+Flex Grow align
+==============*/
+
+.container_grow2,
+.container_cross {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-c {
+    /* flex-grow: 1;
+    flex-basis: 200px; */
+    flex: 1 200px;
+}
+
+
+/*===================
+Flex Grow cross align
+====================*/
+
+.container_cross {
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+    align-items: center;
+}
+
+.item-d,
+.item-dd {
+    flex: 1;
+}
+
+.item-d2 {
+    flex: 2;
+}
+
+
+/* The following is second container. */
+
+.container_cross2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+    align-items: center;
+}
+
+.item-dd1 {
+    align-self: flex-start;
+}
+
+.item-dd2 {
+    align-self: flex-end;
+}
+
+.item-dd3 {
+    align-self: flex-start;
+}
+
+.item-dd4 {
+    align-self: center;
+}
+
+
+/*=========================
+Flex items Center Align
+=========================*/
+
+.container_center {
+    display: flex;
+    min-height: 50vh;
+    /* justify-content: center;
+    align-items: center; */
+    /* justify-content: center; */
+}
+
+
+/* .item-e {
+    align-self: center;
+} */
+
+.item-e {
+    margin: auto;
+}
