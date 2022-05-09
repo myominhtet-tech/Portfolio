@@ -1,0 +1,44 @@
+li {
+    list-style-type: none;
+    border-bottom: 1px solid gray;
+    display: block;
+    padding: 20px;
+}
+
+ul {
+    padding: 0;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.box {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    background-colo r: #d3ded3;
+    border-radius: 10px;
+}
+
+a.secure:after{
+    content: "Safe";
+    color: #fff;
+    font-size: 10px;
+    background-color: #64ce83;
+    padding: 3px 6px;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+a.pdf:after{
+    content:"Locked";
+    color: #fff;
+    font-size: 10px;
+    background-color: #de565b;
+    padding: 3px 6px;
+    margin-left: 5px;
+    border-radius: 3px;
+}
