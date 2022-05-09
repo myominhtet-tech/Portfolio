@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AJAX with JavaScript</title>
+    <meta charset="utf-8">
+    <link href="http://fonts.goolgeapis.com/css?family=Varela-Bound" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js">
+        // var xhr = new XMLHttpRequest();
+        // xhr.onreadystatechange = function() {
+        //     if (xhr.readyState === 4) {
+
+        //         if (xhr.status === 200) {
+        //             document.getElementById('ajax').innerHTML = xhr.responseText;
+        //         } else if (xhr.status === 404) {
+        //             //file not found
+        //         } else if (xhr.status === 500) {
+        //             //server had a problem
+        //         }
+        //     }
+        // };
+        // xhr.open('GET', 'sidebar.html');
+        // xhr.send();
+        function sendAJAX() {
+            $('#ajax').load('sidebar.html');
+            $('#load').hide();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="grid-container centered">
+        <div class="grid-100">
+            <div class="contained">
+                <div class="grid-100">
+                    <div class="heading">
+                        <h1>corporate Intranet</h1>
+
+                    </div>
+                    <!-- <ul id="ajax"> -->
+
+
+                    <!-- </ul>
+                     -->
+                    <section class="grid-70 main">
+                        <h2>Loren Tpsun Headline</h2>
+                        <p>Set ut perspociatis undo annis isto natus error sit voluptatem dolorenque laudantiun</p>
+                    </section>
+                    <aside class="rid-38 list">
+                        <h2>Employee office Status</h2>
+                        <div id="employeeList">
+
+                        </div>
+                    </aside>
+                    <footer class="grid-100">
+                        <p>Copyright, The Internet Corporation</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

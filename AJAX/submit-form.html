@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $.get('missing.html', function(data) {
+                $('#myDiv').html(data);
+
+            }).fail(function(jqXHR) {
+
+                var errorMessage = "Please try again later.</p>";
+                $('#myDiv').html("<p>Sorry! " + jqXHR.statusText + "error.</p>");
+            });
+
+        }); //end ready
+    </script>
+</head>
+
+<body>
+
+    <div class="grid-container centered">
+        <div class="grid-100">
+            <div class="heading">
+                <h1>Sign Up for Our Nowsletter</h1>
+                <div id="signup">
+                    <form method="post" action="/signup">
+                        <label for="userName">Please type your name</label>
+                        <input type="text" name="userName" id="userName"><br>
+                        <label for="email">Your email address</label>
+                        <input type="email" name="email" id="email"><br>
+                        <label for="submit"></label>
+                        <input type="submit" value="Signup!" id="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

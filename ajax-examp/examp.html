@@ -1,0 +1,14 @@
+<body>
+    <!-- nothing called in the head -->
+
+    <h1>Why Aren't You Working?</h1>
+
+    <select id="people"></select>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script type="text/javaScript">
+        var $select = $('#people'); $.getJSON( "example.JSON", function(data){ $select.html(''); $.each(data.person, function(key, val){ $select.append('
+        <option id="' + val.id + '">' + val.name + '</option>'); }) });
+    </script>
+</body>

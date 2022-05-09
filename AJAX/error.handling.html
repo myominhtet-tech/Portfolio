@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $.get('missing.html', function(data) {
+                $('#myDiv').html(data);
+
+            }).fail(function(jqXHR) {
+                var errorMessage = "Please try again later.</p>";
+                errorMessage += "Please try again later.</p>";
+                $('#myDiv').html("<p>Sorry! " + jqXHR.statusText + "error.</p>");
+                $('#myDiv').html(errorMessage);
+            });
+
+        }); //end ready
+    </script>
+</head>
+
+<body>
+    <div class="grid-container centered">
+        <div class="grid-100">
+            <div class="container">
+                <div class="grid-100">
+                    <div class="heading">
+                        <h1>Bring on the AJAX</h1>
+
+                    </div>
+                    <p id="myDIv">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

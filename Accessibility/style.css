@@ -1,0 +1,35 @@
+ #warpper {
+     font-family: sans-serif;
+     width: 80%;
+     margin: 0 auto;
+ }
+
+ .graph {
+     padding: 0;
+     width: 50%;
+     float: left;
+     border-bottom: 1px solid #888;
+ }
+
+ .graph li {
+     border-top: 1px solid #888;
+     position: relative;
+     list-style: none;
+     clear: both;
+ }
+
+ .fruit {
+     display: block;
+     padding: 1em;
+     position: relative;
+     color: #222;
+     float: left;
+     font-weight: bold;
+     background: #66ee99;
+ }
+
+ .total {
+     margin-top: 15px;
+     float: right;
+
+ }
