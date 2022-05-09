@@ -1,0 +1,76 @@
+.side-b {
+    width: 364px;
+    height: 242px;
+}
+
+.photo {
+    color: black;
+    overflow: hidden;
+}
+
+.button {
+    color: white;
+    background: #00ff2d;
+    padding: 21px 0;
+}
+
+.photo-overlay {
+    background: #4e79a5;
+}
+
+
+/*=================================
+Transition Overlay Functions
+=================================*/
+
+img {
+    transition: transform .5s;
+}
+
+img:hover {
+    transform: translate(50%);
+}
+
+.photo img {
+    transform-origin: 0 0;
+}
+
+.photo:hover img {
+    transform: scale(1.2);
+}
+
+.slide1 .photo-overlay,
+.slide1 img {
+    transition: transform .6s ease-out;
+}
+
+.slide1 .photo-overlay,
+.slide2 .photo-overlay {
+    transform: translateX(-100%);
+}
+
+.slide1:hover .photo-overlay {
+    transform: translateX(0);
+}
+
+.logo:hover {
+    transform: rotate(-20deg);
+}
+
+
+/*==================
+Transform SlideOut
+=================*/
+
+.slide2 .photo-overlay,
+.slide2 img {
+    transition: transform .6s ease-out;
+}
+
+.slide2:hover img {
+    transform: translateX(100%);
+}
+
+.slide2:hover .photo-overlay {
+    transform: translate(0);
+}

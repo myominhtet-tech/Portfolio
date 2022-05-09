@@ -1,0 +1,51 @@
+.button {
+    color: #fff;
+    width: 75%;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 0;
+    border-radius: .5em;
+    background: rgba(74, 137, 202, .8);
+    margin: .3em 0 0;
+}
+
+.button {
+    color: white;
+    background: #00ff2d;
+    padding: 21px 0;
+}
+
+.side-a {
+    width: 364px;
+    height: 242px;
+}
+
+
+/*================================
+Using perspective for 3D transform
+================================*/
+
+.photo-container {
+    perspective: 700px;
+    perspective-origin: 100% 100%;
+}
+
+.photo {
+    transition: transform 3s cubic-bezier(.55, -.62, .27, 1.2);
+    transform-style: preserve-3d;
+}
+
+.photo:hover {
+    transform: rotate3d(1, 0, 0, 180deg);
+}
+
+.side-a,
+.side-b {
+    backface-visibility: hidden;
+}
+
+.side-b {
+    transform: rotateX(180deg);
+}

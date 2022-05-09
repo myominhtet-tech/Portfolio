@@ -1,0 +1,26 @@
+/*==========================
+Transform Origin Top Left
+==========================*/
+
+.photo1 img {
+    transition: transform .5s;
+    transform-origin: top left;
+}
+
+.photo1 img:hover {
+    transform: rotate(45deg);
+}
+
+
+/*===========================
+Transform Origin Bottom right 
+ ==========================*/
+
+.sec-o {
+    transition: transform .5s;
+    transform-origin: bottom right;
+}
+
+.sec-o:hover {
+    transform: rotate(360deg);
+}
