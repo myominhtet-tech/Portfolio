@@ -1,0 +1,75 @@
+p {
+    color: white;
+    background-color: lightblue;
+}
+/*  Body */
+
+body {
+    color: #878787;
+    margin: 0;
+    font-size: 150%;
+}
+
+/* Class selector */
+
+.main-header {
+    background-color: orange;
+    width: 50%;                     /* This is used percentage unit. */
+    margin-left: 10%;               /* This is used percentage unit. */
+}
+
+.title {
+    color: white;
+    font-size: 26px;
+}
+
+.primary-content,
+.secondary-content {
+    width: 60%;                     /* This is used percentage unit. */
+}
+/* Heading */
+h1 {
+    font-size: 90px;
+    color: white;
+}
+
+h2 {
+    font-size: 53px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #48525c;
+}
+    
+.primary-content {
+    text-align: center;
+}
+
+.t-border {
+    border-top: 2px solid lightgrey;
+}
+
+a:link {
+    color: orange;
+}
+ 
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: forestgreen;
+}
+
+p:hover {
+    color: blueviolet;
+}
+ a:active {
+     color: lightcoral;
+ }
+
+ :focus {
+     color: white;
+     background-color: orange;
+ }

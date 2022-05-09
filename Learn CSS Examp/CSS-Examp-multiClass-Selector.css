@@ -1,0 +1,44 @@
+p {
+    color: white;
+    background-color: lightblue;
+}
+
+body {
+    color: #878787;
+    margin: 0;
+}
+
+#top {
+    background-color: red;
+}
+.main-header {
+    background-color: orange;
+}
+
+h1 {
+    font-size: 90px;
+    color: white;
+}
+
+h2 {
+    font-size: 53px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #48525c;
+}
+    
+.primary-content {
+    text-align: center;
+}
+
+.t-border {
+    border: 2px solid lightgrey;
+}
+
+#main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: solid 10px orange;
+}

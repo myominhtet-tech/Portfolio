@@ -1,0 +1,25 @@
+/*****************************
+Flexbox layout
+*****************************/
+
+.header,
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.nav {
+    flex: 1;
+    justify-content: space-around;
+}
+
+@media all and (min-width: 640px) {
+    .header,
+    .nav {
+        flex-direction: row;
+    }
+}
