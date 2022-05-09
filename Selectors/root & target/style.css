@@ -1,0 +1,33 @@
+:root {
+    background: #e3effb;
+}
+
+:target {
+    background: #384047;
+    color: white;
+}
+
+#col-c:target {
+    background: #eff1f2;
+    color: initial;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+}
+
+
+/*Pseudo-Elements ---------------*/
+
+.intro::first-line {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.intro::first-letter {
+    float: left;
+    font-size: 80px;
+    color: white;
+    padding: 5px 10px;
+    background: #384047;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+    line-height: 1;
+}

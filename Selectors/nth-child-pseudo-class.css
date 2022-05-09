@@ -1,0 +1,63 @@
+h2 {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+body {
+    font-size: 'nunito', sans-serif;
+    color: #343636;
+    max-width: 500px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+li,
+div {
+    border-bottom: 2px dotted #40918c;
+    padding: 15px 10px;
+}
+
+
+/* :nth-child Pseudo-classes -------------- */
+
+ul[class="1st"] li:nth-child(even) {
+    background: #52bab2;
+    color: white;
+}
+
+ul[class="2nd"] li:nth-child(odd) {
+    background: #ba5282;
+    color: white;
+}
+
+ul[class="3rd"] li:nth-child(2n+1) {
+    background: #52ba52;
+    color: white;
+}
+
+ul[class="4th"] li:nth-child(-n+5) {
+    background: #b3ab41;
+    color: white;
+}
+
+
+/* Structural Pseudo classes--------------*/
+
+div:nth-child(5) {
+    background: #52ba52;
+    color: white;
+}
+
+div:nth-of-type(4) {
+    background: #b3ab41;
+    color: white;
+}
+
+div:nth-last-of-type(1) {
+    background: red;
+    color: white;
+}

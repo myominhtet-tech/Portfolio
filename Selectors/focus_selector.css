@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+    padding: 40px 0 60px;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.br {
+    border-radius: .3em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    outline: 0;
+    margin-bottom: 1.2em;
+    border-radius: .3em;
+}
+
+.form-contact {
+    padding: 20px 24px;
+    background: #f4f7f8;
+}
+
+div[id="container"] {
+    max-width: 500px;
+    margin: auto;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: rgb(17, 92, 57);
+}
+
+
+/* UI element states Pseudo-classes ----------*/
+
+input:focus,
+textarea:focus {
+    border-color: #392172;
+}
+
+input:disabled {
+    color: rgb(63, 65, 66);
+}
+
+input[type="checkbox"]:checked+label {
+    font-weight: bold;
+}

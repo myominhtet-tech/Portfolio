@@ -1,0 +1,22 @@
+/* ==============================
+  Practice CSS Grid Layout
+  ============================ */
+
+  /* Target the grid container */
+  .REPLACE_ME {
+      max-width: 990px;
+  }
+  .wrapper {
+      display: grid;
+      grid-auto-rows: 50px;
+      grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine";
+  }
