@@ -1,0 +1,100 @@
+@media screen and (min-width: 480px) {
+    /**********************
+    TWO COLUMN LAYOUT
+    **********************/
+    #primary {
+        width: 55%;
+        float: left;
+    }
+    #secondary {
+        width: 40%;
+        float: right;
+    }
+    footer {
+        bottom: 0;
+    }
+    .tag {
+        padding-top: 50px;
+    }
+    .tag a {
+        display: inline-block;
+    }
+    .tag ul {
+        display: inline-block;
+    }
+    /**********************
+    PAGE:About
+    **********************/
+    .main-img {
+        float: left;
+        margin: 0 5% 80px 0;
+    }
+    /****************
+    PAGE:Lesson
+    ****************/
+    .low-fide-image,
+    iframe {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 768px),
+only screen and (min-width: 700px) and (orientation: landscape) {
+    .secdiv {
+        padding: 0 16%;
+        padding-top: 170px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    /**********************
+    HEADER
+    **********************/
+    nav {
+        background: none;
+        float: right;
+        font-size: 1.125em;
+        margin-right: 3%;
+        margin-top: 35px;
+        text-align: right;
+        width: 30%;
+    }
+    #logo {
+        float: left;
+        margin-left: 3%;
+        text-align: left;
+        width: 50%;
+        margin-top: 15px;
+    }
+    h1 {
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 0.825em;
+    }
+    header {
+        border-bottom: 5px solid #599a68;
+        /*  margin-bottom: 20px; */
+    }
+}
+
+
+/**********************
+    3*5 = 15
+    100% - 15% =85%
+    85 / 3 = 28.333333
+    **********************/
+
+
+/**********************
+    PAGE: PORFOLIO
+    **********************/
+
+#gallery li {
+    width: 28.3333;
+}
+
+#gallery li:nth-child(4n) {
+    clear: left;
+}

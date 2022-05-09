@@ -1,0 +1,486 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/****************
+MainPage title
+********************/
+
+.display-3,
+.display-6 {
+    text-shadow: 5px 8px 0 #222;
+}
+
+
+/***********
+BODY
+************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    background: #e4d7d7;
+    margin: 0;
+}
+
+#wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+
+/***************
+Navigation
+***************/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 50;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(63, 123, 78);
+    width: 100%;
+}
+
+nav a {
+    font-weight: 700;
+    padding: 15px 8px;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav a {
+    transition: all .5s;
+    color: #121233;
+}
+
+nav a.selected,
+nav a:hover {
+    color: #e4d7d7;
+    text-transform: uppercase;
+    border-top: 1px solid rgb(226, 208, 208);
+    border-bottom: 1px solid rgb(226, 208, 208);
+    padding: 7px 1px 7px 1px;
+}
+
+
+/********************
+HEADER
+********************/
+
+header {
+    float: left;
+    margin: 0 0 20px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+    background-color: rgb(63, 123, 78);
+}
+
+#logo {
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Tinos', serif;
+    margin: 15px 0;
+    font-size: 1.75em;
+    font-weight: normal;
+    /* line-height: 0.8em; */
+}
+
+.header-h2 {
+    font-size: 0.75em;
+    margin: -5x 0 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(5, 1, 1);
+}
+
+
+/********************
+FOOTER
+********************/
+
+footer {
+    width: 100%;
+    bottom: 0px;
+    position: relative;
+    font-size: 0.75em;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    color: rgb(236, 200, 200);
+    clear: both;
+    background-color: rgba(109, 91, 91, 0.877);
+}
+
+.social-ico {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+
+/************
+page:content
+************/
+
+#container {
+    height: 100%;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.contact-info a {
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+    background-image: url('../images/phone.png');
+}
+
+.contact-info li.mail a {
+    background-image: url('../images/email.png');
+}
+
+.contact-info li.twitter a {
+    background-image: url('../images/twitter1.png');
+}
+
+.content-paragraph {
+    text-align: left;
+}
+
+
+/************
+PAGE:ABOUT
+************/
+
+.main-img {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+}
+
+h3 {
+    margin: 0 0 1em 0;
+}
+
+
+/********************
+PAGE:LESSON
+********************/
+
+.lesson-img {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+}
+
+.small-title {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.lesson-learn li {
+    list-style: none;
+    border-bottom: 2px dotted black;
+    margin-bottom: 25px;
+}
+
+.lesson-learn li a:not(.See_page) {
+    color: blue;
+}
+
+.tag-name {
+    margin: 25px auto;
+    text-align: center;
+    font-style: normal;
+    border-top: 3px solid #57577d;
+    border-bottom: 3px solid #57577d;
+    padding: 10px;
+    background: #81926f;
+    color: #1b2908;
+}
+
+.small-title {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    font-family: 'Unlock', sans-serif;
+    font-weight: normal;
+}
+
+
+/********************
+PAGE:HOME
+********************/
+
+.tag {
+    padding-bottom: 50px;
+    background: #ffa949 url('../images/sec-img.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+.tag a:hover {
+    color: white;
+    padding: 0.01em;
+}
+
+.low-fide-image,
+iframe {
+    width: 280px;
+    height: 300px;
+}
+
+
+/*==================================
+View Code Examples
+==================================*/
+
+.See_page {
+    font-size: 15px;
+    color: white;
+    padding: 5px 10px;
+    background: #2f5734;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+    line-height: 1;
+}
+
+
+/*========================================
+Test flexbox container
+========================================*/
+
+.container1 {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.247);
+    border-radius: 5px;
+}
+
+.item {
+    flex-grow: 1;
+    flex-basis: 200px;
+    color: #fff;
+    padding: 15px;
+    margin: 5px;
+    background: #539c74;
+    border-radius: 3px;
+    border: 1px double rgb(42, 39, 80);
+}
+
+.item:hover {
+    border: 1px dotted white;
+}
+
+.secdiv {
+    padding: 0 5%;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+topic speaker
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.topic {
+    width: 100%;
+    background: linear-gradient(#fafefe, transparent 8%), linear-gradient(0deg, #fff, transparent), #e1e4e4 url(../images/coding-background.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Bootstrap Page CSS Noted by 14
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.navbar .navbar-brand {
+    color: rgba(245, 236, 236, 0.85);
+    font-size: 1rem;
+}
+
+.jumbotron {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../jumbo-back1.jpg) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron1 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/html-cover.jpg) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron2 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/javscript-1.png) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron3 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/CSS_logo.png) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron4 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/Grid-logo.png) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron5 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/mediaQuery.png) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron6 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/responsive_logo.png) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron7 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/flexbox.svg) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron8 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/css-selectors.jpg) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron9 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/tran_transform.png) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron10 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/css_variables.png) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron11 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/new-features.jpg) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron12 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/bootstrap.jpg) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron13 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/CSS_logo.png) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+.jumbotron14 {
+    /* background-image: url(../jumbo-back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background: linear-gradient(#29bb4a, transparent 91%), linear-gradient(0deg, #fff, transparent), #59abb1 url(../images/javascript_basic.jpg) no-repeat center;
+    background-size: cover;
+    /* background properties with short term */
+}
+
+@media screen and (min-width: 480px) {
+    .dropdown-menu {
+        min-width: 46rem;
+    }
+}
